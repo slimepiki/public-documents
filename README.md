@@ -1,2 +1,0 @@
-# public-documents
-survey etc.

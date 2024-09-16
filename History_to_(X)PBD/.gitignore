@@ -1,0 +1,7 @@
+*.out
+*.toc
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log

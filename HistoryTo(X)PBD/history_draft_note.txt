@@ -1,0 +1,113 @@
+#(1987)enrgy_constraints_on_parameterized_models
+[Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
+for changing the shape of parametrically-defined primitive objects. 
+
+#(1988)a_modeling_system_based_on dynamic_constraints
+Closest to [1987]'s in approach are Barzel and Barr's dynauric constraints[1988].
+
+#(1989)Constraint Methods
+general constraints via a constraint function
+
+
+#(1990)Interactive Dynamics
+Formulation of constrained mechanical systems and techniques for solving them have
+been presented before in the graphics literature in [Witkin et al. 1990]
+derivation of constraint forces.
+
+
+#(1997)An_introduction_to_constraints
+We refer the interested reader to [Nealen
+et al. 2006] for a more complete survey on the simulation
+of deformable objects and to [Witkin 1997; Erleben 2013] for
+constrained dynamics.
+
+###(1998)Large Steps in Cloth Simulation
+constraint  functions
+
+Since that time, the use of explicit integration became popular
+until Baraff and Witkin [1998] proposed a implicit backward Euler
+scheme for handling all the forces implicitly, including damping
+in cloth simulation. 
+
+
+
+#(1999)interactive_animation_predictor_collector
+ Desbrun et al. [1999] sped up the computation
+by using a predictor-corrector approach to compute an approximate solution to implicit integration.
+
+#(2004)A Versatile and Robust Model
+Jakobsen [Jak01] built his Fysix engine on a position
+based approach. His central idea was to use a Verlet integrator and manipulate positions directly.
+
+#(2006)Interactive Simulation of Elastic Deformable Materials
+We define general constraints via a constraint function
+as [BW98] and [THMG04].
+
+###(2006)posBasedDyn
+PBD!
+
+#(2006)A Quadratic Bending Model for Inextensible Surfaces
+A bending constraint for inextensible surfaces was introduced
+in [BKCW14]. The definition of this constraint is based on the discrete isometric bending model of Bergou et al. [BWH∗
+06], which
+can be applied if a surface deforms isometrically, i.e., if the edge
+lengths remain invariant
+
+#(2006)Interactive Simulation of Elastic Deformable Materials
+a compliant version of elasticity that
+fits naturally inside constrained rigid body simulators
+
+#(2008)Animating Developable Surfaces using Nonconforming Elements
+Now we have established the connection to backward Euler, we
+can apply higher order integration schemes to PBD. Following the
+derivation in [EB08] we will adapt BDF2, a second order accurate
+multistep method. First, we write the second order accurate BDF2
+update equations
+(second order PBD method)
+
+#(2014)strainBasedDynamics
+proposed constraining the entries
+of the Green-St Venant strain tensor to allow controlling strain in 
+directions independent from the model discretization
+
+#(2014)Position-Based Rigid Body Dynamics
+extends PBD beyond particles and simulate rigid bodies as single entities
+by introducing rotational states
+
+#(2014)Position-Based Simulation of Continuous Materials
+Recently, Bender et al. [2014a] proposed a continuum-based formulation 
+that treats strain-energy as a constraint function directly
+
+#(2015)Stable Constrained Dynamics
+Tournier et al. [2015] proposed
+a compliant constrained dynamics framework with support for
+continuum materials, and a geometric stiffness term to stabilize a
+linearly implicit time-integration. 
+
+#(2017)XPBD
+XPBD!
+
+#(2017)unified_particle
+a particle based unified solver in the position based framework
+
+#(2018)smallsteps(stabilize XPBD by simple way)
+By replacing solver iterations with
+substeps, Gauss-Seidel and Jacobi methods become competitors of
+global solvers in terms of convergence. Substepping in combination with one NPGS iteration per substep yields a method that looks
+computationally almost identical to an explicit integration step, but
+with the advantage of being unconditionally stable due to the usage
+of compliance.
+
+
+#(2019)non-smooth newton(mentioned basis of XPBD)
+A formulation of smooth isotropic Coulomb friction in terms
+of non-smooth complementarity functions.
+A generalized compliance formulation that supports hyperelastic material models
+A simple approximation of geometric stiffness to improve
+A new complementarity preconditioner that significantly
+improves convergence for contact problems.
+robustness without changing system dynamics.
+
+
+#(2020)rigidbodyXPBD
+XPBD for rigid body

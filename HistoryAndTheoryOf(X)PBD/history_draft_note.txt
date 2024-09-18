@@ -20,6 +20,9 @@ We refer the interested reader to [Nealen
 et al. 2006] for a more complete survey on the simulation
 of deformable objects and to [Witkin 1997; Erleben 2013] for
 constrained dynamics.
+Classical methods determine forces to simulate a dynamic system with constraints. This is done, e.g. 
+by defining a potential energy E = k2C2 and deriving the forces as f = −∇E (soft constraints)
+or via Lagrange multipliers derived from constrained dynamics (hard constraints) [Wit97].
 
 ###(1998)Large Steps in Cloth Simulation
 constraint  functions
@@ -111,3 +114,7 @@ robustness without changing system dynamics.
 
 #(2020)rigidbodyXPBD
 XPBD for rigid body
+
+#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+XPBD framework for Neo-Hookean. This method achieves 8ms/frame simulation with 80k tetrahedra on GPU.
+Note that this paper has supplemental that we can't get from Müller's website (but we can get it from Miles Macklin's website).

@@ -1,0 +1,9 @@
+
+#FEM (2005)Erleben ... it often solving simultaneous equation and get static condition
+						(but  It seems like to be able solve time evolution.
+						 [C. Johnson, Numerical solutions of partial differential equations 
+						by the finite element method, Dover, 2009] but I've not read that.)
+#numerical integration ... solving differential equations and get object's time evolution
+	#equation what we want to solve at physical simulation (2022)DynamicDeformables 11.1
+	#forward euler integration
+	#backward euler integration

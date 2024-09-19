@@ -2,6 +2,11 @@
 	#constraint physics
 	#constraint projection
 	#numerical integration
+	#confinuum mechanics
+		#brief discussion of energy from (2022)DynamicDeformables
+			#how to use energy functions (Implicit Integration described at (2022)DynamicDeformables or at PBD)
+		#deformation gradient (2010)Multi-Resolution Isotropic Strain Limiting or (2022)Physically_Based_Shape_Matching___SCA_2022
+
 
 #constraints at PBD
 	#geometric constraints(planer)
@@ -27,10 +32,13 @@
 	#constraints from energy
 		#method 1 (2014)Position-Based Simulation of Continuous Materials
 		#method 2 (2014)strainBasedDynamics
+		(#shape matching (2005)MeshlessDeformations_SIG05)
+		#physicall based shape matching (2022)Physically_Based_Shape_Matching
 
 
 
 #improved PBD
 	#XPBD
 	#friction constraint
+	#shape matching (2005)MeshlessDeformations_SIG05
 

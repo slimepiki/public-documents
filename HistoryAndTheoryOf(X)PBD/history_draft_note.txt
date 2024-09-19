@@ -55,6 +55,10 @@ We define general constraints via a constraint function as [BW98] and [THMG04]
 In order to compute forces based on these constraints we consider the potential energy
 1/2 kC^2
 
+#(2005)MeshlessDeformations_SIG05
+introduced a meshless simulation
+method based on shape matching to solve problem that creating volumetric mesh is a difficult;
+
 #(2006)Interactive Simulation of Elastic Deformable Materials
 We define general constraints via a constraint function
 as [BW98] and [THMG04].
@@ -173,7 +177,8 @@ XPBD for rigid body
 XPBD framework for Neo-Hookean. This method achieves 8ms/frame simulation with 80k tetrahedra on GPU.
 Note that this paper has supplemental that we can't get from Müller's website (but we can get it from Miles Macklin's website).
 
-
+#(2022)Physically_Based_Shape_Matching___SCA_2022
+Physically Based Shape Matching with XPBD
 
 (~2000)constraint dynamics
 ↓

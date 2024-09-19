@@ -14,10 +14,22 @@
 		#witkin
 
 #disassembling PBD
-	#constraint physics
-	#constraint projection
-	#numerical integration
+	#geometric constraints and physical constraints
+	#constraints solver
+		#where PBD constraints belong to from a stand point of numerical analysis
+			it located non-linear ??? problem
+		#why constraints projection works well
+	#what changed at XPBD
+
 	#continuum mechanics
 		#brief discussion of energy from (2022)DynamicDeformables
 			#how to use energy functions (Implicit Integration described at (2022)DynamicDeformables or at PBD)
 		#deformation gradient (2010)Multi-Resolution Isotropic Strain Limiting or (2022)Physically_Based_Shape_Matching___SCA_2022
+
+
+#additional survey of (X)PBD (2018~2024)
+	#(2018)smallsteps(stabilize XPBD by simple way)
+	#(2019)non-smooth newton(mentioned basis of XPBD)
+	#(2020)Detailed Rigid Body Simulation XPBD
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	#(2022)Physically_Based_Shape_Matching___SCA_2022

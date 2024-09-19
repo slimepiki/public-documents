@@ -108,7 +108,9 @@ A similar approach was recently proposed by Müller et al.
 [MKC12] to guarantee zero stretch in a single pass for the case of
 attached rope
 
-
+#(2013)PositionBasedFluids
+A fluid simulation method is presented by Macklin and Müller [MM13]
+where fluid incompressibility is enforced using density constraints.
 
 #(2014)strainBasedDynamics
 proposed constraining the entries

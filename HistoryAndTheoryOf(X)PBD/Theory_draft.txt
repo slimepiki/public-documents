@@ -3,7 +3,34 @@
 	#constraint projection
 	#numerical integration
 
-#improved PBD
+#constraints at PBD
+	#geometric constraints(planer)
+		#stretching (2006)PBD
+		#ending(cloth) (2006)PBD
+		#isometric bending (2014)Position-Based Simulation of Continuous Materials
+		#area conservation(2017)cource note
+		#strands (2012)Fast Simulation of Inextensible Hair and Fur(it will be omit)
+		#long range attachments (2012)Long Range Attachments - A Method to Simulate
+
+	#geometric constraints(volumetric)
+		#tetrahedral conservation (2017)cource note
+		#cloth balloons (2017)cource note
+		#improved cloth baloons (2009)VolumeConservingDeformableBodies
+		#cosserat rods
+
+	#for responce
+		#self collision (2017)cource note
+		#particle collision (2014)unified_particle
+		#friction (2014)unified_particle
+		#air mesh (2015)airMeshesPreprint (it will be omit)(little hassle and expensive)
+
 	#constraints from energy
+		#method 1 (2014)Position-Based Simulation of Continuous Materials
+		#method 2 (2014)strainBasedDynamics
+
+
+
+#improved PBD
 	#XPBD
 	#friction constraint
+

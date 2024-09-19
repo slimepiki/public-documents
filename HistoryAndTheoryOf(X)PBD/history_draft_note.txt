@@ -2,6 +2,10 @@
 [Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
 for changing the shape of parametrically-defined primitive objects. 
 
+(1987)Elastically Deformable Models 
+General penalty forces derived from energy functions for simulating deformable elastic 
+objects were introduced in the graphics literature by [Terzopoulos et al. 1987].
+
 #(1988)a_modeling_system_based_on dynamic_constraints
 Closest to [1987]'s in approach are Barzel and Barr's dynauric constraints[1988].
 
@@ -25,22 +29,31 @@ by defining a potential energy E = k2C2 and deriving the forces as f = −∇E (
 or via Lagrange multipliers derived from constrained dynamics (hard constraints) [Wit97].
 
 ###(1998)Large Steps in Cloth Simulation
-constraint  functions
+Instead, we define internal behavior by formulating a
+vector condition C(x) which we want to be zero, and then defining
+the associated energy as k
+2C(x)TC(x) where k is a stiffness constant.
 
 Since that time, the use of explicit integration became popular
 until Baraff and Witkin [1998] proposed a implicit backward Euler
 scheme for handling all the forces implicitly, including damping
 in cloth simulation. 
 
-
-
 #(1999)interactive_animation_predictor_collector
  Desbrun et al. [1999] sped up the computation
 by using a predictor-corrector approach to compute an approximate solution to implicit integration.
 
+(2001)Advanced Character Physics
+Jakobsen [Jak01] built his Fysix engine on a position based approach. His central idea 
+was to use a Verlet integrator and manipulate positions directly.
+The idea of using standard energy terms for generating penalty force has also been
+used several times before [Terzopoulos et al. 1987][Teschner et al.2004].
+
+
 #(2004)A Versatile and Robust Model
-Jakobsen [Jak01] built his Fysix engine on a position
-based approach. His central idea was to use a Verlet integrator and manipulate positions directly.
+We define general constraints via a constraint function as [BW98] and [THMG04]
+In order to compute forces based on these constraints we consider the potential energy
+1/2 kC^2
 
 #(2006)Interactive Simulation of Elastic Deformable Materials
 We define general constraints via a constraint function
@@ -52,13 +65,19 @@ PBD!
 #(2006)A Quadratic Bending Model for Inextensible Surfaces
 A bending constraint for inextensible surfaces was introduced
 in [BKCW14]. The definition of this constraint is based on the discrete isometric bending model of Bergou et al. [BWH∗
-06], which
-can be applied if a surface deforms isometrically, i.e., if the edge
+06], which can be applied if a surface deforms isometrically, i.e., if the edge
 lengths remain invariant
 
-#(2006)Interactive Simulation of Elastic Deformable Materials
+##(2006)Interactive Simulation of Elastic Deformable Materials
 a compliant version of elasticity that
 fits naturally inside constrained rigid body simulators
+It is well known in physics that kinematic
+constraints of the form1 φi(x) = 0 are the physical limit of strong
+potential forces of the form (ki/2)φ^2_i(x), for very large ki and this
+has lead to two main strategies for solving constrained system.
+In the case of distance constraints the corresponding potential is a
+spring potential, with spring stiffness α −1
+
 
 #(2008)Animating Developable Surfaces using Nonconforming Elements
 Now we have established the connection to backward Euler, we
@@ -81,6 +100,12 @@ by introducing rotational states
 Recently, Bender et al. [2014a] proposed a continuum-based formulation 
 that treats strain-energy as a constraint function directly
 
+#(2014)unified_particle
+a particle based unified solver in the position based framework
+(As such, the problem is equivalent to finding the minimum change in kinetic energy that satisfies the constraints, which
+is consistent with Gauss’s principle of least constraint.)
+
+
 #(2015)Stable Constrained Dynamics
 Tournier et al. [2015] proposed
 a compliant constrained dynamics framework with support for
@@ -90,8 +115,7 @@ linearly implicit time-integration.
 #(2017)XPBD
 XPBD!
 
-#(2017)unified_particle
-a particle based unified solver in the position based framework
+#(2017)#PBDTutorial2017-CourseNotes.pdf
 
 #(2018)smallsteps(stabilize XPBD by simple way)
 By replacing solver iterations with
@@ -118,3 +142,21 @@ XPBD for rigid body
 #(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 XPBD framework for Neo-Hookean. This method achieves 8ms/frame simulation with 80k tetrahedra on GPU.
 Note that this paper has supplemental that we can't get from Müller's website (but we can get it from Miles Macklin's website).
+
+
+
+(~2000)constraint dynamics
+↓
+(2000~2005)?
+↓
+(2006~2013)Position Based Dynamics
+↓
+(2014~2016)Strain based PBD
+↓
+(2017~)XPBD
+
+I need detailed infomation of...
+#Gauss’s principle of least constraint 
+#how convert constraint into energy 
+#Neo-Hookean
+#linear complementarity problem

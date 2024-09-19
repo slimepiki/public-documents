@@ -1,0 +1,9 @@
+#disassembling PBD
+	#constraint physics
+	#constraint projection
+	#numerical integration
+
+#improved PBD
+	#constraints from energy
+	#XPBD
+	#friction constraint

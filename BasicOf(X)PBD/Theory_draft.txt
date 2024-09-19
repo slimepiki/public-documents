@@ -2,7 +2,7 @@
 	#constraint physics
 	#constraint projection
 	#numerical integration
-	#confinuum mechanics
+	#continuum mechanics
 		#brief discussion of energy from (2022)DynamicDeformables
 			#how to use energy functions (Implicit Integration described at (2022)DynamicDeformables or at PBD)
 		#deformation gradient (2010)Multi-Resolution Isotropic Strain Limiting or (2022)Physically_Based_Shape_Matching___SCA_2022
@@ -21,7 +21,6 @@
 		#tetrahedral conservation (2017)cource note
 		#cloth balloons (2017)cource note
 		#improved cloth baloons (2009)VolumeConservingDeformableBodies
-		#cosserat rods
 
 	#for responce
 		#self collision (2017)cource note
@@ -29,9 +28,14 @@
 		#friction (2014)unified_particle
 		#air mesh (2015)airMeshesPreprint (it will be omit)(little hassle and expensive)
 
-	#constraints from energy
+	#constraints from continuum mechanics
 		#method 1 (2014)Position-Based Simulation of Continuous Materials
+			constraint that energy to be zero 
 		#method 2 (2014)strainBasedDynamics
+			stretch/shear constraint that derived from strain tensor
+			in addition them, volume conservation constraint derived from deformation gradient
+			the improvement shear/stretch constraint is mentioned at (2017)cource note but I couldn't find original paper.
+		#cosserat rods
 		(#shape matching (2005)MeshlessDeformations_SIG05)
 		#physicall based shape matching (2022)Physically_Based_Shape_Matching
 
@@ -39,6 +43,5 @@
 
 #improved PBD
 	#XPBD
-	#friction constraint
-	#shape matching (2005)MeshlessDeformations_SIG05
+	#rigid body #(2014)Position-Based Rigid Body Dynamics
 

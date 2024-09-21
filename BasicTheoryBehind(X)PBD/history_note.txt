@@ -18,6 +18,10 @@ Formulation of constrained mechanical systems and techniques for solving them ha
 been presented before in the graphics literature in [Witkin et al. 1990]
 derivation of constraint forces.
 
+#(1995)Deformation Constraints in a MassSpring Model
+Provot [Pro95] was among the first to use this method in the context of
+cloth simulation. He performs a single iteration through all cloth edges
+after a force based solver. 
 
 #(1997)An_introduction_to_constraints
 We refer the interested reader to [Nealen
@@ -49,6 +53,8 @@ was to use a Verlet integrator and manipulate positions directly.
 The idea of using standard energy terms for generating penalty force has also been
 used several times before [Terzopoulos et al. 1987][Teschner et al.2004].
 
+(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+relaxation based on the concept of constraint averagingf
 
 #(2004)A Versatile and Robust Model
 We define general constraints via a constraint function as [BW98] and [THMG04]
@@ -82,6 +88,12 @@ has lead to two main strategies for solving constrained system.
 In the case of distance constraints the corresponding potential is a
 spring potential, with spring stiffness α −1
 
+#(2007)Efficient Simulation of Inextensible Cloth
+improve the convergence rate are the use of a global NewtonRaphson solver as 
+proposed by Goldenthal et al. [GHF∗07]
+
+#(2007)FastLSM Fast Lattice Shape Matching for realtime
+Lattice Shape Matching which was originally introduced by Rivers and James [RJ07]
 
 #(2008)Animating Developable Surfaces using Nonconforming Elements
 Now we have established the connection to backward Euler, we
@@ -95,18 +107,27 @@ update equations
 In the following we introduce the position-based approach
 for volume conservation of Diziol et al.
 
+#(2011)-SCA-RobustRealTimeDeformation
+The one of Diziol et al. [DBB11] is best suited
+for a parallel implementation on the GPU.
+
 #(2012)Long Range Attachments - A Method to Simulate
 Recently, Kim et al. [KCM12] found a surprisingly simple and robust 
 technique they call Long Range Attachments (LRA) to prevent cloth 
 from getting stretched globally with low iteration counts.
 
-
-
+#(2012)Mass Splitting for Jitter-Free Parallel Rigid Body Simulatio
+relaxation based on mass-splitting
 
 #(2012)Fast Simulation of Inextensible Hair and Fur
 A similar approach was recently proposed by Müller et al.
 [MKC12] to guarantee zero stretch in a single pass for the case of
 attached rope
+
+#(2013)Efficient GPU data structures and methods to solve
+The restriction and the prolongation of
+the results can be performed efficiently using the sparse matrix data
+structure of Weber et al. [WBS∗13]
 
 #(2013)PositionBasedFluids
 A fluid simulation method is presented by Macklin and Müller [MM13]
@@ -132,6 +153,11 @@ e directly constrains the strain tensor [MCKM14]
 a particle based unified solver in the position based framework
 (As such, the problem is equivalent to finding the minimum change in kinetic energy that satisfies the constraints, which
 is consistent with Gauss’s principle of least constraint.)
+
+#(2015)Scalable Partitioning for Parallel Position Based Dynamics
+To take advantage of both Gauss-Seidel and Jacobi solvers, Fratarcangeli et al. [FP15] proposed a hybrid approach. They use graph
+coloring and modify the graph such that it produces a desired number of k colors by splitting high valence particles, i.e. solving them
+Jacobi style. 
 
 #(2015)airMeshesPreprint
 As Müller et al. show in [MCKM15], per-element volume 

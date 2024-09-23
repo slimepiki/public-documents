@@ -42,6 +42,22 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
+\usepackage{glossaries}
+\makeglossaries
+
+\newglossaryentry{iteration}
+{
+	name=iteration,
+	description={In computer science, iteration is the process of repeating a series of instructions multiple times. Especially at (X)PBD, the part of physical solver which treats \gls{constraint}s is called iteration.}
+}
+
+\newglossaryentry{constraint}{
+	name = constraint,
+	description={
+		At the (X)PBD, constraint is relationship among arbitrary vertices what we want to keep during simulation.
+		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron.
+	}
+}
 %%%%
 
 %%%%%=============================================================================%%%%
@@ -74,7 +90,6 @@
 
 \raggedbottom
 %%\unnumbered% uncomment this for unnumbered level heads
-
 \begin{document}
 
 \title[Article Title]{Article Title}
@@ -127,7 +142,19 @@
 \newpage
 
 \section{Introduction}\label{sec1}
-\cite{bib1}\cite{bib2}
+\subsection{What is (X)PBD?}
+PBD (Position Based Dynamics) proposed at \cite{10.1016/j.jvcir.2007.01.005} is popular method because of its stability and ease of imprement. The reason of them is same, PBD computes physical simulation without using velocity inside the \gls{iteration}
+
+
+But, in contrast to ease of implement, it is difficult to understanding PBD's background theory. This is problem when modification PBD depending on your purpose. 
+
+If you start from original PBD paper\cite{10.1016/j.jvcir.2007.01.005}, you will be at lost 
+
+
+
+
+
+
 % \cite{bib1} 
 
 %%==================%%
@@ -373,16 +400,15 @@
 
 \begin{appendices}
 
-\section{}\label{ap1}
+\section{Glossaly}\label{ap1}
+\subsection{symbols}
+
+\subsection{terms}
+\printglossaries
+
 
 \end{appendices}
 
-%%===========================================================================================%%
-%% If you are submitting to one of the Nature Portfolio journals, using the eJP submission   %%
-%% system, please include the references within the manuscript file itself. You may do this  %%
-%% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
-%% file, and delete the associated \verb+\bibliography+ commands.                            %%
-%%===========================================================================================%%
 
 \addcontentsline{toc}{section}{References}
 \bibliography{sn-bibliography}% common bib file

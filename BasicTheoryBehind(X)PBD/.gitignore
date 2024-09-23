@@ -5,3 +5,6 @@
 *.blg
 *.dvi
 *.log
+*.glo
+*.glsdefs
+*.ist

@@ -7,3 +7,7 @@
 	#equation what we want to solve at physical simulation (2022)DynamicDeformables 11.1
 	#forward euler integration
 	#backward euler integration
+
+#BDF (Backward Differentiation Methods)
+
+#CCD (Continuous collision detection)

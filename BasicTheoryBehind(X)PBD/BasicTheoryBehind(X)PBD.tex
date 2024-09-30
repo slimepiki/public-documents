@@ -13,87 +13,6 @@
 %% to compile with pdflatex/xelatex use pdflatex option %%
 %%======================================================%%
 
-\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
-
- 
-%%\documentclass[sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
-%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
-%%\documentclass[sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
-%%\documentclass[sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
-%%\documentclass[sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
-%%\documentclass[sn-vancouver,Numbered]{sn-jnl}% Vancouver Reference Style
-%%\documentclass[sn-apa]{sn-jnl}% APA Reference Style 
-%%\documentclass[sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
-
-%%%% Standard Packages
-%%<additional latex packages if required can be included here>
-
-\usepackage{graphicx}%
-\usepackage{multirow}%
-\usepackage{amsmath,amssymb,amsfonts}%
-\usepackage{amsthm}%
-\usepackage{mathrsfs}%
-\usepackage[title]{appendix}%
-\usepackage{xcolor}%
-\usepackage{textcomp}%
-\usepackage{manyfoot}%
-\usepackage{booktabs}%
-\usepackage{algorithm}%
-\usepackage{algorithmicx}%
-\usepackage{algpseudocode}%
-\usepackage{listings}%
-\usepackage{glossaries}
-\makeglossaries
-
-\newglossaryentry{iteration}
-{
-	name=iteration,
-	description={In computer science, iteration is the process of repeating a series of instructions multiple times. Especially at (X)PBD, the part of physical solver which treats \gls{constraint}s is called iteration.}
-}
-
-\newglossaryentry{constraint}{
-	name = constraint,
-	description={
-		At the (X)PBD, constraint is relationship among arbitrary vertices what we want to keep during simulation.
-		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron.
-	}
-}
-%%%%
-
-%%%%%=============================================================================%%%%
-%%%%  Remarks: This template is provided to aid authors with the preparation
-%%%%  of original research articles intended for submission to journals published 
-%%%%  by Springer Nature. The guidance has been prepared in partnership with 
-%%%%  production teams to conform to Springer Nature technical requirements. 
-%%%%  Editorial and presentation requirements differ among journal portfolios and 
-%%%%  research disciplines. You may find sections in this template are irrelevant 
-%%%%  to your work and are empowered to omit any such section if allowed by the 
-%%%%  journal you intend to submit to. The submission guidelines and policies 
-%%%%  of the journal take precedence. A detailed User Manual is available in the 
-%%%%  template package for technical guidance.
-%%%%%=============================================================================%%%%
-
-%% as per the requirement new theorem styles can be included as shown below
-\theoremstyle{thmstyleone}%
-\newtheorem{theorem}{Theorem}%  meant for continuous numbers
-%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
-%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
-\newtheorem{proposition}[theorem]{Proposition}% 
-%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
-
-\theoremstyle{thmstyletwo}%
-\newtheorem{example}{Example}%
-\newtheorem{remark}{Remark}%
-
-\theoremstyle{thmstylethree}%
-\newtheorem{definition}{Definition}%
-
-\raggedbottom
-%%\unnumbered% uncomment this for unnumbered level heads
-\begin{document}
-
-\title[Article Title]{Article Title}
-
 %%=============================================================%%
 %% GivenName	-> \fnm{Joergen W.}
 %% Particle	-> \spfx{van der} -> surname prefix
@@ -102,7 +21,6 @@
 %% \author*[1,2]{\fnm{Joergen W.} \spfx{van der} \sur{Ploeg} 
 %%  \sfx{IV}}\email{iauthor@gmail.com}
 %%=============================================================%%
-\author*{\fnm{Slime} \sur{Piki}}
 
 
 %%==================================%%
@@ -137,22 +55,128 @@
 
 %%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
 
+% Reference Style/Chemistry Reference Style
+
+
+%%\documentclass[sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+%%\documentclass[sn-mathphys-num]{sn-jnl}% Math and Physical Sciences Numbered Reference Style 
+%%\documentclass[sn-mathphys-ay]{sn-jnl}% Math and Physical Sciences Author Year Reference Style
+%%\documentclass[sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[sn-vancouver,Numbered]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[sn-apa]{sn-jnl}% APA Reference Style 
+%%\documentclass[sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+\documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Basic Springer Nature
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage{glossaries}
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+\makeglossaries
+
+\newglossaryentry{iteration}
+{
+	name=iteration,
+	description={In computer science, iteration is the process of repeating a series of instructions multiple times. Especially at (X)PBD, the part of physical solver which treats \gls{constraint}s is called iteration.}
+}
+
+\newglossaryentry{constraint}{
+	name = constraint,
+	description={
+		At the (X)PBD, constraint is relationship among arbitrary vertices what we want to keep during simulation.
+		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron.
+	}
+}
+%%%%
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+\begin{document}
+	
+	\title[Basic theory behind (X)PBD]{Basic theory behind (X)PBD}
+	\author*{\fnm{Slime} \sur{Piki}}
 \maketitle
 \tableofcontents
 \newpage
 
 \section{Introduction}\label{sec1}
 \subsection{What is (X)PBD?}
-PBD (Position Based Dynamics) proposed at \cite{10.1016/j.jvcir.2007.01.005} is popular method because of its stability and ease of imprement. The reason of them is same, PBD computes physical simulation without using velocity inside the \gls{iteration}
-
+PBD (Position Based Dynamics) proposed at \cite{PBD} is popular method because of its stability and ease of imprement. The reason of them is same, PBD computes physical simulation only using positions inside the \gls{iteration}s and all we have to do is compute displacement and modifying them.
+In other words, we don't have to use complicated numerical analysis, it sounds pretty good.
 
 But, in contrast to ease of implement, it is difficult to understanding PBD's background theory. This is problem when modification PBD depending on your purpose. 
 
-If you start from original PBD paper\cite{10.1016/j.jvcir.2007.01.005}, you will be at lost 
+If you start your research from original PBD paper\cite{PBD}, you will wonder how the author derive constraints' formulations or why this solver works well. Or you start from XPBD \cite{XPBD}, you will be confused by suddnly appeared lagrange multipliyer or energy potential that we don't know how handle.
+Unfortunately, we can't know much from them and it may be common in literature search ,there is no clear path to learning them. Then, I decided to write a guidebook on the underlying theory of PBD.
+
+\subsection{Difference from existing PBD coursenote}
+Actually, there is coursenote of PBD written by authors who published paper of PBD and XPBD \cite{PBDCoursenote}. This coursenote describes basic style PBD and its extensions. But there is the same problem we saw in \cite{PBD} and \cite{XPBD}, that is, how to implement is described but why this method works well is not. Thus, I believe that this document isn't meaningless. Well then, let's start the journey to XPBD!
+
+\section{The history of PBD}
+I think starting from history is good way to learn something because there is no leaps in logic and we will be easy to understand where we are. However, certainly, there is redundancy, so you can skip this section for save your time. I'll effort to write that you can understand everything even if you skipped this section.
+\subsection{PBD's chronicle}
 
 
+\newpage
+\appendix
 
 
+\section{Glossaly}\label{ap1}
+\subsection{symbols}
+
+\subsection{terms}
+\printglossaries
+
+\appendix
+
+\addcontentsline{toc}{section}{References}
+\bibliography{sn-bibliography}% common bib file
+
+
+\end{document}
 
 
 % \cite{bib1} 
@@ -396,22 +420,3 @@ If you start from original PBD paper\cite{10.1016/j.jvcir.2007.01.005}, you will
 %\bmhead{Supplementary information}
 %If your article 
 
-\newpage
-
-\begin{appendices}
-
-\section{Glossaly}\label{ap1}
-\subsection{symbols}
-
-\subsection{terms}
-\printglossaries
-
-
-\end{appendices}
-
-
-\addcontentsline{toc}{section}{References}
-\bibliography{sn-bibliography}% common bib file
-
-
-\end{document}

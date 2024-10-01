@@ -1,3 +1,14 @@
+##(variation of https://iis-lab.org/misc/paperreading/ )
+A : Abstruct
+M : Motivation
+M :	Method
+D :	Detail
+I : Insight
+K : Key word
+U : Unknown
+R : Reflection
+R :	Reference
+
 #(1987)enrgy_constraints_on_parameterized_models
 A : [Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
 for changing the shape of parametrically-defined primitive objects. 

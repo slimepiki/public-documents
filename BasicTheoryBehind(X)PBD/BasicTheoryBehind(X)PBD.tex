@@ -144,19 +144,19 @@
 
 \section{Introduction}\label{sec1}
 \subsection{What is (X)PBD?}
-PBD (Position Based Dynamics) proposed at \cite{PBD} is popular method because of its stability and ease of imprement. The reason of them is same, PBD computes physical simulation only using positions inside the \gls{iteration}s and all we have to do is compute displacement and modifying them.
+PBD (Position Based Dynamics) proposed at \cite{PBD} is a popular method because of its stability and ease of implementation. The reason for them is the same, PBD computes physical simulation only using positions inside the \gls{iteration}s and all we have to do is compute displacement and modify them.
 In other words, we don't have to use complicated numerical analysis, it sounds pretty good.
 
-But, in contrast to ease of implement, it is difficult to understanding PBD's background theory. This is problem when modification PBD depending on your purpose. 
+But, in contrast to ease of implementation, it isn't easy to understand PBD's background theory. This is the problem when modifying PBD depending on your purpose. 
 
-If you start your research from original PBD paper\cite{PBD}, you will wonder how the author derive constraints' formulations or why this solver works well. Or you start from XPBD \cite{XPBD}, you will be confused by suddnly appeared lagrange multipliyer or energy potential that we don't know how handle.
-Unfortunately, we can't know much from them and it may be common in literature search ,there is no clear path to learning them. Then, I decided to write a guidebook on the underlying theory of PBD.
+If you start your research from the original PBD paper\cite{PBD}, you will wonder how the authors derive constraints' formulations or why this solver works well. Or you start from XPBD \cite{XPBD}, you will be confused by the suddenly appeared Lagrange multiplier or energy potential that we don't know how to handle.
+Unfortunately, we can't know much from them and it may be common in literature search, there is no clear path to learning them. Then, I decided to write a guidebook on the underlying theory of PBD.
 
 \subsection{Difference from existing PBD coursenote}
-Actually, there is coursenote of PBD written by authors who published paper of PBD and XPBD \cite{PBDCoursenote}. This coursenote describes basic style PBD and its extensions. But there is the same problem we saw in \cite{PBD} and \cite{XPBD}, that is, how to implement is described but why this method works well is not. Thus, I believe that this document isn't meaningless. Well then, let's start the journey to XPBD!
+Actually, there are some course notes on PBD written by authors who published papers on PBD and XPBD, e.g. \cite{PBDCoursenote}. These course notes describe the basic style of PBD and its extensions. But there is the same problem we saw in \cite{PBD} and \cite{XPBD}, that is, how to implement is described but why this method works well is not. Thus, I believe that this document isn't meaningless. Well then, let's start the journey to XPBD!
 
 \section{The history of PBD}
-I think starting from history is good way to learn something because there is no leaps in logic and we will be easy to understand where we are. However, certainly, there is redundancy, so you can skip this section for save your time. I'll effort to write that you can understand everything even if you skipped this section.
+I think starting from history is a good way to learn something because there are no leaps in logic and it will be easy to understand where we are. However, there is certainly redundancy, so you can skip this section to save time. I'll make an effort to write that you can understand everything even if you skipped this section.
 \subsection{PBD's chronicle}
 
 

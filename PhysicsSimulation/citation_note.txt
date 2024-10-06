@@ -14,3 +14,10 @@
 
 (2022)DynamicDeformables
 good text about strain energy 
+
+
+
+I heard 
+https://www.epfl.ch/labs/gcm/
+has inprementation of Projective Dynamics
+

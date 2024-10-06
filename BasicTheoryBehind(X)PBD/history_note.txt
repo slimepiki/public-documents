@@ -10,8 +10,3 @@
 ↓
 (2017~)XPBD
 
-I need detailed infomation of...
-#Gauss’s principle of least constraint 
-#how convert constraint into energy 
-#Neo-Hookean
-#linear complementarity problem

@@ -1,4 +1,6 @@
 ##(variation of https://iis-lab.org/misc/paperreading/ )
+A : Author
+C : Conference
 A : Abstruct
 M : Motivation
 M :	Method
@@ -10,7 +12,9 @@ R : Reflection
 R :	Reference
 C : Cited by
 
-#(1987)enrgy_constraints_on_parameterized_models
+#(1987)enrgy constraints on parameterized models
+A : 
+C : 
 A : [Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
 for changing the shape of parametrically-defined primitive objects. 
 M : 
@@ -24,6 +28,8 @@ R :
 C :
 
 (1987)Elastically Deformable Models 
+A : 
+C : 
 A : General penalty forces derived from energy functions for simulating deformable elastic 
 objects were introduced in the graphics literature by [Terzopoulos et al. 1987].
 M : 
@@ -36,7 +42,9 @@ R :
 R :
 C :
 
-#(1988)a_modeling_system_based_on dynamic_constraints
+#(1988)a modeling system based on dynamic constraints
+A : 
+C : 
 A : Closest to [1987]'s in approach are Barzel and Barr's dynauric constraints[1988].
 M : 
 M :
@@ -50,6 +58,8 @@ C :
 
 
 #(1989)Constraint Methods
+A : 
+C : 
 general constraints via a constraint function
 M : 
 M :
@@ -62,6 +72,8 @@ R :
 C :
 
 #(1990)Interactive Dynamics
+A : 
+C : 
 A : Formulation of constrained mechanical systems and techniques for solving them have
 been presented before in the graphics literature in [Witkin et al. 1990]
 derivation of constraint forces.
@@ -76,6 +88,8 @@ R :
 C :
 
 #(1995)Deformation Constraints in a MassSpring Model
+A : 
+C : 
 A : Provot [Pro95] was among the first to use this method in the context of
 cloth simulation. He performs a single iteration through all cloth edges
 after a force based solver. 
@@ -89,7 +103,9 @@ R :
 R :
 C :
 
-#(1997)An_introduction_to_constraints
+#(1997)An introduction to constraints
+A : 
+C : 
 A : We refer the interested reader to [Nealen
 et al. 2006] for a more complete survey on the simulation
 of deformable objects and to [Witkin 1997; Erleben 2013] for
@@ -108,20 +124,11 @@ R :
 C :
 
 ###(1998)Large Steps in Cloth Simulation
+
 A : Instead, we define internal behavior by formulating a
 vector condition C(x) which we want to be zero, and then defining
 the associated energy as k
 2C(x)TC(x) where k is a stiffness constant.
-M : 
-M :
-D :
-I : 
-K : 
-U : 
-R : 
-R :
-C :
-
 Since that time, the use of explicit integration became popular
 A : until Baraff and Witkin [1998] proposed a implicit backward Euler
 scheme for handling all the forces implicitly, including damping
@@ -136,7 +143,10 @@ R :
 R :
 C :
 
-#(1999)interactive_animation_predictor_collector
+
+#(1999)Interactive animation of structured deformable objects
+A : 
+C : 
 A : Desbrun et al. [1999] sped up the computation
 by using a predictor-corrector approach to compute an approximate solution to implicit integration.
 M : 
@@ -150,6 +160,8 @@ R :
 C :
 
 (2001)Advanced Character Physics
+A : 
+C : 
 A : Jakobsen [Jak01] built his Fysix engine on a position based approach. His central idea 
 was to use a Verlet integrator and manipulate positions directly.
 The idea of using standard energy terms for generating penalty force has also been
@@ -165,9 +177,13 @@ R :
 C :
 
 (2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+A : 
+C : 
 A : relaxation based on the concept of constraint averagingf
 
 #(2004)A Versatile and Robust Model
+A : 
+C : 
 A : We define general constraints via a constraint function as [BW98] and [THMG04]
 In order to compute forces based on these constraints we consider the potential energy
 1/2 kC^2
@@ -181,9 +197,11 @@ R :
 R :
 C :
 
-#(2005)MeshlessDeformations_SIG05
+#(2005)Meshless Deformations_SIG05
+A : 
+C : 
 A : introduced a meshless simulation
-method based on shape matching to solve problem that creating volumetric mesh is a difficult;
+method based on shape matching to solve problem that creating volumetric mesh is a difficult.
 M : 
 M :
 D :
@@ -192,9 +210,11 @@ K :
 U : 
 R : 
 R :
-C :
+C : #(2022)Physically Based Shape Matching
 
 #(2006)Interactive Simulation of Elastic Deformable Materials
+A : 
+C : 
 A : We define general constraints via a constraint function
 as [BW98] and [THMG04].
 M : 
@@ -207,11 +227,15 @@ R :
 R :
 C :
 
-###(2006)posBasedDyn
+###(2006)Position Based Dynamics
+A : 
+C : 
 A : PBD!
 C :
 
 #(2006)A Quadratic Bending Model for Inextensible Surfaces
+A : 
+C : 
 A : A bending constraint for inextensible surfaces was introduced
 in [BKCW14]. The definition of this constraint is based on the discrete isometric bending model of Bergou et al. [BWH∗
 06], which can be applied if a surface deforms isometrically, i.e., if the edge
@@ -227,6 +251,8 @@ R :
 C :
 
 ##(2006)Interactive Simulation of Elastic Deformable Materials
+A : 
+C : 
 A : a compliant version of elasticity that
 fits naturally inside constrained rigid body simulators
 It is well known in physics that kinematic
@@ -246,6 +272,8 @@ R :
 C :
 
 #(2007)Efficient Simulation of Inextensible Cloth
+A : 
+C : 
 A : improve the convergence rate are the use of a global NewtonRaphson solver as 
 proposed by Goldenthal et al. [GHF∗07]
 M : 
@@ -259,6 +287,8 @@ R :
 C :
 
 #(2007)FastLSM Fast Lattice Shape Matching for realtime
+A : 
+C : 
 A : Lattice Shape Matching which was originally introduced by Rivers and James [RJ07]
 M : 
 M :
@@ -271,6 +301,8 @@ R :
 C :
 
 #(2008)Animating Developable Surfaces using Nonconforming Elements
+A : 
+C : 
 A : Now we have established the connection to backward Euler, we
 can apply higher order integration schemes to PBD. Following the
 derivation in [EB08] we will adapt BDF2, a second order accurate
@@ -288,6 +320,8 @@ R :
 C :
 
 #(2009)VolumeConservingDeformableBodies
+A : 
+C : 
 A : In the following we introduce the position-based approach
 for volume conservation of Diziol et al.
 M : 
@@ -301,6 +335,8 @@ R :
 C :
 
 #(2011)-SCA-RobustRealTimeDeformation
+A : 
+C : 
 A : The one of Diziol et al. [DBB11] is best suited
 for a parallel implementation on the GPU.
 M : 
@@ -314,6 +350,8 @@ R :
 C :
 
 #(2012)Long Range Attachments - A Method to Simulate
+A : 
+C : 
 A : Recently, Kim et al. [KCM12] found a surprisingly simple and robust 
 technique they call Long Range Attachments (LRA) to prevent cloth 
 from getting stretched globally with low iteration counts.
@@ -327,7 +365,9 @@ R :
 R :
 C :
 
-#(2012)Mass Splitting for Jitter-Free Parallel Rigid Body Simulatio
+#(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
+A : 
+C : 
 A : relaxation based on mass-splitting
 M : 
 M :
@@ -340,6 +380,8 @@ R :
 C :
 
 #(2012)Fast Simulation of Inextensible Hair and Fur
+A : 
+C : 
 A : A similar approach was recently proposed by Müller et al.
 [MKC12] to guarantee zero stretch in a single pass for the case of
 attached rope
@@ -354,6 +396,8 @@ R :
 C :
 
 #(2013)Efficient GPU data structures and methods to solve
+A : 
+C : 
 A : The restriction and the prolongation of
 the results can be performed efficiently using the sparse matrix data
 structure of Weber et al. [WBS∗13]
@@ -368,6 +412,8 @@ R :
 C :
 
 #(2013)PositionBasedFluids
+A : 
+C : 
 A : A fluid simulation method is presented by Macklin and Müller [MM13]
 where fluid incompressibility is enforced using density constraints.
 M : 
@@ -380,7 +426,9 @@ R :
 R :
 C :
 
-#(2014)strainBasedDynamics
+#(2014)strain Based Dynamics
+A : 
+C : 
 A : proposed constraining the entries
 of the Green-St Venant strain tensor to allow controlling strain in 
 directions independent from the model discretization
@@ -395,6 +443,8 @@ R :
 C :
 
 #(2014)Position-Based Rigid Body Dynamics
+A : 
+C : 
 A : extends PBD beyond particles and simulate rigid bodies as single entities
 by introducing rotational states
 M : 
@@ -408,6 +458,8 @@ R :
 C :
 
 #(2014)Position-Based Simulation of Continuous Materials
+A : 
+C : 
 A : Recently, Bender et al. [2014a] proposed a continuum-based formulation 
 that treats strain-energy as a constraint function directly. 
 Themethod defines a constraint for the strain 
@@ -423,7 +475,9 @@ R :
 R :
 C :
 
-#(2014)unified_particle
+#(2014)unified particle
+A : 
+C : 
 A : a particle based unified solver in the position based framework
 (As such, the problem is equivalent to finding the minimum change in kinetic energy that satisfies the constraints, which
 is consistent with Gauss’s principle of least constraint.)
@@ -438,6 +492,8 @@ R :
 C :
 
 #(2015)Scalable Partitioning for Parallel Position Based Dynamics
+A : 
+C : 
 A : To take advantage of both Gauss-Seidel and Jacobi solvers, Fratarcangeli et al. [FP15] proposed a hybrid approach. They use graph
 coloring and modify the graph such that it produces a desired number of k colors by splitting high valence particles, i.e. solving them
 Jacobi style. 
@@ -451,7 +507,9 @@ R :
 R :
 C :
 
-#(2015)airMeshesPreprint
+#(2015)air Meshes Preprint
+A : 
+C : 
 A : As Müller et al. show in [MCKM15], per-element volume 
 constraints can also be used to robustly handle collision
 M : 
@@ -465,6 +523,8 @@ R :
 C :
 
 #(2015)Stable Constrained Dynamics
+A : 
+C : 
 A : Tournier et al. [2015] proposed
 a compliant constrained dynamics framework with support for
 continuum materials, and a geometric stiffness term to stabilize a
@@ -480,6 +540,8 @@ R :
 C :
 
 (2016)Position and Orientation Based Cosserat Rods
+A : 
+C : 
 A : The method constrains the strain measures of one dimensional
 elastic bodies, so called Cosserat rods, which can undergo bending
 and twisting deformations [KS16]
@@ -494,6 +556,8 @@ R :
 C :
 
 #(2017)XPBD
+A : 
+C : 
 A : XPBD!
 M : 
 M :
@@ -506,8 +570,12 @@ R :
 C :
 
 #(2017)#PBDTutorial2017-CourseNotes.pdf
+A : 
+C : 
 
 #(2018)smallsteps(stabilize XPBD by simple way)
+A : 
+C : 
 A : By replacing solver iterations with
 substeps, Gauss-Seidel and Jacobi methods become competitors of
 global solvers in terms of convergence. Substepping in combination with one NPGS iteration per substep yields a method that looks
@@ -525,6 +593,8 @@ R :
 C :
 
 #(2019)non-smooth newton(mentioned basis of XPBD)
+A : 
+C : 
 A : A formulation of smooth isotropic Coulomb friction in terms
 of non-smooth complementarity functions.
 A generalized compliance formulation that supports hyperelastic material models
@@ -543,6 +613,8 @@ R :
 C :
 
 #(2020)Detailed Rigid Body Simulation XPBD
+A : 
+C : 
 A : XPBD for rigid body
 M : 
 M :
@@ -555,8 +627,11 @@ R :
 C :
 
 #(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+A : 
+C : 
 A : XPBD framework for Neo-Hookean. This method achieves 8ms/frame simulation with 80k tetrahedra on GPU.
-Note that this paper has supplemental that we can't get from Müller's website (but we can get it from Miles Macklin's website).
+	Note that this paper has supplemental that we can't get from Müller's website 
+	(but we can get it from Miles Macklin's website).
 M : 
 M :
 D :
@@ -567,7 +642,9 @@ R :
 R :
 C :
 
-#(2022)Physically_Based_Shape_Matching___SCA_2022
+#(2022)Physically Based Shape Matching
+A : Matthias Müller(NVIDIA), Miles Macklin(NVIDIA), Nuttapong Chentanez(NVIDIA), Stefan Jeschke(NVIDIA)
+C : SIGGRAPH 2022
 A : Physically Based Shape Matching with XPBD
 M : 
 M :
@@ -576,5 +653,6 @@ I :
 K : 
 U : 
 R : 
-R :
+R : #(2005)Meshless Deformations_SIG05
+	#(2006)Position Based Dynamics
 C :

@@ -24,8 +24,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C :!
 
 #(1987)Elastically Deformable Models 
 A : 
@@ -41,7 +41,7 @@ I :
 K : 
 U : 
 R : 
-R :
+R :!
 C : (2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
 	(2017)A Survey on Position Based Dynamics
@@ -59,8 +59,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C :1
 
 
 #(1989)Constraint Methods
@@ -74,8 +74,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C :!
 
 #(1990)Interactive Dynamics
 A : 
@@ -90,7 +90,7 @@ I :
 K : 
 U : 
 R : 
-R :
+R :!
 C : (2017)A Survey on Position Based Dynamics
 
 #(1995)Deformation Constraints in a MassSpring Model
@@ -106,8 +106,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C :!
 
 #(1997)An introduction to constraints
 A : 
@@ -126,8 +126,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C :!
 
 ###(1998)Large Steps in Cloth Simulation
 A : Instead, we define internal behavior by formulating a
@@ -145,7 +145,7 @@ I :
 K : 
 U : 
 R : 
-R :
+R :!
 C : (2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
@@ -168,7 +168,7 @@ I :
 K : 
 U : 
 R : 
-R :
+R :!
 C : (2005)Meshless Deformations
 	(2006)Position Based Dynamics
 	(2017)A Survey on Position Based Dynamics
@@ -188,7 +188,7 @@ I :
 K : 
 U : 
 R : 
-R :
+R :!
 C : #(2006)Position Based Dynamics
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)unified particle
@@ -205,7 +205,7 @@ I :
 K : 
 U : 
 R : 
-R :
+R :!
 C : (2004)A Versatile and Robust Model
 	(2006)Position Based Dynamic
 	(2012)Long Range Attachments - A Method to Simulate
@@ -226,7 +226,7 @@ D :
 I : 
 K : 
 U : 
-R : 
+R : !
 R : (1987)Elastically Deformable Models 
 	#(1998)Large Steps in Cloth Simulation
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
@@ -244,7 +244,7 @@ D :
 I : 
 K : 
 U : 
-R : 
+R : !
 R : #(1987)Elastically Deformable Models 
 	#(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
@@ -266,7 +266,17 @@ R : #(1998)Large Steps in Cloth Simulation
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	#(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
-C : #(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+C : #(2012)Fast Simulation of Inextensible Hair and Fur
+	#(2012)Long Range Attachments - A Method to Simulate
+	#(2013)Position Based Fluids
+	#(2014)strain Based Dynamics
+	#(2014)unified particle
+	#(2015)air Meshes Preprint
+	#(2017)A Survey on Position Based Dynamics
+	#(2017)XPBD
+	#(2018)Small Steps in Physics Simulation
+	#(2020)Detailed Rigid Body Simulation XPBD
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	#(2022)Physically Based Shape Matching
 
 
@@ -284,8 +294,9 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2012)Long Range Attachments - A Method to Simulate
+	(2017)A Survey on Position Based Dynamics
 
 ##(2006)Interactive Simulation of Elastic Deformable Materials
 A : 
@@ -305,10 +316,14 @@ I :
 K : 
 U : 
 R : 
-R :
-C : #(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+R :!
+C : (2017)A Survey on Position Based Dynamics
+	#(2017)XPBD
+	(2018)Small Steps in Physics Simulation
+	(2019)non-smooth newton
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
-#(2007)Efficient Simulation of Inextensible Cloth
+##(2007)Efficient Simulation of Inextensible Cloth
 A : 
 C : 
 A : improve the convergence rate are the use of a global NewtonRaphson solver as 
@@ -320,8 +335,13 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2012)Fast Simulation of Inextensible Hair and Fur
+	(2012)Long Range Attachments - A Method to Simulate
+	(2014)strain Based Dynamics
+	(2017)A Survey on Position Based Dynamics
+	#(2017)XPBD
+	(2018)Small Steps in Physics Simulation
 
 #(2007)FastLSM Fast Lattice Shape Matching for realtime
 A : 
@@ -334,8 +354,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2017)A Survey on Position Based Dynamics
 
 #(2008)Animating Developable Surfaces using Nonconforming Elements
 A : 
@@ -353,10 +373,12 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2012)Long Range Attachments - A Method to Simulate
+	(2014)strain Based Dynamics
+	(2017)A Survey on Position Based Dynamics
 
-#(2009)Volume Conserving DeformableBodies
+#(2009)Volume Conserving Simulation of Deformable Bodies
 A : 
 C : 
 A : In the following we introduce the position-based approach
@@ -368,8 +390,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2017)A Survey on Position Based Dynamics
 
 #(2011)Robust Real-Time Deformation
 A : 
@@ -383,8 +405,9 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2014)strain Based Dynamics
+	(2017)A Survey on Position Based Dynamics
 
 #(2012)Long Range Attachments - A Method to Simulate
 A : 
@@ -398,11 +421,18 @@ D :
 I : 
 K : 
 U : 
-R : 
+R : !
 R : (1998)Large Steps in Cloth Simulation
 	(2001)Advanced Character Physics
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
-C :
+	#(2006)Position Based Dynamics
+	(2006)A Quadratic Bending Model for Inextensible Surfaces
+	(2007)Efficient Simulation of Inextensible Cloth
+	(2008)Animating Developable Surfaces using Nonconforming Elements
+C : (2014)strain Based Dynamics
+	(2014)unified particle
+	(2017)A Survey on Position Based Dynamics
+	(2018)Small Steps in Physics Simulation
 
 #(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
 A : 
@@ -415,8 +445,10 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2014)unified particle
+	(2017)A Survey on Position Based Dynamics
+	(2019)non-smooth newton
 
 #(2012)Fast Simulation of Inextensible Hair and Fur
 A : 
@@ -430,9 +462,12 @@ D :
 I : 
 K : 
 U : 
-R : 
-R :
-C :
+R : !
+R : #(2006)Position Based Dynamics
+	(2007)Efficient Simulation of Inextensible Cloth
+C : (2014)strain Based Dynamics
+	(2017)A Survey on Position Based Dynamics
+	(2018)Small Steps in Physics Simulation
 
 #(2013)Efficient GPU data structures and methods to solve
 A : 
@@ -447,8 +482,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2017)A Survey on Position Based Dynamics
 
 #(2013)Position Based Fluids
 A : 
@@ -462,8 +497,11 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R : #(2006)Position Based Dynamics
+C : #(2014)unified particle
+	(2017)A Survey on Position Based Dynamics
+	(2018)Small Steps in Physics Simulation
+	(2020)Detailed Rigid Body Simulation XPBD
 
 #(2014)strain Based Dynamics
 A : 
@@ -479,7 +517,14 @@ K :
 U : 
 R : 
 R : (1998)Large Steps in Cloth Simulation
-C :
+	#(2006)Position Based Dynamics
+	(2007)Efficient Simulation of Inextensible Cloth
+	(2008)Animating Developable Surfaces using Nonconforming Elements
+	(2011)Robust Real-Time Deformation
+	(2012)Long Range Attachments - A Method to Simulate
+	(2012)Fast Simulation of Inextensible Hair and Fur
+C : (2017)A Survey on Position Based Dynamics
+	#(2017)XPBD
 
 #(2014)Position-Based Rigid Body Dynamics
 A : 
@@ -493,8 +538,9 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2017)A Survey on Position Based Dynamics
+	#(2020)Detailed Rigid Body Simulation XPBD
 
 #(2014)Position-Based Simulation of Continuous Materials
 A : 
@@ -511,8 +557,10 @@ I :
 K : 
 U : 
 R : 
-R :
-C : #(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+R :!
+C : (2017)A Survey on Position Based Dynamics
+	#(2017)XPBD
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
 #(2014)unified particle
 A : 
@@ -530,7 +578,14 @@ R :
 R : (2001)Advanced Character Physics
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2005)Meshless Deformations
-C :
+	#(2006)Position Based Dynamics
+	(2012)Long Range Attachments - A Method to Simulate
+	(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
+	#(2013)Position Based Fluids
+C : (2015)air Meshes
+	(2017)A Survey on Position Based Dynamics
+	(2018)Small Steps in Physics Simulation
+	(2020)Detailed Rigid Body Simulation XPBD
 
 #(2015)Scalable Partitioning for Parallel Position Based Dynamics
 A : 
@@ -545,8 +600,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2017)A Survey on Position Based Dynamics
 
 #(2015)air Meshes Preprint
 A : 
@@ -562,9 +617,11 @@ U :
 R : 
 R : (2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2005)Meshless Deformations
-C :
+	#(2006)Position Based Dynamics
+	(2014)unified particle
+C : (2017)A Survey on Position Based Dynamics
 
-#(2015)Stable Constrained Dynamics
+##(2015)Stable Constrained Dynamics
 A : 
 C : 
 A : Tournier et al. [2015] proposed
@@ -578,10 +635,12 @@ I :
 K : 
 U : 
 R : 
-R :
-C : (2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+R :!
+C : (2017)XPBD
+	#(2019)non-smooth newton
+	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
-(2016)Position and Orientation Based Cosserat Rods
+#(2016)Position and Orientation Based Cosserat Rods
 A : 
 C : 
 A : The method constrains the strain measures of one dimensional
@@ -594,8 +653,8 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R :!
+C : (2017)A Survey on Position Based Dynamics
 
 #(2017)XPBD
 A : 
@@ -609,7 +668,17 @@ K :
 U : 
 R : 
 R : (2005)Meshless Deformations
-C : #(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	#(2006)Position Based Dynamics
+	#(2006)Interactive Simulation of Elastic Deformable Materials
+	#(2007)Efficient Simulation of Inextensible Cloth
+	#(2014)strain Based Dynamics
+	#(2014)Position-Based Simulation of Continuous Materials
+	(2015)Stable Constrained Dynamics
+C : (2017)A Survey on Position Based Dynamics
+	#(2018)Small Steps in Physics Simulation
+	#(2019)non-smooth newton
+	#(2020)Detailed Rigid Body Simulation XPBD
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	#(2022)Physically Based Shape Matching
 
 #(2017)A Survey on Position Based Dynamics
@@ -623,7 +692,29 @@ R : (1987)Elastically Deformable Models
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
-C : 
+	#(2006)Position Based Dynamics
+	(2006)A Quadratic Bending Model for Inextensible Surfaces
+	(2006)Interactive Simulation of Elastic Deformable Materials
+	(2007)Efficient Simulation of Inextensible Cloth
+	(2007)FastLSM Fast Lattice Shape Matching for realtime
+	(2008)Animating Developable Surfaces using Nonconforming Elements
+	(2009)Volume Conserving Simulation of Deformable Bodies
+	(2011)Robust Real-Time Deformation
+	(2012)Long Range Attachments - A Method to Simulate
+	(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
+	(2012)Fast Simulation of Inextensible Hair and Fur
+	(2013)Efficient GPU data structures and methods to solve
+	(2013)Position Based Fluids
+	(2014)strain Based Dynamics
+	(2014)Position-Based Rigid Body Dynamics
+	(2014)Position-Based Simulation of Continuous Materials
+	#(2014)unified particle
+	(2015)Scalable Partitioning for Parallel Position Based Dynamics
+	(2015)air Meshes Preprint
+	(2016)Position and Orientation Based Cosserat Rods
+	(2017)XPBD
+C : (2019)non-smooth newton
+	(2020)Detailed Rigid Body Simulation XPBD
 
 #(2018)Small Steps in Physics Simulation
 A : 
@@ -645,14 +736,23 @@ R :
 R : (1987)Elastically Deformable Models 
 	(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
-C : (2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	#(2006)Position Based Dynamics
+	(2006)Interactive Simulation of Elastic Deformable Materials
+	(2007)Efficient Simulation of Inextensible Cloth
+	(2012)Long Range Attachments - A Method to Simulate
+	(2012)Fast Simulation of Inextensible Hair and Fur
+	(2013)Position Based Fluids
+	(2014)unified particle
+	#(2017)XPBD
+C : (2020)Detailed Rigid Body Simulation XPBD
+	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	(2022)Physically Based Shape Matching
 
-#(2019)non-smooth newton(mentioned basis of XPBD)
+#(2019)non-smooth newton
 A : 
 C : 
 A : A formulation of smooth isotropic Coulomb friction in terms
-of non-smooth complementarity functions.
+of non-smooth complementarity functions.(mentioned basis of XPBD)
 A generalized compliance formulation that supports hyperelastic material models
 A simple approximation of geometric stiffness to improve
 A new complementarity preconditioner that significantly
@@ -665,8 +765,12 @@ I :
 K : 
 U : 
 R : 
-R :
-C :
+R : (2006)Interactive Simulation of Elastic Deformable Materials
+	(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
+	#(2015)Stable Constrained Dynamics
+	(2017)A Survey on Position Based Dynamics
+	#(2017)XPBD
+C : (2020)Detailed Rigid Body Simulation XPBD
 
 #(2020)Detailed Rigid Body Simulation XPBD
 A : 
@@ -679,8 +783,15 @@ I :
 K : 
 U : 
 R : 
-R : 
-	(2005)Meshless Deformations
+R : (2005)Meshless Deformations
+	#(2006)Position Based Dynamics
+	(2013)Position Based Fluids
+	#(2014)Position-Based Simulation of Continuous Materials
+	(2014)unified particle
+	#(2017)XPBD
+	(2017)A Survey on Position Based Dynamics
+	(2018)Small Steps in Physics Simulation
+	(2019)non-smooth newton
 C :
 
 #(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials

@@ -13,18 +13,24 @@ R :	Reference
 C : Cited by
 
 #(1987)enrgy constraints on parameterized models
-A : 
-C : 
-A : [Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
-for changing the shape of parametrically-defined primitive objects. 
-M : 
+A : Demetri Terzopoulos (Schlumberger Palo Alto Research), John Platt(Caltech), Alan Barr(caltech), Kurt Fleischer(SPAR)
+C : SIGGRAPH '87
+A : ``[Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
+	for changing the shape of parametrically-defined primitive objects.''
+	Employed elasticity theory to construct differential equations that model
+	the behavior of non-rigid curves, surfaces and solids as a function fo time.
+	The differential equations are used for the computer animations.
+M : Conventional animation methods can only simulate kinematically.
+	If animators want to make plausible pseudo-dynamic animation, they must have expertise.
+	Then this paper proposed elasticity theory to animate dynamic behaviors.
 M :
-D :
+D : This paper simplifies elasticity theory based on principles of mathematical physics.
 I : 
 K : 
 U : 
 R : 
-R :!
+R :Courant, R., and Hilbert, D., Methods of Mathematical Physics, Vol. I, Interscienee, London, 1953. 
+	(1988)a modeling system based on dynamic constraints
 C :!
 
 #(1987)Elastically Deformable Models 
@@ -60,7 +66,7 @@ K :
 U : 
 R : 
 R :!
-C :1
+C : (1988)a modeling system based on dynamic constraints
 
 
 #(1989)Constraint Methods

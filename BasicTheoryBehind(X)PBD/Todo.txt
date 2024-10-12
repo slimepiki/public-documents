@@ -3,3 +3,29 @@ I need detailed infomation of...
 #how convert constraint into energy 
 #Neo-Hookean
 #linear complementarity problem
+#importancy check
+	#(1987)Elastically Deformable Models 
+	#(1987)enrgy_constraints_on_parameterized_models
+	#(1988)a_modeling_system_based_on dynamic_constraints
+	#(1989)Constraint Methods
+	#(1998)Large Steps in Cloth Simulation
+	#(2001)Advanced Character Physics
+	#(2004)A Versatile and Robust Model
+	#(2005)MeshlessDeformations_SIG05
+	#(2006)Interactive Simulation of Elastic Deformable Materials
+	#(2007)Efficient Simulation of Inextensible Cloth
+	#(2012)FTLHairFur
+	#(2012)Long Range Attachments - A Method to Simulate
+	#(2013)PositionBasedFluids
+	#(2014)Position-Based Simulation of Continuous Materials
+	#(2014)strainBasedDynamics
+	#(2014)unified_particle
+	#(2015)airMeshesPreprint
+	#(2015)Stable Constrained Dynamics
+	#(2017)PBDTutorial2017-CourseNotes
+	#(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
+	#(2019)non-smooth newton(mentioned basis of XPBD)
+	#(2020)Detailed Rigid Body Simulation XPBD
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	#(2021)neohookean_supplemental
+	#(2022)Physically_Based_Shape_Matching___SCA_2022

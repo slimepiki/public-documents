@@ -117,6 +117,7 @@
 \theoremstyle{thmstylethree}%
 \newtheorem{definition}{Definition}%
 \makeglossaries
+\newcommand{\pname}[1]{``{\sl #1}''}
 
 \newglossaryentry{iteration}
 {
@@ -158,11 +159,40 @@ Actually, there are some course notes on PBD written by authors who published pa
 \section{The history of PBD}
 I think starting from history is a good way to learn something because there are no leaps in logic and it will be easy to understand where we are. However, there is certainly redundancy, so you can skip this section to save time. I'll make an effort to write that you can understand everything even if you skipped this section.
 \subsection{PBD's chronicle}
+The history of PBD can be roughly divided into three parts.
+Let me name them pre-PBD, post-PBD and post-XPBD.
 
+\subsection{pre-PBD}
+The general flow of pre-PBD began from the appearance of constraint dynamics(\cite{EnergyWitkin1987}, \cite{ConstrainedBarzel} and \cite{ConstrainedPlatt}) through  \pname{Large Steps in Cloth Simulation}\cite{LargeStepBaraff} simulates cloth with constraints, \pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduces position-based approach with the distance constraint and \pname{A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner} derives several constraints as energy functions.
+And, finally, with these benefits, \pname{Position Based Dynamics}\cite{PBD} having the advantage I mentioned above was published.
 
+\subsection{post-PBD}
+
+\subsection{post-XPBD}
 \newpage
 \appendix
 
+\section{Inportance of papers}
+A lower number means more important.
+\begin{enumerate}
+	\item You must read these papers. But if you want to understand them completely, I recommend reading the others also.
+		\begin{itemize}
+			\item \pname{Position Based Dynamics}\cite{PBD} is one of the main subjects of this document.
+			\item \pname{XPBD: position-based simulation of compliant constrained dynamics}\cite{XPBD}  addressed a numerical artifact that makes dependency between stiffness and \gls{iteration} count or size of the time-step.
+		\end{itemize}
+	\item  These papers are vital in understanding (X)PBD or have a strong impact on the field.
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\item These papers offer interesting discussions around PBD or deepen your understanding of PBD.
+		\begin{itemize}
+			\item 
+		\end{itemize}
+	\item These papers have historical value, but deeper discussions are done in other papers.
+	\begin{itemize}
+		\item \pname{Elastically deformable models}\cite{ElasticTerzopoulos}  brought the formulation of elastic bodies to computer graphics.
+	\end{itemize}
+\end{enumerate}
 
 \section{Glossaly}\label{ap1}
 \subsection{symbols}

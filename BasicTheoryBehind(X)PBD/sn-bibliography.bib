@@ -26,7 +26,6 @@ publisher = {Eurographics Association},
 address = {Goslar, DEU},
 url = {https://doi.org/10.2312/egt.20171034},
 doi = {10.2312/egt.20171034},
-abstract = {The physically-based simulation of mechanical effects has been an important research topic in computer graphics for more than two decades. Classical methods in this field discretize Newton's second law and determine different forces to simulate various effects like stretching, shearing, and bending of deformable bodies or pressure and viscosity of fluids, to mention just a few. Given these forces, velocities and finally positions are determined by a numerical integration of the resulting accelerations. In the last years position-based simulation methods have become popular in the graphics community. In contrast to classical simulation approaches these methods compute the position changes in each simulation step directly, based on the solution of a quasi-static problem. Therefore, position-based approaches are fast, stable and controllable which make them well-suited for use in interactive environments. However, these methods are generally not as accurate as force-based methods but provide visual plausibility. Hence, the main application areas of position-based simulation are virtual reality, computer games and special effects in movies and commercials.In this tutorial we first introduce the basic concept of position-based dynamics. Then we present different solvers and compare them with the variational formulation of the implicit Euler method in connection with compliant constraints. We discuss approaches to improve the convergence of these solvers. Moreover, we show how position-based methods are applied to simulate elastic rods, cloth, volumetric deformable bodies, rigid body systems and fluids. We also demonstrate how complex effects like anisotropy or plasticity can be simulated and introduce approaches to improve the performance. Finally, we give an outlook and discuss open problems.},
 booktitle = {Proceedings of the European Association for Computer Graphics: Tutorials},
 articleno = {6},
 numpages = {31},
@@ -45,11 +44,108 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
 url = {https://doi.org/10.1145/2994258.2994272},
 doi = {10.1145/2994258.2994272},
-abstract = {We address the long-standing problem of iteration count and time step dependent constraint stiffness in position-based dynamics (PBD). We introduce a simple extension to PBD that allows it to accurately and efficiently simulate arbitrary elastic and dissipative energy potentials in an implicit manner. In addition, our method provides constraint force estimates, making it applicable to a wider range of applications, such those requiring haptic user-feedback. We compare our algorithm to more expensive non-linear solvers and find it produces visually similar results while maintaining the simplicity and robustness of the PBD method.},
 booktitle = {Proceedings of the 9th International Conference on Motion in Games},
 pages = {49–54},
 numpages = {6},
 keywords = {constrained dynamics, physics simulation, position based dynamics},
 location = {Burlingame, California},
 series = {MIG '16}
+}
+
+@inproceedings{LargeStepBaraff,
+author = {Baraff, David and Witkin, Andrew},
+title = {Large steps in cloth simulation},
+year = {1998},
+isbn = {0897919998},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/280814.280821},
+doi = {10.1145/280814.280821},
+booktitle = {Proceedings of the 25th Annual Conference on Computer Graphics and Interactive Techniques},
+pages = {43–54},
+numpages = {12},
+keywords = {cloth, constraints, implicit integration, physically-based modeling, simulation},
+series = {SIGGRAPH '98}
+}
+
+@inproceedings{Jakobsen2003AdvancedCP,
+  title={Advanced Character Physics},
+  author={Thomas P. Jakobsen},
+  year={2003},
+  url={https://api.semanticscholar.org/CorpusID:5102710}
+}
+
+@INPROCEEDINGS{VersatileTeschner,
+  author={Teschner, M. and Heidelberger, B. and Muller, M. and Gross, M.},
+  booktitle={Proceedings Computer Graphics International, 2004.}, 
+  title={A versatile and robust model for geometrically complex deformable solids}, 
+  year={2004},
+  volume={},
+  number={},
+  pages={312-319},
+  keywords={Robustness;Solid modeling;Deformable models;Computational modeling;Potential energy;Computer graphics;Plastics;Material properties;Computational efficiency;Visualization},
+  doi={10.1109/CGI.2004.1309227}}
+
+@article{EnergyWitkin1987,
+author = {Witkin, Andrew and Fleischer, Kurt and Barr, Alan},
+title = {Energy constraints on parameterized models},
+year = {1987},
+issue_date = {July 1987},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {21},
+number = {4},
+issn = {0097-8930},
+url = {https://doi.org/10.1145/37402.37429},
+doi = {10.1145/37402.37429},
+journal = {SIGGRAPH Comput. Graph.},
+month = aug,
+pages = {225–232},
+numpages = {8}
+}
+
+@article{ConstrainedBarzel,
+author = {Barzel, Ronen and Barr, Alan H.},
+title = {A modeling system based on dynamic constraints},
+year = {1988},
+issue_date = {Aug. 1988},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {22},
+number = {4},
+issn = {0097-8930},
+url = {https://doi.org/10.1145/378456.378509},
+doi = {10.1145/378456.378509},
+journal = {SIGGRAPH Comput. Graph.},
+month = jun,
+pages = {179–188},
+numpages = {10},
+keywords = {simulation, modeling, dynamics, contraints}
+}
+
+@article{ConstrainedPlatt
+author = {Platt, John Carlton},
+title = {Constraint Methods for Neural Networks and Computer Graphics},
+year = {1989},
+publisher = {California Institute of Technology},
+journal = {Dissertation (Ph.D.)}, 
+doi ={10.7907/vnt8-kh55}
+}
+
+@article{ElasticTerzopoulos,
+author = {Terzopoulos, Demetri and Platt, John and Barr, Alan and Fleischer, Kurt},
+title = {Elastically deformable models},
+year = {1987},
+issue_date = {July 1987},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {21},
+number = {4},
+issn = {0097-8930},
+url = {https://doi.org/10.1145/37402.37427},
+doi = {10.1145/37402.37427},
+journal = {SIGGRAPH Comput. Graph.},
+month = aug,
+pages = {205–214},
+numpages = {10}
 }

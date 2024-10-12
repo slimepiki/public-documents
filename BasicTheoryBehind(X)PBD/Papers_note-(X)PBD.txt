@@ -34,19 +34,21 @@ R :Courant, R., and Hilbert, D., Methods of Mathematical Physics, Vol. I, Inters
 C :!
 
 #(1987)Elastically Deformable Models 
-A : 
-C : 
+A : Demetri Terzopoulos(Schlumberger Palo Alto Research), Jhon Platt(caltech), Alan Barr(Caltech), Kurt Fleischer(SPAR)
+C : SIGGRAPH 1987
 A : There is a large body of work on the simulation of deformable objects in computer graphics going back to the work of Terzopoulos
 et al. [1987].
 General penalty forces derived from energy functions for simulating deformable elastic 
 objects were introduced in the graphics literature by [Terzopoulos et al. 1987].
-M : 
-M :
-D :
-I : 
-K : 
-U : 
-R : 
+M : Conventional theory in computer graphics couldn't handle elasticity well. 
+	Then this paper introduced strain energy to address the problem.
+M : Formulating elastic law of motion, strain energy, and force.
+	And explain how to discretize elastic bodies and how numerical integration be done.
+D : This paper also showed the importance of time-step size.
+I : Achieved simulating elastic phenomena.
+K : Finite element method, elastic body, Lagrange's form
+U : A more sophisticated formulation or numerical integration method is desirable.
+R : The pioneer work in physical simulation.
 R :!
 C : (2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations

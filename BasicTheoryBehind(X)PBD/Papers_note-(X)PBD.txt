@@ -221,6 +221,7 @@ C : (2004)A Versatile and Robust Model
 	(2014)unified particle
 	(2015)air Meshes
 	(2017)A Survey on Position Based Dynamics
+	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation : hair
 
 #(2004)A Versatile and Robust Model
 A : Matthias Teschner(ETH), Bruno Heidelberger(ETH)

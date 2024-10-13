@@ -1,7 +1,3 @@
-
-
-
-
 #FEM (2005)Erleben ... it often solving simultaneous equation and get static condition
 						(but  It seems like to be able solve time evolution.
 						 [C. Johnson, Numerical solutions of partial differential equations 
@@ -14,3 +10,5 @@
 #BDF (Backward Differentiation Methods)
 
 #CCD (Continuous collision detection)
+
+#MPM (Material Point Method)

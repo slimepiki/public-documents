@@ -1,0 +1,269 @@
+##(variation of https://iis-lab.org/misc/paperreading/ )
+A : Author
+C : Conference
+A : Abstruct
+M : Motivation
+M :	Method
+D :	Detail
+I : Insight
+K : Key word
+U : Unknown
+R : Reflection
+R :	Reference
+C : Cited by
+
+#(1993)Non-penetrating Rigid Body Simulation
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(1994)A PARTICLE METHOD FOR HISTORY-DEPENDENT MATERIALS
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(1995)Impulsebased Simulation of Rigid Bodie
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(1996)Fast and Accurate Computation of Polyhedral Mass Properties
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2003)Nonconvex Rigid Bodies with Stacking
+A : 
+C : 
+A : An Efficient solution for collision handling is
+	to represent solid objects implicitly using a signed distance
+	field.
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : (2017)Adaptive Skinning for Interactive Hair-Solid Simulation : hair
+
+#(2004)Collision Detection for Deformable Objects
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2009)implicit_contact
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2009)nucleus
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2009)optimized_damping
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2011)A Hybrid Iterative Solver for Robustly Capturing
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2011)Stable Proportional-Derivative Controllers(predecessor of proj dyn)
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2012)Interactive Simulation of Rigid Body Dynamics in Computer
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2014)ProjectiveDynamics
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2015)ADAM A METHOD FOR STOCHASTIC OPTIMIZATION
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2018)energy_proj_dyn
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2020)Incremental Potential Contact Intersection- and Inversion-free
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2021)gradsim_differentiable_simulat
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+#(2022)DynamicDeformables
+A : 
+C : 
+A : good text about strain energy 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+

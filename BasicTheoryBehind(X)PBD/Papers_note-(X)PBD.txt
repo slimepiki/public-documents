@@ -475,6 +475,7 @@ U :
 R : 
 R : #(2006)Position Based Dynamics
 	(2007)Efficient Simulation of Inextensible Cloth
+	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation : hair
 C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation

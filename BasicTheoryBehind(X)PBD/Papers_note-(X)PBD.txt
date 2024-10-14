@@ -12,6 +12,22 @@ R : Reflection
 R :	Reference
 C : Cited by
 
+@ : too difficult paper for me
+
+(for copy)
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
 #(1987)enrgy constraints on parameterized models
 A : Demetri Terzopoulos (Schlumberger Palo Alto Research), John Platt(Caltech), Alan Barr(caltech), Kurt Fleischer(SPAR)
 C : SIGGRAPH '87

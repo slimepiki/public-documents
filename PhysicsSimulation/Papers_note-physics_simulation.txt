@@ -12,6 +12,23 @@ R : Reflection
 R :	Reference
 C : Cited by
 
+@ : too difficult paper for me
+
+(for copy)
+A : 
+C : 
+A : 
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : 
+
+
 #(1993)Non-penetrating Rigid Body Simulation
 A : 
 C : 

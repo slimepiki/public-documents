@@ -28,27 +28,6 @@ R :
 R :	
 C : 
 
-#(1987)enrgy constraints on parameterized models
-A : Demetri Terzopoulos (Schlumberger Palo Alto Research), John Platt(Caltech), Alan Barr(caltech), Kurt Fleischer(SPAR)
-C : SIGGRAPH '87
-A : ``[Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
-	for changing the shape of parametrically-defined primitive objects.''
-	Employed elasticity theory to construct differential equations that model
-	the behavior of non-rigid curves, surfaces and solids as a function fo time.
-	The differential equations are used for the computer animations.
-M : Conventional animation methods can only simulate kinematically.
-	If animators want to make plausible pseudo-dynamic animation, they must have expertise.
-	Then this paper proposed elasticity theory to animate dynamic behaviors.
-M : 
-D : This paper simplifies elasticity theory based on principles of mathematical physics.
-I : 
-K : 
-U : 
-R : 
-R :Courant, R., and Hilbert, D., Methods of Mathematical Physics, Vol. I, Interscienee, London, 1953. 
-	(1988)a modeling system based on dynamic constraints
-C :!
-
 #(1987)Elastically Deformable Models 
 A : Demetri Terzopoulos(Schlumberger Palo Alto Research), Jhon Platt(caltech), Alan Barr(Caltech), Kurt Fleischer(SPAR)
 C : SIGGRAPH 1987
@@ -60,17 +39,38 @@ M : Conventional theory in computer graphics couldn't handle elasticity well.
 	Then this paper introduced strain energy to address the problem.
 M : Formulating elastic law of motion, strain energy, and force.
 	And explain how to discretize elastic bodies and how numerical integration be done.
-D : This paper also showed the importance of time-step size.
+D : This paper simplifies elasticity theory based on principles of mathematical physics.
+	This paper also showed the importance of time-step size.
 I : Achieved simulating elastic phenomena.
 K : Finite element method, elastic body, Lagrange's form
 U : A more sophisticated formulation or numerical integration method is desirable.
 R : The pioneer work in physical simulation.
-R :!
-C : (2004)A Versatile and Robust Model
+R : Courant, R., and Hilbert, D., Methods of Mathematical Physics, Vol. I, Interscienee, London, 1953. 
+	(1988)a modeling system based on dynamic constraints
+C : (1987)enrgy constraints on parameterized models
+	(2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+
+#(1987)enrgy constraints on parameterized models
+A : Andrew Witkin(Schlumberger Palo Alto), Kurt Fleischer(ditto), Alan Barr(Caltech)
+C : SIGGRAPH 1987
+A : ``[Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
+	for changing the shape of parametrically-defined primitive objects.''
+	Employed elasticity theory to construct differential equations that model
+	the behavior of non-rigid curves, surfaces and solids as a function fo time.
+	The differential equations are used for the computer animations.
+M : 
+M : 
+D : 
+I : 
+K : Constraints
+U : 
+R : 
+R : (1987)Elastically Deformable Models 
+C :!
 
 #(1988)a modeling system based on dynamic constraints
 A : 

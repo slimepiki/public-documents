@@ -62,13 +62,25 @@ A : ``[Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D
 	Employed elasticity theory to construct differential equations that model
 	the behavior of non-rigid curves, surfaces and solids as a function fo time.
 	The differential equations are used for the computer animations.
-M : 
-M : 
-D : 
-I : 
-K : Constraints
+M : There are two tasks when constructing a model: creating shape and setting parameters 
+	so that a plausible simulation is done. 
+	Particularly, the latter is tedious when the model is composed of enormous primitives.
+	Then, this paper provides ``constraint energy'' which can allow parameterization of the 
+	model automatically for plausible simulation.
+M : Introducing ``constraint energy'' and then solving the matters described above.
+	Because every constraint is formulated into scalar energy, we don't have to be concerned about mutual dependency.
+	We can solve overdetermined -- there is no analytical solution -- systems 
+	because we simulate a motion through the energy minimization task.
+D : The proposed method uses the steepest descent method when solving the energy minimization problem.
+	The constraints are not related to physical phenomena in this paper.
+	User interaction is used to avoid the local minimum of the sum of the energy.
+I : Some examples using the constraints presented.
+K : Constrained dynamics
 U : 
-R : 
+R : This is the first paper that uses constraints for conserving geometric property. Previous research used constraints for motion.
+	The shape representations are quite different from the current ones 
+	and the constraints presented in this paper are slightly inconvenient
+	to the current ones. Thus, we no longer have to read this though we can say it has historical value.
 R : (1987)Elastically Deformable Models 
 C :!
 

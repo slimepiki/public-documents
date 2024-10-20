@@ -48,6 +48,7 @@ R : The pioneer work in physical simulation.
 R : Courant, R., and Hilbert, D., Methods of Mathematical Physics, Vol. I, Interscienee, London, 1953. 
 	(1988)a modeling system based on dynamic constraints
 C : (1987)enrgy constraints on parameterized models
+	(1988)a modeling system based on dynamic constraints
 	(2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
 	(2017)A Survey on Position Based Dynamics
@@ -82,21 +83,31 @@ R : This is the first paper that uses constraints for conserving geometric prope
 	and the constraints presented in this paper are slightly inconvenient
 	to the current ones. Thus, we no longer have to read this though we can say it has historical value.
 R : (1987)Elastically Deformable Models 
-C :!
+C : (1988)a modeling system based on dynamic constraints
 
 #(1988)a modeling system based on dynamic constraints
-A : 
-C : 
+A : Ronen Barzel (Caltech), Alan Barr (Caltech)
+C : SIGGRAPH 1988
 A : Closest to [1987]'s in approach are Barzel and Barr's dynauric constraints[1988].
-M : 
-M : 
-D : 
+M : Conventional physical simulation methods suffer from implementation difficulty, 
+	hardship of control, and high computational cost.
+	Then, this paper suggests a new physical simulation that is at least easy to implement.
+M : This paper provided a modeling system, used constraints to construct an object with primitives like being glued,
+	and solved physical problems with constraints by deriving forces from constraints 
+	with inverse dynamics.
+D : The constraints provided in this paper are point-to-nail (moves object's end to pinned point),
+	point-to-point (glues two objects), point-to-path(moves a point on an object along an arbitrarily defined line),
+	orientation (rotates object to a desired direction), point-on-line and sphere-to-sphere.
+	The framework was written in Lisp.
 I : 
-K : 
-U : 
-R : 
-R :!
-C : (1988)a modeling system based on dynamic constraints
+K : dynamic constraints, a physicall-based technique for constraint-based control of computer graphics models.
+U : Collisions are not handled in this paper.
+	Soft body objects are not handled to.
+R : This paper uses constraints as models' motion rather than to hold a model's detail.
+	In other words, the constraints determine objects' behavior.
+R : (1987)Elastically Deformable Models
+	#(1987)enrgy constraints on parameterized models
+C : (2015)Stable Constrained Dynamics
 
 
 #(1989)Constraint Methods
@@ -674,7 +685,7 @@ I :
 K : 
 U : 
 R : 
-R :!
+R : (1988)a modeling system based on dynamic constraints
 C : (2017)XPBD
 	#(2019)non-smooth newton
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials

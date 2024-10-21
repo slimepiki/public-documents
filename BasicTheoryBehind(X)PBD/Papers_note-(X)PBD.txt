@@ -98,13 +98,16 @@ M : This paper provided a modeling system, used constraints to construct an obje
 D : The constraints provided in this paper are point-to-nail (moves object's end to pinned point),
 	point-to-point (glues two objects), point-to-path(moves a point on an object along an arbitrarily defined line),
 	orientation (rotates object to a desired direction), point-on-line and sphere-to-sphere.
+	This paper uses linear simultaneous equations when deriving forces.
 	The framework was written in Lisp.
-I : 
+I : It seems to work well.
 K : dynamic constraints, a physicall-based technique for constraint-based control of computer graphics models.
 U : Collisions are not handled in this paper.
 	Soft body objects are not handled to.
 R : This paper uses constraints as models' motion rather than to hold a model's detail.
 	In other words, the constraints determine objects' behavior.
+	The points that are difficult to understand are that the paper doesn't describe the background of the equation derivation
+	and that the symbols are scattered too much.
 R : (1987)Elastically Deformable Models
 	#(1987)enrgy constraints on parameterized models
 C : (2015)Stable Constrained Dynamics

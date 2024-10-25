@@ -197,7 +197,8 @@ K :
 U : 
 R : 
 R :!
-C : (2004)A Versatile and Robust Model
+C : #(2003)Discrete Shells
+	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
 	(2012)Long Range Attachments - A Method to Simulat
@@ -265,6 +266,23 @@ C : (2004)A Versatile and Robust Model
 	(2017)A Survey on Position Based Dynamics
 	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation : hair
 
+#(2003)Discrete Shells
+A : 
+C : 
+A : dihedral angle
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	#(1998)Large Steps in Cloth Simulation
+C : (2003)Simulation of Clothing with Folds and Wrinkles : hair-coll
+	(2004)A Versatile and Robust Model
+	(2006)Position Based Dynamics
+	(2012)Long Range Attachments - A Method to Simulate
+
 #(2004)A Versatile and Robust Model
 A : Matthias Teschner(ETH), Bruno Heidelberger(ETH)
 	Matthias M¨uller(ETH), Markus Gross(ETH)
@@ -282,6 +300,7 @@ R :
 R : (1987)Elastically Deformable Models 
 	#(1998)Large Steps in Cloth Simulation
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+	(2003)Discrete Shells
 C : #(2006)Position Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 
@@ -316,6 +335,8 @@ R : #(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
 	#(2001)Advanced Character Physics
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+	(2003)Discrete Shells
+	(2003)Simulation of Clothing with Folds and Wrinkles : hair-collision_friction
 	#(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 C : #(2012)Fast Simulation of Inextensible Hair and Fur
@@ -477,6 +498,7 @@ R :
 R : (1998)Large Steps in Cloth Simulation
 	(2001)Advanced Character Physics
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+	(2003)Discrete Shells
 	#(2006)Position Based Dynamics
 	(2006)A Quadratic Bending Model for Inextensible Surfaces
 	(2007)Efficient Simulation of Inextensible Cloth

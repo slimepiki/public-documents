@@ -29,3 +29,48 @@ I need detailed infomation of...
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	#(2021)neohookean_supplemental
 	#(2022)Physically_Based_Shape_Matching___SCA_2022
+
+
+#draft
+#history of PBD
+	#chronology
+		(~2000)constraint dynamics
+		↓
+		(2001~2005)constraint force, position based method
+		↓
+		(2006~2013)Position Based Dynamics and its variants
+		↓
+		(2014~2016)Strain based PBD
+		↓
+		(2017~)XPBD
+
+	#primary scholar
+		#witkin
+
+#disassembling PBD
+	#intended reader of this section
+	#geometric constraints and physical constraints
+	#constraints solver
+		#where PBD constraints belong to from a stand point of numerical analysis
+			it located non-linear ??? problem
+		#why constraints projection works well
+	#collision handling
+
+#improvement 
+	#what changed at XPBD
+	#continuum mechanics
+		#brief discussion of energy from (2022)DynamicDeformables
+			#how to use energy functions (Implicit Integration described at (2022)DynamicDeformables or at PBD)
+		#deformation gradient (2010)Multi-Resolution Isotropic Strain Limiting or (2022)Physically_Based_Shape_Matching___SCA_2022
+
+
+
+#appendix : additional brief survey of (X)PBD (2018~2024)
+	#(2018)smallsteps(stabilize XPBD by simple way)
+	#(2019)non-smooth newton(mentioned basis of XPBD)
+	#(2020)Detailed Rigid Body Simulation XPBD
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	#(2022)Physically_Based_Shape_Matching___SCA_2022
+
+
+#appendix glossary

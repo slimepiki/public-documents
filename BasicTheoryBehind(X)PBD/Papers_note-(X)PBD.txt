@@ -202,6 +202,7 @@ C : #(2003)Discrete Shells
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
 	(2012)Long Range Attachments - A Method to Simulat
+	(2013)Fast Simulation of Mass-Spring Systems : hair-sim
 	(2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation

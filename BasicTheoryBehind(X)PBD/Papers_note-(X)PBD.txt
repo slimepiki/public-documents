@@ -181,17 +181,19 @@ R :!
 C :!
 
 ###(1998)Large Steps in Cloth Simulation
-A : Instead, we define internal behavior by formulating a
-vector condition C(x) which we want to be zero, and then defining
-the associated energy as k
-2C(x)TC(x) where k is a stiffness constant.
-Since that time, the use of explicit integration became popular
-A : until Baraff and Witkin [1998] proposed a implicit backward Euler
+A : David Barraff (Carnegie Mellon), Andrew Witkin (Carnegie Mellon)
+C : SIGGRAPH 1998
+A : ``until Baraff and Witkin [1998] proposed a implicit backward Euler
 scheme for handling all the forces implicitly, including damping
-in cloth simulation. 
-M : 
-M : 
-D : 
+in cloth simulation. ''
+	The method introduced in this paper solves the cloth simulation which is composed of aaaaaaaaa with a modified conjugate gradient method.
+	This paper brings again the implicit solver to cloth simulation that used the initial physical simulation work.
+M : In the cloth simulations, which hardly stretch despite capable bending or shearing, in other words,
+	cloth simulation causes stiff equations that force very small timesteps to the explicit integrate methods such as Euler's method or Runge-Kutta methods, etc.
+	Then, the authors wanted to reduce the computation costs described above.
+M : They directly formulated contact and geometric constraints without additional energy functions of Lagrange-multiplier forces that make implicit integration tedious.
+D : ``Instead, we define internal behavior by formulating a vector condition C(x) which we want to be zero,
+	 and then defining the associated energy as (k/2)C(x)TC(x) where k is a stiffness constant.''
 I : 
 K : 
 U : 

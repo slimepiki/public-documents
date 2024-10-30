@@ -50,6 +50,7 @@ R : Courant, R., and Hilbert, D., Methods of Mathematical Physics, Vol. I, Inter
 C : (1987)enrgy constraints on parameterized models
 	(1988)a modeling system based on dynamic constraints
 	(1989)Constraint Methods
+	(1998)Large Steps in Cloth Simulation
 	(2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
 	(2017)A Survey on Position Based Dynamics
@@ -158,7 +159,7 @@ K :
 U : 
 R : 
 R :!
-C :!
+C :(1998)Large Steps in Cloth Simulation
 
 #(1997)An introduction to constraints
 A : 
@@ -193,12 +194,21 @@ M : In the cloth simulations, which hardly stretch despite capable bending or sh
 	Then, the authors wanted to reduce the computation costs described above.
 M : They directly formulated contact and geometric constraints without additional energy functions of Lagrange-multiplier forces that make implicit integration tedious.
 D : ``Instead, we define internal behavior by formulating a vector condition C(x) which we want to be zero,
-	 and then defining the associated energy as (k/2)C(x)TC(x) where k is a stiffness constant.''
-I : 
-K : 
-U : 
-R : 
-R :!
+	and then defining the associated energy as (k/2)C(x)TC(x) where k is a stiffness constant.''
+	The authors formulate the energy function to a quadratic form that has easiness in numerical computation.
+	Contributions of this paper could be said to formulate constraints for cloth and damping force and, to use implicit integration for physical simulation.
+	``If the particle is constrained in all three dimensions, then we are explicitly setting the particle’s velocity (at the next step).
+	If the constraint is in two or one dimensions, we are constraining the
+	particle’s velocity along either two or one mutually orthogonal axes.''
+	↑This part is not intuitive(compared to PBD).
+	The problem this paper have to solve is definite liniear equations that can use CG method. 
+I : They achieved faster simulation than previous ones, correctly handled bending terms, and then, were capable of large-scale simulations.
+K : implicit method, constraints (conditions), sparse definite matrix computation 
+U : There was nothing written.
+R : This paper describes detailed physical simulation with constraints using implicit integration.
+	It is worth reading because the method is basic physical simulation now.
+R : (1987)Elastically Deformable Models 
+	(1995)Deformation Constraints in a MassSpring Model
 C : #(2003)Discrete Shells
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations

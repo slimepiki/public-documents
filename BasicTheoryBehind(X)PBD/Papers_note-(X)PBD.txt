@@ -853,7 +853,10 @@ I :
 K : 
 U : 
 R : 
-R : (2006)Interactive Simulation of Elastic Deformable Materials
+R : #(1996)An Implicit Time-Stepping Scheme for Rigid Body Dynamics with Coulomb Friction
+	(2006)Interactive Simulation of Elastic Deformable Materials
+	#(2010)A Nonsmooth Newton Solver for Capturing Exact Coulomb : hair
+	(2011)A Hybrid Iterative Solver	: hair
 	(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
 	#(2015)Stable Constrained Dynamics
 	(2017)A Survey on Position Based Dynamics

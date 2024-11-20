@@ -251,10 +251,12 @@ A : Jakobsen [Jak01] built his Fysix engine on a position based approach. His ce
 M : This paper suggests a real-time physical simulation method for mainly video games that concerns believability rather than accuracy.
 M : The method uses a position-based approach and tolerates subtle inaccuracy to make simulation faster.
 D : The method models rigid bodies as particles with constraints and uses the Velet integration scheme and sophisticated collision handling.
+	It isn't necessary to cancel velocity when a collision occurs because velocity isn't used explicitly; just correct its position so that it doesn't penetrate.
+	The method uses the distance constraints that can be considered an infinitely stiff spring for cloth simulation.
 I : 
 K : 
 U : 
-R : 
+R : The framework of the PBD can be seen here. Specifically,using distance constraints, modifying verticies' position directoly and solving constraints with some iterations. This paper is easier to read than PBD, but the ideas appear here and pseudo codes are presented. I recommend reading this before reading PBD.
 R : (1996)An Implicit Time-Stepping Scheme for Rigid Body Dynamics with Coulomb Friction : h
 C : #(2006)Position Based Dynamics
 	(2012)Long Range Attachments - A Method to Simulate

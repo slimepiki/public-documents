@@ -218,6 +218,7 @@ C : #(2003)Discrete Shells
 	(2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
+	(2020)Primal/Dual Descent Methods for Dynamics
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
 
@@ -362,6 +363,7 @@ C : #(2012)Fast Simulation of Inextensible Hair and Fur
 	#(2017)XPBD
 	#(2018)Small Steps in Physics Simulation
 	#(2020)Detailed Rigid Body Simulation XPBD
+	#(2020)Primal/Dual Descent Methods for Dynamics
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	#(2022)Physically Based Shape Matching
 
@@ -407,6 +409,7 @@ C : (2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	(2018)Small Steps in Physics Simulation
 	(2019)non-smooth newton
+	(2020)Primal/Dual Descent Methods for Dynamics
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
 ##(2007)Efficient Simulation of Inextensible Cloth
@@ -428,6 +431,7 @@ C : (2012)Fast Simulation of Inextensible Hair and Fur
 	(2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	(2018)Small Steps in Physics Simulation
+	(2020)Primal/Dual Descent Methods for Dynamics
 
 #(2007)FastLSM Fast Lattice Shape Matching for realtime
 A : 
@@ -532,10 +536,11 @@ I :
 K : 
 U : 
 R : 
-R :!
+R : (2011)A Hybrid Iterative Solver
 C : (2014)unified particle
 	(2017)A Survey on Position Based Dynamics
 	(2019)non-smooth newton
+	(2020)Primal/Dual Descent Methods for Dynamics
 
 #(2012)Fast Simulation of Inextensible Hair and Fur
 A : 
@@ -726,6 +731,7 @@ R :
 R : (1988)a modeling system based on dynamic constraints
 C : (2017)XPBD
 	#(2019)non-smooth newton
+	(2020)Primal/Dual Descent Methods for Dynamics
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
 #(2016)Position and Orientation Based Cosserat Rods
@@ -744,7 +750,7 @@ R :
 R :!
 C : (2017)A Survey on Position Based Dynamics
 
-#(2017)XPBD
+###(2017)XPBD
 A : 
 C : 
 A : XPBD!
@@ -766,6 +772,7 @@ C : (2017)A Survey on Position Based Dynamics
 	#(2018)Small Steps in Physics Simulation
 	#(2019)non-smooth newton
 	#(2020)Detailed Rigid Body Simulation XPBD
+	#(2020)Primal/Dual Descent Methods for Dynamics
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	#(2022)Physically Based Shape Matching
 

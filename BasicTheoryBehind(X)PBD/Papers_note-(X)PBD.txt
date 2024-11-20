@@ -187,7 +187,7 @@ C : SIGGRAPH 1998
 A : ``until Baraff and Witkin [1998] proposed a implicit backward Euler
 scheme for handling all the forces implicitly, including damping
 in cloth simulation. ''
-	The method introduced in this paper solves the cloth simulation which is composed of aaaaaaaaa with a modified conjugate gradient method.
+	The method introduced in this paper solves the cloth simulation which is composed of stretch/shear/bend constraints with a modified conjugate gradient method.
 	This paper brings again the implicit solver to cloth simulation that used the initial physical simulation work.
 M : In the cloth simulations, which hardly stretch despite capable bending or shearing, in other words,
 	cloth simulation causes stiff equations that force very small timesteps to the explicit integrate methods such as Euler's method or Runge-Kutta methods, etc.
@@ -240,21 +240,22 @@ C : (2005)Meshless Deformations
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 
-(2001)Advanced Character Physics
-A : 
-C : 
+#(2001)Advanced Character Physics
+A : Thomas Jakobsen
+C : In Game Developers Conference Proceedings 2001
 A : Jakobsen [Jak01] built his Fysix engine on a position based approach. His central idea 
-was to use a Verlet integrator and manipulate positions directly.
-The idea of using standard energy terms for generating penalty force has also been
-used several times before [Terzopoulos et al. 1987][Teschner et al.2004].
-M : 
-M : 
-D : 
+	was to use a Verlet integrator and manipulate positions directly.
+	The idea of using standard energy terms for generating penalty force has also been
+	used several times before [Terzopoulos et al. 1987][Teschner et al.2004].
+	The author called this method " velocity-less ".
+M : This paper suggests a real-time physical simulation method for mainly video games that concerns believability rather than accuracy.
+M : The method uses a position-based approach and tolerates subtle inaccuracy to make simulation faster.
+D : The method models rigid bodies as particles with constraints and uses the Velet integration scheme and sophisticated collision handling.
 I : 
 K : 
 U : 
 R : 
-R :!
+R : (1996)An Implicit Time-Stepping Scheme for Rigid Body Dynamics with Coulomb Friction : h
 C : #(2006)Position Based Dynamics
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)unified particle

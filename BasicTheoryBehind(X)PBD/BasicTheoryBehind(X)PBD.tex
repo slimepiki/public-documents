@@ -86,8 +86,8 @@
 %%%%%=============================================================================%%%%
 
 \documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Basic Springer Nature
-\usepackage{graphicx}%
 \usepackage{multirow}%
+\usepackage[]{graphicx}
 \usepackage{amsmath,amssymb,amsfonts}%
 \usepackage{amsthm}%
 \usepackage{mathrsfs}%
@@ -132,6 +132,13 @@
 		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron.
 	}
 }
+
+\newglossaryentry{cgmethod}
+{
+	name = conjugate gradient method,
+	description={This method, also called CG methods is used linear equations that form is $A\boldsymbol{x} = \boldsymbol{b}$. This method  often has high computational cost.
+	}
+}
 %%%%
 \raggedbottom
 %%\unnumbered% uncomment this for unnumbered level heads
@@ -163,8 +170,16 @@ The history of PBD can be roughly divided into three parts.
 Let me name them pre-PBD, post-PBD and post-XPBD.
 
 \subsection{pre-PBD}
-The general flow of pre-PBD began from the appearance of constraint dynamics(\cite{EnergyWitkin1987}, \cite{ConstrainedBarzel} and \cite{ConstrainedPlatt}) through \pname{Large Steps in Cloth Simulation}\cite{LargeStepBaraff} simulates cloth with constraints, \pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduces position-based approach with the distance constraint and \pname{A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner} derives several constraints as energy functions.
-And, finally, with these benefits, \pname{Position Based Dynamics}\cite{PBD} having the advantage I mentioned above was published.
+\begin{figure}[h]
+\centering
+\label{prePBD}
+\includegraphics[width=0.9\linewidth]{prePBD.png}
+\caption{history of pre-PBD}
+\end{figure}
+
+The general flow of pre-PBD began from the appearance of constraint dynamics(\cite{EnergyWitkin1987}, \cite{ConstrainedBarzel} and \cite{ConstrainedPlatt}) through \pname{Large Steps in Cloth Simulation}\cite{LargeStepBaraff} used \gls{constraint}s as shape representation and simulates cloth with energy form \gls{constraint}s' gradients, \pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduces position-based approach derived from Verlet's integration scheme with the distance constraints and \pname{A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner} generalize \cite{LargeStepBaraff}'s method.
+And, finally, \pname{Position Based Dynamics}\cite{PBD} introduced the generalized constraints method from \cite{VersatileTeschner} into \cite{Jakobsen2003AdvancedCP}'s position-based simulation to use various \gls{constraint}s.
+
 
 \subsubsection{Pioneer scholars}
 
@@ -210,28 +225,27 @@ A lower number means more important.
 	\item You must read these papers. But if you want to understand them completely, I recommend reading the others also.
 		\begin{itemize}
 			\item \pname{Position Based Dynamics}\cite{PBD} is one of the main subjects of this document.
-			\item \pname{XPBD : position-based simulation of compliant constrained dynamics}\cite{XPBD}  addressed a numerical artifact that makes dependency between stiffness and \gls{iteration} count or size of the time-step.
+			\item \pname{XPBD : position-based simulation of compliant constrained dynamics}\cite{XPBD} addressed a numerical artifact that makes dependency between stiffness and \gls{iteration} count or size of the time-step.
 		\end{itemize}
 		\item  These papers are vital in understanding (X)PBD or have a strong impact on the field.
 		\begin{itemize}
-			\item 
+			\item\pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduced position based simulation method derived from Verlet's integration scheme and combined distance constraints. The framework of PBD can be seen here. Specifically,using distance and angular constraints, modifying verticies' position directoly and solving \gls{constraint}s with some iterations. This paper is easier to read than PBD, but the ideas appear here and pseudo codes are presented. I recommend reading this before read PBD.
+			\item \pname{Large steps in cloth simulation}\cite{LargeStepBaraff} solved implicit integration with \gls{constraint}s by conjugate gradient method for off-line simulation. The scheme isn't used at PBD, but this one gives us a perspective of present physical simulations.
 		\end{itemize}
 		\item These papers offer interesting discussions around PBD or deepen your understanding of PBD.
 		\begin{itemize}
-			\item \pname{Constraint Methods for Neural Networks and Computer Graphics}\cite{ConstrainedPlatt} Tdescribes the constraint methods for neural networks and computer graphics.
+			\item \pname{Constraint Methods for Neural Networks and Computer Graphics}\cite{ConstrainedPlatt} Describes the constraint methods for neural networks and computer graphics.
 			It may not be easy to read because of 150 pages. But, if you have time, it's more worth reading this paper than some papers published before this one.
 		\end{itemize}
-	\item These papers have historical value, but deeper discussions are done in other papers.
+	\item These ones have historical value, but deeper discussions are done in other papers.
 		\begin{itemize}
 		\item \pname{Elastically deformable models}\cite{ElasticTerzopoulos}  brought the formulation of elastic bodies to computer graphics.
 		\item \pname{Energy Constraints On Parameterized Models}\cite{Witkin1987}The shape representations presented in this paper are quite different from the current ones and the constraints presented in this paper are slightly inconvenient to the current ones. Thus, we no longer have to read this.
 		\item \pname{A modeling system based on dynamic constraints}\cite{Barzel1988} uses constraints as models' motion rather than to hold a model's detail and uses linear simultaneous equations when deriving forces.The points that are difficult to understand are that the paper doesn't describe the background of the equation derivation and that the symbols are scattered too much.
-		Fortunately, we don't have to understand this paper completely to understand recent constrained dynamics because the style varies from the recent ones.
+		Fortunately, we don't have to read this paper completely to understand present constrained dynamics because the style varies from the recent ones.
 		\end{itemize}
 	\item Not be classified yet.
 		\begin{itemize}
-			\item \pname{Large steps in cloth simulation}\cite{LargeStepBaraff}
-			\item \pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP}
 			\item \pname{A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner}
 			\item \pname{Meshless deformations based on shape matching}\cite{MeshlessMuller2005}
 			\item \pname{Interactive simulation of elastic deformable materials}\cite{Servin2006InteractiveSO}

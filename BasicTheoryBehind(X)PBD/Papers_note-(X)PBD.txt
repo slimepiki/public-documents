@@ -394,23 +394,19 @@ C : (2012)Long Range Attachments - A Method to Simulate
 	(2017)A Survey on Position Based Dynamics
 
 ##(2006)Interactive Simulation of Elastic Deformable Materials
-A : 
-C : 
-A : a compliant version of elasticity that
-fits naturally inside constrained rigid body simulators
-It is well known in physics that kinematic
-constraints of the form1 φi(x) = 0 are the physical limit of strong
-potential forces of the form (ki/2)φ^2_i(x), for very large ki and this
-has lead to two main strategies for solving constrained system.
-In the case of distance constraints the corresponding potential is a
-spring potential, with spring stiffness α −1
+A : Martin Servin(Umeå University), Claude Lacousiére (Umeå University), Niklas Melin (Umeå University)
+C : SIGRAD 2006 ( https://ep.liu.se/konferensnummer.aspx?series=ecp&issue=19 )
+A : a compliant version of elasticity that fits naturally inside constrained rigid body simulators
+	``We focus here on numerically stable methods for integrating elastic deformable objects at interactive rates over a wide range of stiffness, including incompressibility and the nearly rigid limit, and on establishing a clear correspondence between the known material parameters used in elasticity theory–such as Young’s modulus–to the simulation parameters''
+M : Conventional methods suffer from simulation where high-stiffness materials are included and ignore the relation between the simulation parameters and the physical material parameters.
 M : 
-M : 
-D : 
-I : 
-K : 
-U : 
-R : 
+D : The computational bottlenech are the computation of the Jacobian and constraint, building and solving the matrix equation.
+	``It is well known in physics that kinematic constraints of the form1 φi(x) = 0 are the physical limit of strong potential forces of the form (ki/2)φ^2_i(x)''
+I : The method showed realistic deformation which fits theory and achieved high-stiffness material simulation where Young's module 1000.0 GPa e.t.c.
+K : Young's module, sympletic Euler, high-stiffness
+U : The energy dissipation is inverse propotion of timestep size.
+	This method can simulate in real-time where tetrahedra are up to nearly 200.
+R : This is a good introduction to constrained dynamics with physical parameters.
 R : (1987)Elastically Deformable Models 
 	(1990)Interactive Dynamics
 	(1998)Large Steps in Cloth Simulation

@@ -87,12 +87,12 @@
 
 \documentclass[pdflatex,sn-mathphys-num]{sn-jnl}% Basic Springer Nature
 \usepackage{multirow}%
-\usepackage[]{graphicx}
+\usepackage{graphicx}
 \usepackage{amsmath,amssymb,amsfonts}%
 \usepackage{amsthm}%
 \usepackage{mathrsfs}%
 \usepackage[title]{appendix}%
-\usepackage{xcolor}%
+\usepackage[dvipdfmx]{xcolor}%
 \usepackage{textcomp}%
 \usepackage{manyfoot}%
 \usepackage{booktabs}%
@@ -100,7 +100,7 @@
 \usepackage{algorithmicx}%
 \usepackage{algpseudocode}%
 \usepackage{listings}%
-\usepackage{glossaries}
+\usepackage[xindy]{glossaries}
 
 %% as per the requirement new theorem styles can be included as shown below
 \theoremstyle{thmstyleone}%
@@ -122,28 +122,31 @@
 \newglossaryentry{iteration}
 {
 	name=iteration,
-	description={In computer science, iteration is the process of repeating a series of instructions multiple times. Especially at (X)PBD, the part of physical solver which treats \gls{constraint}s is called iteration.}
+	description={ : In computer science, iteration is the process of repeating a series of instructions multiple times. Especially at (X)PBD, the part of physical solver which treats \gls{constraint}s is called iteration
+	}
 }
 
 \newglossaryentry{constraint}{
 	name = constraint,
 	description={
-		At the (X)PBD, constraint is relationship among arbitrary vertices what we want to keep during simulation.
-		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron.
+		 : At the (X)PBD, constraint is relationship among arbitrary vertices what we want to keep during simulation.
+		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron
 	}
 }
 
 \newglossaryentry{cgmethod}
 {
-	name = conjugate gradient method,
-	description={This method, also called CG methods is used linear equations that form is $A\boldsymbol{x} = \boldsymbol{b}$. This method  often has high computational cost.
+	name = {conjugate gradient method},
+	description={ : This method, abbreviated as CG method is used linear equations that form is $A\boldsymbol{x} = \boldsymbol{b}$. This method often has high computational cost
 	}
 }
+
+
 %%%%
 \raggedbottom
+
 %%\unnumbered% uncomment this for unnumbered level heads
 \begin{document}
-	
 	\title[Basic theory behind (X)PBD]{Basic theory behind (X)PBD}
 	\author*{\fnm{Slime} \sur{Piki}}
 \maketitle
@@ -173,7 +176,7 @@ Let me name them pre-PBD, post-PBD and post-XPBD.
 \begin{figure}[h]
 \centering
 \label{prePBD}
-\includegraphics[width=0.9\linewidth]{prePBD.png}
+\includegraphics[width=0.8\textwidth]{prePBD.png}
 \caption{history of pre-PBD}
 \end{figure}
 
@@ -230,7 +233,7 @@ A lower number means more important.
 		\item  These papers are vital in understanding (X)PBD or have a strong impact on the field.
 		\begin{itemize}
 			\item\pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduced position based simulation method derived from Verlet's integration scheme and combined distance constraints. The framework of PBD can be seen here. Specifically,using distance and angular constraints, modifying verticies' position directoly and solving \gls{constraint}s with some iterations. This paper is easier to read than PBD, but the ideas appear here and pseudo codes are presented. I recommend reading this before read PBD.
-			\item \pname{Large steps in cloth simulation}\cite{LargeStepBaraff} solved implicit integration with \gls{constraint}s by conjugate gradient method for off-line simulation. The scheme isn't used at PBD, but this one gives us a perspective of present physical simulations.
+			\item \pname{Large steps in cloth simulation}\cite{LargeStepBaraff} solved implicit integration with \gls{constraint}s by \gls{cgmethod} for off-line simulation. The scheme isn't used at PBD, but this one gives us a perspective of present physical simulations.
 		\end{itemize}
 		\item These papers offer interesting discussions around PBD or deepen your understanding of PBD.
 		\begin{itemize}

@@ -1,0 +1,20 @@
+;; This logfile was generated automatically by `xindy'
+;; at 22.11.2024  19:35:13
+;; Indexstyle: "D:\\school\\TokyoUniv\\Research\\2024~\\documents\\public-documents\\BasicTheoryBehind(X)PBD\\mIR0T9lsfP", Rawindex: "D:\\school\\TokyoUniv\\Research\\2024~\\documents\\public-documents\\BasicTheoryBehind(X)PBD\\UF2ViX_Rga", Output: "BasicTheoryBehind(X)PBD.gls"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "¨Ú—Ë€Ú¨Ã¼" -> "I"
+Letter-group: "†Ã¼ÐÚË€¨¼Ú" -> "C"
+Letter-group: "†Ã¼¬à€Ú— Ë€¨—¼Ú »—Ú¤Ã" -> "C"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "†Ã¼¬à€Ú— Ë€¨—¼Ú »—Ú¤Ã" -> "C"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¨Ú—Ë€Ú¨Ã¼" -> "I"

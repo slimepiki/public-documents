@@ -53,6 +53,7 @@ C : (1987)enrgy constraints on parameterized models
 	(1998)Large Steps in Cloth Simulation
 	(2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
+	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
@@ -143,7 +144,8 @@ K :
 U : 
 R : 
 R :!
-C : (2017)A Survey on Position Based Dynamics
+C : (2006)Interactive Simulation of Elastic Deformable Materials
+	(2017)A Survey on Position Based Dynamics
 
 #(1995)Deformation Constraints in a MassSpring Model
 A : 
@@ -237,6 +239,7 @@ R :
 R :!
 C : (2005)Meshless Deformations
 	(2006)Position Based Dynamics
+	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 
@@ -318,6 +321,7 @@ R : (1987)Elastically Deformable Models
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2003)Discrete Shells
 C : #(2006)Position Based Dynamics
+	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2017)A Survey on Position Based Dynamics
 
 #(2005)Meshless Deformations
@@ -335,7 +339,8 @@ R :
 R : #(1987)Elastically Deformable Models 
 	#(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
-C : (2006)Position Based Dynamics
+C : (2006)Interactive Simulation of Elastic Deformable Materials
+	(2006)Position Based Dynamics
 	#(2014)unified particle
 	(2015)air Meshes Preprint
 	(2017)XPBD
@@ -406,7 +411,11 @@ I :
 K : 
 U : 
 R : 
-R :!
+R : (1987)Elastically Deformable Models 
+	(1990)Interactive Dynamics
+	(1998)Large Steps in Cloth Simulation
+	(2004)A Versatile and Robust Model
+	(2005)Meshless Deformations
 C : (2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	(2018)Small Steps in Physics Simulation

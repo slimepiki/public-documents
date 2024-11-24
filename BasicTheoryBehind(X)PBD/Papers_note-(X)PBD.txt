@@ -58,7 +58,7 @@ C : (1987)enrgy constraints on parameterized models
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
-#(1987)enregy constraints on parameterized models
+(1987)enregy constraints on parameterized models
 A : Andrew Witkin(Schlumberger Palo Alto), Kurt Fleischer(ditto), Alan Barr(Caltech)
 C : SIGGRAPH 1987
 A : ``[Witkin, Fleischer, and Barr 87] uses "energy'' constraints to assemble 3D models,
@@ -90,7 +90,7 @@ C : (1987)enregy constraints on parameterized models
 	(1988)a modeling system based on dynamic constraints
 	(1989)Constraint Methods
 
-#(1988)a modeling system based on dynamic constraints
+(1988)a modeling system based on dynamic constraints
 A : Ronen Barzel (Caltech), Alan Barr (Caltech)
 C : SIGGRAPH 1988
 A : Closest to [1987]'s in approach are Barzel and Barr's dynauric constraints[1988].
@@ -119,7 +119,7 @@ R : (1987)Elastically Deformable Models
 C : (2015)Stable Constrained Dynamics
 
 
-#(1989)Constraint Methods
+(1989)Constraint Methods
 A : John Platt
 C : Caltech Ph.D. thesis
 A : This thesis describes the constraint methods for nural network and computer graphics.
@@ -130,7 +130,7 @@ R : (1987)Elastically Deformable Models
 	(1988)a modeling system based on dynamic constraints
 C :!
 
-#(1990)Interactive Dynamics
+(1990)Interactive Dynamics
 A : 
 C : 
 A : Formulation of constrained mechanical systems and techniques for solving them have
@@ -147,7 +147,7 @@ R :!
 C : (2006)Interactive Simulation of Elastic Deformable Materials
 	(2017)A Survey on Position Based Dynamics
 
-#(1995)Deformation Constraints in a MassSpring Model
+(1995)Deformation Constraints in a MassSpring Model
 A : 
 C : 
 A : Provot [Pro95] was among the first to use this method in the context of
@@ -163,7 +163,7 @@ R :
 R :!
 C :(1998)Large Steps in Cloth Simulation
 
-#(1997)An introduction to constraints
+(1997)An introduction to constraints
 A : 
 C : 
 A : We refer the interested reader to [Nealen
@@ -183,7 +183,7 @@ R :
 R :!
 C :!
 
-###(1998)Large Steps in Cloth Simulation
+##(1998)Large Steps in Cloth Simulation
 A : David Barraff (Carnegie Mellon), Andrew Witkin (Carnegie Mellon)
 C : SIGGRAPH 1998
 A : ``until Baraff and Witkin [1998] proposed a implicit backward Euler
@@ -224,7 +224,7 @@ C : #(2003)Discrete Shells
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
 
-#(1999)Interactive animation of structured deformable objects
+(1999)Interactive animation of structured deformable objects
 A : 
 C : 
 A : Desbrun et al. [1999] sped up the computation
@@ -265,7 +265,7 @@ C : #(2006)Position Based Dynamics
 	(2014)unified particle
 	(2017)A Survey on Position Based Dynamics
 
-#(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 A : 
 C : 
 A : relaxation based on the concept of constraint averagingf
@@ -285,7 +285,7 @@ C : (2004)A Versatile and Robust Model
 	(2017)A Survey on Position Based Dynamics
 	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation : hair
 
-#(2003)Discrete Shells
+(2003)Discrete Shells
 A : 
 C : 
 A : dihedral angle
@@ -324,7 +324,7 @@ C : #(2006)Position Based Dynamics
 	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2017)A Survey on Position Based Dynamics
 
-#(2005)Meshless Deformations
+(2005)Meshless Deformations
 A : 
 C : 
 A : introduced a meshless simulation
@@ -375,7 +375,7 @@ C : #(2012)Fast Simulation of Inextensible Hair and Fur
 	#(2022)Physically Based Shape Matching
 
 
-#(2006)A Quadratic Bending Model for Inextensible Surfaces
+(2006)A Quadratic Bending Model for Inextensible Surfaces
 A : 
 C : 
 A : A bending constraint for inextensible surfaces was introduced
@@ -393,7 +393,7 @@ R :!
 C : (2012)Long Range Attachments - A Method to Simulate
 	(2017)A Survey on Position Based Dynamics
 
-##(2006)Interactive Simulation of Elastic Deformable Materials
+#(2006)Interactive Simulation of Elastic Deformable Materials
 A : Martin Servin(Umeå University), Claude Lacousiére (Umeå University), Niklas Melin (Umeå University)
 C : SIGRAD 2006 ( https://ep.liu.se/konferensnummer.aspx?series=ecp&issue=19 )
 A : a compliant version of elasticity that fits naturally inside constrained rigid body simulators
@@ -419,7 +419,7 @@ C : (2017)A Survey on Position Based Dynamics
 	(2020)Primal/Dual Descent Methods for Dynamics
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
-##(2007)Efficient Simulation of Inextensible Cloth
+#(2007)Efficient Simulation of Inextensible Cloth
 A : 
 C : 
 A : improve the convergence rate are the use of a global NewtonRaphson solver as 
@@ -440,7 +440,7 @@ C : (2012)Fast Simulation of Inextensible Hair and Fur
 	(2018)Small Steps in Physics Simulation
 	(2020)Primal/Dual Descent Methods for Dynamics
 
-#(2007)FastLSM Fast Lattice Shape Matching for realtime
+(2007)FastLSM Fast Lattice Shape Matching for realtime
 A : 
 C : 
 A : Lattice Shape Matching which was originally introduced by Rivers and James [RJ07]
@@ -454,7 +454,7 @@ R :
 R :!
 C : (2017)A Survey on Position Based Dynamics
 
-#(2008)Animating Developable Surfaces using Nonconforming Elements
+(2008)Animating Developable Surfaces using Nonconforming Elements
 A : 
 C : 
 A : Now we have established the connection to backward Euler, we
@@ -475,7 +475,7 @@ C : (2012)Long Range Attachments - A Method to Simulate
 	(2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 
-#(2009)Volume Conserving Simulation of Deformable Bodies
+(2009)Volume Conserving Simulation of Deformable Bodies
 A : 
 C : 
 A : In the following we introduce the position-based approach
@@ -490,7 +490,7 @@ R :
 R :!
 C : (2017)A Survey on Position Based Dynamics
 
-#(2011)Robust Real-Time Deformation
+(2011)Robust Real-Time Deformation
 A : 
 C : 
 A : The one of Diziol et al. [DBB11] is best suited
@@ -506,7 +506,7 @@ R :!
 C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 
-#(2012)Long Range Attachments - A Method to Simulate
+(2012)Long Range Attachments - A Method to Simulate
 A : 
 C : 
 A : Recently, Kim et al. [KCM12] found a surprisingly simple and robust 
@@ -532,7 +532,7 @@ C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 
-#(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
+(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
 A : 
 C : 
 A : relaxation based on mass-splitting
@@ -549,7 +549,7 @@ C : (2014)unified particle
 	(2019)non-smooth newton
 	(2020)Primal/Dual Descent Methods for Dynamics
 
-#(2012)Fast Simulation of Inextensible Hair and Fur
+(2012)Fast Simulation of Inextensible Hair and Fur
 A : 
 C : 
 A : A similar approach was recently proposed by Müller et al.
@@ -569,7 +569,7 @@ C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 
-#(2013)Efficient GPU data structures and methods to solve
+(2013)Efficient GPU data structures and methods to solve
 A : 
 C : 
 A : The restriction and the prolongation of
@@ -585,7 +585,7 @@ R :
 R :!
 C : (2017)A Survey on Position Based Dynamics
 
-#(2013)Position Based Fluids
+(2013)Position Based Fluids
 A : 
 C : 
 A : A fluid simulation method is presented by Macklin and Müller [MM13]
@@ -603,7 +603,7 @@ C : #(2014)unified particle
 	(2018)Small Steps in Physics Simulation
 	(2020)Detailed Rigid Body Simulation XPBD
 
-#(2014)strain Based Dynamics
+(2014)strain Based Dynamics
 A : 
 C : 
 A : proposed constraining the entries
@@ -626,7 +626,7 @@ R : (1998)Large Steps in Cloth Simulation
 C : (2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 
-#(2014)Position-Based Rigid Body Dynamics
+(2014)Position-Based Rigid Body Dynamics
 A : 
 C : 
 A : extends PBD beyond particles and simulate rigid bodies as single entities
@@ -642,7 +642,7 @@ R :!
 C : (2017)A Survey on Position Based Dynamics
 	#(2020)Detailed Rigid Body Simulation XPBD
 
-#(2014)Position-Based Simulation of Continuous Materials
+(2014)Position-Based Simulation of Continuous Materials
 A : 
 C : 
 A : Recently, Bender et al. [2014a] proposed a continuum-based formulation 
@@ -662,7 +662,7 @@ C : (2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
-#(2014)unified particle
+(2014)unified particle
 A : 
 C : 
 A : a particle based unified solver in the position based framework
@@ -687,7 +687,7 @@ C : (2015)air Meshes
 	(2018)Small Steps in Physics Simulation
 	(2020)Detailed Rigid Body Simulation XPBD
 
-#(2015)Scalable Partitioning for Parallel Position Based Dynamics
+(2015)Scalable Partitioning for Parallel Position Based Dynamics
 A : 
 C : 
 A : To take advantage of both Gauss-Seidel and Jacobi solvers, Fratarcangeli et al. [FP15] proposed a hybrid approach. They use graph
@@ -703,7 +703,7 @@ R :
 R :!
 C : (2017)A Survey on Position Based Dynamics
 
-#(2015)air Meshes Preprint
+(2015)air Meshes Preprint
 A : 
 C : 
 A : As Müller et al. show in [MCKM15], per-element volume 
@@ -721,7 +721,7 @@ R : (2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animati
 	(2014)unified particle
 C : (2017)A Survey on Position Based Dynamics
 
-##(2015)Stable Constrained Dynamics
+#(2015)Stable Constrained Dynamics
 A : 
 C : 
 A : Tournier et al. [2015] proposed
@@ -741,7 +741,7 @@ C : (2017)XPBD
 	(2020)Primal/Dual Descent Methods for Dynamics
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
-#(2016)Position and Orientation Based Cosserat Rods
+(2016)Position and Orientation Based Cosserat Rods
 A : 
 C : 
 A : The method constrains the strain measures of one dimensional

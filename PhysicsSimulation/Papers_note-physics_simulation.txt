@@ -115,6 +115,23 @@ R :
 R :	
 C : 
 
+(2006)Geometric, Variational Integrators for Computer Animation
+A : 
+C : 
+A : Variational approaches can also be used to derive integrators
+[Kane et al. 2000; Kharevych et al. 2006; Marsden and West 2001]
+with excellent energy preservation and controlled damping.
+M : 
+M :	
+D :	
+I : 
+K : 
+U : 
+R : 
+R :	
+C : (2006)Interactive Simulation of Elastic Deformable Materials : PBD
+	#(2018)Small Steps in Physics Simulation : PBD
+
 #(2009)implicit_contact
 A : 
 C : 

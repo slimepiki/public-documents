@@ -54,6 +54,7 @@ C : (1987)enrgy constraints on parameterized models
 	(2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
 	(2006)Interactive Simulation of Elastic Deformable Materials
+	(2007)Efficient Simulation of Inextensible Cloth
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
@@ -145,6 +146,7 @@ U :
 R : 
 R :!
 C : (2006)Interactive Simulation of Elastic Deformable Materials
+	(2007)Efficient Simulation of Inextensible Cloth
 	(2017)A Survey on Position Based Dynamics
 
 (1995)Deformation Constraints in a MassSpring Model
@@ -215,6 +217,7 @@ C : #(2003)Discrete Shells
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
+	#(2007)Efficient Simulation of Inextensible Cloth
 	(2012)Long Range Attachments - A Method to Simulat
 	(2013)Fast Simulation of Mass-Spring Systems : hair-sim
 	(2014)strain Based Dynamics
@@ -240,6 +243,7 @@ R :!
 C : (2005)Meshless Deformations
 	(2006)Position Based Dynamics
 	(2006)Interactive Simulation of Elastic Deformable Materials
+	(2007)Efficient Simulation of Inextensible Cloth
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 
@@ -279,6 +283,7 @@ R :
 R :!
 C : (2004)A Versatile and Robust Model
 	(2006)Position Based Dynamic
+	(2007)Efficient Simulation of Inextensible Cloth
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)unified particle
 	(2015)air Meshes
@@ -360,7 +365,8 @@ R : #(1998)Large Steps in Cloth Simulation
 	(2003)Simulation of Clothing with Folds and Wrinkles : hair-collision_friction
 	#(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
-C : #(2012)Fast Simulation of Inextensible Hair and Fur
+C : (2007)Efficient Simulation of Inextensible Cloth
+	#(2012)Fast Simulation of Inextensible Hair and Fur
 	#(2012)Long Range Attachments - A Method to Simulate
 	#(2013)Position Based Fluids
 	#(2014)strain Based Dynamics
@@ -408,7 +414,7 @@ K : Young's module, sympletic Euler, high-stiffness
 U : The energy dissipation is inverse propotion of timestep size.
 	This method can simulate in real-time where tetrahedra are up to nearly 200.
 R : This paper introduces physical parameters into constrained dynamics; the spirit is inherited by XPBD.
-	I think the integrator that provided here, especially, equation (20) lack of explanation.
+	But I think this paper does explain the concept poorly,e. g. the integrator provided here, equation (20) lack of explanation, etc.
 R : (1987)Elastically Deformable Models 
 	(1990)Interactive Dynamics
 	(1998)Large Steps in Cloth Simulation
@@ -423,18 +429,23 @@ C : (2017)A Survey on Position Based Dynamics
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
 #(2007)Efficient Simulation of Inextensible Cloth
-A : 
-C : 
+A : Rony Goldenthal (Columbia Univ, The Hebrew University of Jersalem), David Harmon (Colum), Raan Fattal (University of California Berkeley),Michel Bercovier(Heb), Eitan Grinspun(Colum)
+C : TOG 2007
 A : improve the convergence rate are the use of a global NewtonRaphson solver as 
 	proposed by Goldenthal et al. [GHF∗07]
-M : 
-M : 
+M : Conventional cloth simulation methods tend to simulate cloth stretching while general textiles do not. This paper introduces a method of addressing the matter.
+M : The goal is achieved by using Constrainded Lagrangian Mechanics and a novel fast projection method.
 D : 
-I : 
-K : 
+I : The method can simulate cloth fast (an experience shows 25x speed up) and look not stretched that conventional techniques suffer from.
+K : Constrainded Lagrangian Mechanics, projection method
 U : 
 R : 
-R :!
+R : (1987)Elastically Deformable Models
+	(1990)Interactive Dynamics
+	#(1998)Large Steps in Cloth Simulation
+	(1999)Interactive animation of structured deformable objects
+	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+	(2006)Position Based Dynamics
 C : (2012)Fast Simulation of Inextensible Hair and Fur
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)strain Based Dynamics

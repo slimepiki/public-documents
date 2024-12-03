@@ -431,15 +431,24 @@ C : (2017)A Survey on Position Based Dynamics
 #(2007)Efficient Simulation of Inextensible Cloth
 A : Rony Goldenthal (Columbia Univ, The Hebrew University of Jersalem), David Harmon (Colum), Raan Fattal (University of California Berkeley),Michel Bercovier(Heb), Eitan Grinspun(Colum)
 C : TOG 2007
-A : improve the convergence rate are the use of a global NewtonRaphson solver as 
-	proposed by Goldenthal et al. [GHF∗07]
+A : ``A number of works use a global approach in solving constraints.
+Goldenthal et al. [2007] proposes a projection method for enforcing
+inextensible constraints similar to PBD, but where the constrained
+system is globally linearized and solved with a direct method at each
+iteration'' : XPBD(2017)
+
+``If M 6= 3N the resulting matrix of the linear system is nonsymmetric and not invertible. Goldenthal et al. [GHF∗
+07] solve this problem by using the pseudo-inverse of the system matrix which
+yields the best solution in the least-squares sense. Still, handling
+inequalities is not possible directly'' : PBD cource note(2017)
+
 M : Conventional cloth simulation methods tend to simulate cloth stretching while general textiles do not. This paper introduces a method of addressing the matter.
 M : The goal is achieved by using Constrainded Lagrangian Mechanics and a novel fast projection method.
-D : 
+D : The distance constraint used here is different from ||x_1 - x_2|| - l = 0; it's ||x_1 - x_2||^2/l - l = 0. I don't know the reason.
 I : The method can simulate cloth fast (an experience shows 25x speed up) and look not stretched that conventional techniques suffer from.
-K : Constrainded Lagrangian Mechanics, projection method
+K : Constrainded Lagrangian Mechanics (CLM), projection method, Implicit constant direction (ICD), Step and preject (SAP), SHAKE, RATTLE
 U : 
-R : 
+R : In this method, the constrained system is globally linearized and solved with a direct approach at each iteration. This paper is not in a directory related to (X)PBD.
 R : (1987)Elastically Deformable Models
 	(1990)Interactive Dynamics
 	#(1998)Large Steps in Cloth Simulation

@@ -117,7 +117,8 @@ R : This paper uses constraints as models' motion rather than to hold a model's 
 R : (1987)Elastically Deformable Models
 	#(1987)enrgy constraints on parameterized models
 	(1989)Constraint Methods
-C : (2015)Stable Constrained Dynamics
+C : (1996)Linear-Time Dynamics using Lagrange Multipliers
+	(2015)Stable Constrained Dynamics
 
 
 (1989)Constraint Methods
@@ -145,7 +146,8 @@ K :
 U : 
 R : 
 R :!
-C : (2006)Interactive Simulation of Elastic Deformable Materials
+C : (1996)Linear-Time Dynamics using Lagrange Multipliers
+	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2017)A Survey on Position Based Dynamics
 
@@ -166,17 +168,18 @@ R :!
 C :(1998)Large Steps in Cloth Simulation
 
 #(1996)Linear-Time Dynamics using Lagrange Multipliers
-A : 
-C : 
+A : David Baraff (Carnegie Mellon)
+C : SIGGRAPH 96
 A : 
 M : 
 M :	
 D :	
 I : 
-K : 
+K : Lagrange Multipliers
 U : 
 R : 
-R :	
+R :	(1988)a modeling system based on dynamic constraints
+	(1990)Interactive Dynamics
 C : #(2006)Interactive Simulation of Elastic Deformable Materials
 	(2014)Position-Based Rigid Body Dynamics
 	(2015)Stable Constrained Dynamics
@@ -202,7 +205,7 @@ R :!
 C :!
 
 ##(1998)Large Steps in Cloth Simulation
-A : David Barraff (Carnegie Mellon), Andrew Witkin (Carnegie Mellon)
+A : David Baraff (Carnegie Mellon), Andrew Witkin (Carnegie Mellon)
 C : SIGGRAPH 1998
 A : ``until Baraff and Witkin [1998] proposed a implicit backward Euler
 scheme for handling all the forces implicitly, including damping

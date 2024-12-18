@@ -545,6 +545,30 @@ R :
 R :!
 C : (2017)A Survey on Position Based Dynamics
 
+(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
+A : 
+C : 
+A : ``Our constraint-based formulation bears some similarity with recent
+non-traditional approaches based on constraint projection. The idea
+of constraint projection is central to the Nucleus system [Stam 2009]
+and Position Based Dynamics [Muller et al ¨ . 2007; Bender et al.
+2013]. ''
+M : 
+M : 
+D : 
+I : 
+K : 
+U : 
+R : 
+R :!
+C : #(2014)Projective Dynamics
+	(2014)Position-Based Simulation of Continuous Materials
+	(2014)unified particle
+	(2017)A Survey on Position Based Dynamics
+	(2017)XPBD
+	(2018)Small Steps in Physics Simulation
+	(2020)Detailed Rigid Body Simulation XPBD
+
 (2011)Robust Real-Time Deformation
 A : 
 C : 
@@ -685,9 +709,12 @@ C : (2017)A Survey on Position Based Dynamics
 #(2014)Projective Dynamics
 A : Sofien Bouaziz (EPFL), Sebastian Martin (VM Research), Tiantian Liu(Univ. Pennsylvania), Ladislav Kavan (Univ Pennsylvania), Mark Pauly (EPFL)
 C : TOG 2014
-A : This paper said the method introduced here builds a bridge between FEM and PBD.
-M : 
-M :	
+A : This paper said the method introduced here builds a bridge between implicit Euler integration scheme and PBD.
+M : PBD is one of the most popular methods for physical simulation. However, it has some unfavorable behaviors because it is not rigorously derived from continuum mechanics.
+M :	Introducing energy potentials with a specific structure. 
+	The constraints used in this paper are derived from the continuum theory.
+	Taking advantage of local solver and global solver. 
+
 D :	
 I : 
 K : 
@@ -702,6 +729,7 @@ R :	(1987)Elastically Deformable Models
 	(2006)A Quadratic Bending Model for Inextensible Surfaces
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2007)FastLSM Fast Lattice Shape Matching for realtime
+	#(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics
 	(2013)Position Based Fluids
 C : (2015)Stable Constrained Dynamics
 	#(2017)XPBD
@@ -725,7 +753,7 @@ I :
 K : 
 U : 
 R : 
-R :!
+R : (2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 C : (2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
@@ -747,6 +775,7 @@ R : (2001)Advanced Character Physics
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2012)Long Range Attachments - A Method to Simulate
 	(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
 	#(2013)Position Based Fluids
@@ -858,6 +887,7 @@ R : (2005)Meshless Deformations
 	#(2006)Position Based Dynamics
 	#(2006)Interactive Simulation of Elastic Deformable Materials
 	#(2007)Efficient Simulation of Inextensible Cloth
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	#(2014)strain Based Dynamics
 	#(2014)Position-Based Simulation of Continuous Materials
 	#(2014)Projective Dynamics
@@ -889,6 +919,7 @@ R : (1987)Elastically Deformable Models
 	(2007)FastLSM Fast Lattice Shape Matching for realtime
 	(2008)Animating Developable Surfaces using Nonconforming Elements
 	(2009)Volume Conserving Simulation of Deformable Bodies
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2011)Robust Real-Time Deformation
 	(2012)Long Range Attachments - A Method to Simulate
 	(2012)Mass Splitting for Jitter-Free Parallel Rigid Body simulation
@@ -931,6 +962,7 @@ R : (1987)Elastically Deformable Models
 	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2006)Geometric, Variational Integrators for Computer Animation : phys. sim.
 	(2007)Efficient Simulation of Inextensible Cloth
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2012)Long Range Attachments - A Method to Simulate
 	(2012)Fast Simulation of Inextensible Hair and Fur
 	(2013)Position Based Fluids
@@ -954,6 +986,7 @@ U :
 R : 
 R : (2005)Meshless Deformations
 	#(2006)Position Based Dynamics
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2013)Position Based Fluids
 	#(2014)Position-Based Simulation of Continuous Materials
 	(2014)unified particle

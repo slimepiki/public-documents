@@ -585,6 +585,21 @@ R :!
 C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 
+(2011)Example-Based Elastic Materials
+A : 
+C : 
+A : . As shown in [Martin et al. 2011], this can be equivalently formulated as a non-convex optimization problem that operates directly on elastic potentials instead of forces
+M : 
+M : 
+D : 
+I : 
+K : 
+U : 
+R : 
+R :!
+C : #(2014)Projective Dynamics
+	(2016)ADMM ⊇ Projective Dynamics
+
 (2012)Long Range Attachments - A Method to Simulate
 A : 
 C : 
@@ -710,16 +725,19 @@ C : (2017)A Survey on Position Based Dynamics
 A : Sofien Bouaziz (EPFL), Sebastian Martin (VM Research), Tiantian Liu(Univ. Pennsylvania), Ladislav Kavan (Univ Pennsylvania), Mark Pauly (EPFL)
 C : TOG 2014
 A : This paper said the method introduced here builds a bridge between implicit Euler integration scheme and PBD.
-M : PBD is one of the most popular methods for physical simulation. However, it has some unfavorable behaviors because it is not rigorously derived from continuum mechanics.
+	The method has simple form, performance and robustness.
+M : PBD is one of the most popular methods for physical simulation. However, it has some unfavorable behaviors (e.g. number of timesteps dependency or meshing dependency) because it is not rigorously derived from continuum mechanics.
 M :	Introducing energy potentials with a specific structure. 
 	The constraints used in this paper are derived from the continuum theory.
 	Taking advantage of local solver and global solver. 
-
 D :	
-I : 
-K : 
-U : 
-R : 
+I : this method is guaranteed to weakly decrease the energy making any safeguards unnecessay and giving robustness.
+	Projective dynamics has to be taken many iterations than Newton's method, but, because it's small time steps, the former converges faster than the latter.
+	This method takes about 30ms on MacBookPro 2.7GHz Intel Quad-core iy with 16GB of memory.
+K : Nonliner Elastic potentials, global/rocal solver, PBD, project onto manifold
+U : There is implicit damping.
+R : This paper depicts PBD's weakness, which results in dependency on iteration times and introduces momentum constraints to remove them.
+
 R :	(1987)Elastically Deformable Models
 	(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
@@ -730,6 +748,7 @@ R :	(1987)Elastically Deformable Models
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2007)FastLSM Fast Lattice Shape Matching for realtime
 	#(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics
+	(2011)Example-Based Elastic Materials
 	(2013)Position Based Fluids
 C : (2015)Stable Constrained Dynamics
 	#(2017)XPBD
@@ -867,7 +886,7 @@ I :
 K : 
 U : 
 R : 
-R :	
+R :	(2011)Example-Based Elastic Materials
 C : #(2017)XPBD
 	(2020)Simple and Scalable Frictional Contacts for Thin Nodal Objects
 	(2022)Contact and Friction Simulation for Computer Graphics : H

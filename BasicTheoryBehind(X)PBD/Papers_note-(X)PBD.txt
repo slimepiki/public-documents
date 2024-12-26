@@ -55,6 +55,7 @@ C : (1987)enrgy constraints on parameterized models
 	#(2005)Meshless Deformations
 	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2007)Efficient Simulation of Inextensible Cloth
+	(2011)Example-Based Elastic Materials
 	#(2014)Projective Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
@@ -330,6 +331,7 @@ R :	#(1998)Large Steps in Cloth Simulation
 C : (2003)Simulation of Clothing with Folds and Wrinkles : hair-coll
 	(2004)A Versatile and Robust Model
 	(2006)Position Based Dynamics
+	(2011)Example-Based Elastic Materials
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)Projective Dynamics
 
@@ -586,9 +588,9 @@ C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 
 (2011)Example-Based Elastic Materials
-A : 
-C : 
-A : . As shown in [Martin et al. 2011], this can be equivalently formulated as a non-convex optimization problem that operates directly on elastic potentials instead of forces
+A : Sebastian Martin (ETH), Bernhard Thomaszewski (ETH, Disney),Eitan Grinspun (Columbia Univ.), Markus Gross (ETH, Disney)
+C : SIGGRAPH 2011
+A : ``As shown in [Martin et al. 2011], this can be equivalently formulated as a non-convex optimization problem that operates directly on elastic potentials instead of forces'' : (2014)Projective Dynamics
 M : 
 M : 
 D : 
@@ -596,7 +598,8 @@ I :
 K : 
 U : 
 R : 
-R :!
+R : (1987)Elastically Deformable Models
+	(2003)Discrete Shells
 C : #(2014)Projective Dynamics
 	(2016)ADMM ⊇ Projective Dynamics
 

@@ -591,12 +591,13 @@ C : (2014)strain Based Dynamics
 A : Sebastian Martin (ETH), Bernhard Thomaszewski (ETH, Disney),Eitan Grinspun (Columbia Univ.), Markus Gross (ETH, Disney)
 C : SIGGRAPH 2011
 A : ``As shown in [Martin et al. 2011], this can be equivalently formulated as a non-convex optimization problem that operates directly on elastic potentials instead of forces'' : (2014)Projective Dynamics
-M : 
-M : 
+M : A method is desirable for animators that derive material parameters by providing examples of characteristic deformations.
+M : Constructing a strain space of characteristic shapes using interpolation, projecting configurations onto the space by solving a minimization problem, and combining the interpolated and projected ones.
 D : 
-I : 
+I : The objects deformed nearly into the shape that was desired by artists without incident.
+	Local examples also be able to apply. 
 K : 
-U : 
+U : This method isn't a real-time one; this one takes about 300ms to 3s per frame.
 R : 
 R : (1987)Elastically Deformable Models
 	(2003)Discrete Shells

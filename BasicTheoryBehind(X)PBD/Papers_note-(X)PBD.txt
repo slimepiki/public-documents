@@ -51,6 +51,7 @@ C : (1987)enrgy constraints on parameterized models
 	(1988)a modeling system based on dynamic constraints
 	(1989)Constraint Methods
 	(1998)Large Steps in Cloth Simulation
+	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
 	(2006)Interactive Simulation of Elastic Deformable Materials
@@ -237,7 +238,8 @@ R : This paper describes detailed physical simulation with constraints using imp
 	It is worth reading because the method is basic physical simulation now.
 R : (1987)Elastically Deformable Models 
 	(1995)Deformation Constraints in a MassSpring Model
-C : #(2003)Discrete Shells
+C : #(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animatio
+	#(2003)Discrete Shells
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
@@ -265,7 +267,8 @@ K :
 U : 
 R : 
 R :!
-C : (2005)Meshless Deformations
+C : (2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+	(2005)Meshless Deformations
 	(2006)Position Based Dynamics
 	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2007)Efficient Simulation of Inextensible Cloth
@@ -298,7 +301,7 @@ C : #(2006)Position Based Dynamics
 (2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 A : 
 C : 
-A : relaxation based on the concept of constraint averagingf
+A : relaxation based on the concept of constraint averaging
 M : 
 M : 
 D : 
@@ -307,14 +310,22 @@ K :
 U : 
 R : 
 R :!
-C : (2004)A Versatile and Robust Model
+C : (2003)Simulation of Clothing with Folds and Wrinkles : H
+	(2004)A Versatile and Robust Model
 	(2006)Position Based Dynamic
 	(2007)Efficient Simulation of Inextensible Cloth
+	(2008)A Mass Spring Model for Hair Simulation : H
+	(2010)A Nonsmooth Newton Solver for Capturing Exact Coulomb : H
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)unified particle
 	(2015)air Meshes
+	(2015)A physically based approach to the accurate simulation : H
+	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation :H
 	(2017)A Survey on Position Based Dynamics
 	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation : hair
+	(2020)Simple and Scalable Frictional Contacts for Thin Nodal Objects : H
+	(2020)Real-Time Hair Simulation with hepta : H
+	(2022)Contact and Friction Simulation for Computer Graphics : H
 
 (2003)Discrete Shells
 A : 
@@ -596,7 +607,7 @@ M : Constructing a strain space of characteristic shapes using interpolation, pr
 D : 
 I : The objects deformed nearly into the shape that was desired by artists without incident.
 	Local examples also be able to apply. 
-K : 
+K : Example-Based, projection, minimization problem, example subspace
 U : This method isn't a real-time one; this one takes about 300ms to 3s per frame.
 R : 
 R : (1987)Elastically Deformable Models

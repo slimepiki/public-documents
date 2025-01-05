@@ -603,11 +603,11 @@ A : Sebastian Martin (ETH), Bernhard Thomaszewski (ETH, Disney),Eitan Grinspun (
 C : SIGGRAPH 2011
 A : ``As shown in [Martin et al. 2011], this can be equivalently formulated as a non-convex optimization problem that operates directly on elastic potentials instead of forces'' : (2014)Projective Dynamics
 M : A method is desirable for animators that derive material parameters by providing examples of characteristic deformations.
-M : Constructing a strain space of characteristic shapes using interpolation, projecting configurations onto the space by solving a minimization problem, and combining the interpolated and projected ones.
-D : 
+M : Constructing a strain space of characteristic shapes  by introducing an additional elastic potential, projecting configurations onto the space by solving a minimization problem, and combining the interpolated and projected ones.
+D : This method solves interpolation weight, deformation and next position simultaneously.
 I : The objects deformed nearly into the shape that was desired by artists without incident.
 	Local examples also be able to apply. 
-K : Example-Based, projection, minimization problem, example subspace
+K : Example-Based, projection, minimization problem, example manifold
 U : This method isn't a real-time one; this one takes about 300ms to 3s per frame.
 R : 
 R : (1987)Elastically Deformable Models

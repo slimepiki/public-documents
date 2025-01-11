@@ -238,11 +238,13 @@ R : This paper describes detailed physical simulation with constraints using imp
 	It is worth reading because the method is basic physical simulation now.
 R : (1987)Elastically Deformable Models 
 	(1995)Deformation Constraints in a MassSpring Model
-C : #(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animatio
+C : (2001)A Layered Wisp Model for Simulating Interactions : hair
+	#(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animatio
 	#(2003)Discrete Shells
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
+	(2007)A Survey on Hair Modeling : hair
 	#(2007)Efficient Simulation of Inextensible Cloth
 	(2012)Long Range Attachments - A Method to Simulat
 	(2013)Fast Simulation of Mass-Spring Systems : hair-sim

@@ -745,7 +745,7 @@ M : PBD is one of the most popular methods for physical simulation. However, it 
 M :	Introducing energy potentials with a specific structure. 
 	The constraints used in this paper are derived from the continuum theory.
 	Taking advantage of local solver and global solver. 
-D :	
+D :	The method accounts for the momentum neglected at PBD, uses the Jacobi Solver instead of the Gauss-Seidel Solver to suppress the oscillation of the simulation result, and uses constraints derived from continuum mechanics for consistency over meshes even if it poses a poor condition and fast convergence.
 I : this method is guaranteed to weakly decrease the energy making any safeguards unnecessay and giving robustness.
 	Projective dynamics has to be taken many iterations than Newton's method, but, because it's small time steps, the former converges faster than the latter.
 	This method takes about 30ms on MacBookPro 2.7GHz Intel Quad-core iy with 16GB of memory.

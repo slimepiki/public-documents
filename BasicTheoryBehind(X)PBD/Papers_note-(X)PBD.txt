@@ -55,6 +55,7 @@ C : (1987)enrgy constraints on parameterized models
 	(2004)A Versatile and Robust Model
 	#(2005)Meshless Deformations
 	(2006)Interactive Simulation of Elastic Deformable Materials
+	(2007)Cosserat Rod Elements for the Dynamic Simulation : H S
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2011)Example-Based Elastic Materials
@@ -247,6 +248,7 @@ C : (2001)A Layered Wisp Model for Simulating Interactions : hair
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 	#(2006)Position Based Dynamics
+	(2007)Cosserat Rod Elements for the Dynamic Simulation : H S
 	(2007)A Survey on Hair Modeling : hair
 	#(2007)Efficient Simulation of Inextensible Cloth
 	(2012)Long Range Attachments - A Method to Simulat

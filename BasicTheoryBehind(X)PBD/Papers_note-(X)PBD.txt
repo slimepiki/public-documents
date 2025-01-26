@@ -15,18 +15,18 @@ C : Cited by
 @ : too difficult paper for me
 
 (for copy)
-A : 
-C : 
-A : 
-M : 
+A :	
+C :	
+A :	
+M :	
 M :	
 D :	
-I : 
-K : 
-U : 
-R : 
+I :	
+K :	
+U :	
 R :	
-C : 
+R :	
+C :	
 
 #(1987)Elastically Deformable Models
 A : Demetri Terzopoulos(Schlumberger Palo Alto Research), Jhon Platt(caltech), Alan Barr(Caltech), Kurt Fleischer(SPAR)
@@ -581,11 +581,12 @@ A : ``Our constraint-based formulation bears some similarity with recent
 M : Current dynamics solvers are usually dedicated to a limited domain, such as a cloth simulation, a rigid-body one or an elastic one.
 	However, all of them should be simulated in a unified environment. Then, this paper addressed the problem.
 M : All matter is modeled as a simplicial complex; triangle mesh and constraints, to solve the above problem. 
-D : 
+D : This paper also explaines the interleave method and the collision handling method used in Nucleus.
 I : The method enabled to development of a relatively stable unified simulator that can handle stiff materials such as cloth.
-K : 
-U : 
-R : 
+K :	Unified system, simplicial complex, triangle mesh, constraints, interleave, space-time collision resolving
+U :	
+R :	This is a good introduction to constrained dynamics because it shows its implementation aspect.
+	However, it doesn't describe how constraints are resolved, so it isn't full-contained.
 R : (1987)Elastically Deformable Models
 	(1995)Deformation Constraints in a MassSpring Model
 	(1996)Linear-Time Dynamics using Lagrange Multipliers
@@ -620,7 +621,8 @@ C : (2014)strain Based Dynamics
 (2011)Example-Based Elastic Materials
 A : Sebastian Martin (ETH), Bernhard Thomaszewski (ETH, Disney),Eitan Grinspun (Columbia Univ.), Markus Gross (ETH, Disney)
 C : SIGGRAPH 2011
-A : ``As shown in [Martin et al. 2011], this can be equivalently formulated as a non-convex optimization problem that operates directly on elastic potentials instead of forces'' : (2014)Projective Dynamics
+A : ``As shown in [Martin et al. 2011], this can be equivalently formulated as a non-convex 
+	optimization problem that operates directly on elastic potentials instead of forces'' : (2014)Projective Dynamics
 M : A method is desirable for animators that derive material parameters by providing examples of characteristic deformations.
 M : Constructing a strain space of characteristic shapes by introducing an additional elastic potential,
 	then use it to decide the plausible interpolate rate between rest state and given examples by solving minimization problem.
@@ -629,7 +631,9 @@ I : The objects deformed nearly into the shape that was desired by artists witho
 	Local examples also be able to apply. 
 K : Example-Based, projection, minimization problem, example manifold
 U : This method isn't a real-time one; this one takes about 300ms to 3s per frame.
-R : 
+R : This provides a concept of the elastic manifold and optimization method for deforming into an artist-desirable state. 
+	However, this paper lacks reference to the manifold projection methods that are apparently well-known in the geometric optimization field.
+	This paper helps us understand Projective dynamics, but I don't know Projective Dynamics's relevance with (X)PBD for now.
 R : (1987)Elastically Deformable Models
 	(2003)Discrete Shells
 C : #(2014)Projective Dynamics
@@ -680,6 +684,46 @@ R : #(2006)Position Based Dynamics
 C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
+
+(2012)Shaping Discrete Geometry with Projections
+A :	
+C :	
+A :	local/global solver
+	``Recently, Liu and colleagues [2013] presented a method for efficient implicit time integration of mass-spring
+	systems by introducing auxiliary variables that enable alternating
+	local/global optimization. This approach, also known as block coordinate descent, has been previously used with great success in
+	geometry processing [Sorkine and Alexa 2007; Bouaziz et al. 2012]''
+M :	
+M :	
+D :	
+I :	
+K :	block coordinate descent method(local/global solver), Projection method
+U :	
+R :	
+R :	
+C :	#(2014)Projective Dynamics
+	(2016)ADMM ⊇ Projective Dynamics
+
+#(2013)Fast Simulation of Mass-Spring Systems
+A :	
+C :	
+A :	local/global solver
+	``Recently, Liu and colleagues [2013] presented a method for efficient implicit time integration of mass-spring
+	systems by introducing auxiliary variables that enable alternating
+	local/global optimization. This approach, also known as block coordinate descent, has been previously used with great success in
+	geometry processing [Sorkine and Alexa 2007; Bouaziz et al. 2012]''
+M :	
+M :	
+D :	
+I :	
+K :	local/global solver.
+U :	
+R :	
+R :	!
+C :	(2014)Projective Dynamics
+	(2016)ADMM ⊇ Projective Dynamics
+	(2017)XPBD
+	(2017)A Survey on Position Based Dynamics
 
 (2013)Efficient GPU data structures and methods to solve
 A : 
@@ -786,6 +830,8 @@ R :	(1987)Elastically Deformable Models
 	(2007)FastLSM Fast Lattice Shape Matching for realtime
 	#(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics
 	(2011)Example-Based Elastic Materials
+	(2012)Shaping Discrete Geometry with Projections
+	(2013)Fast Simulation of Mass-Spring Systems
 	(2013)Position Based Fluids
 C : (2015)Stable Constrained Dynamics
 	#(2017)XPBD
@@ -924,6 +970,8 @@ K :
 U : 
 R : 
 R :	(2011)Example-Based Elastic Materials
+	(2012)Shaping Discrete Geometry with Projections
+	(2013)Fast Simulation of Mass-Spring Systems
 C : #(2017)XPBD
 	(2020)Simple and Scalable Frictional Contacts for Thin Nodal Objects
 	(2022)Contact and Friction Simulation for Computer Graphics : H
@@ -944,6 +992,7 @@ R : (2005)Meshless Deformations
 	#(2006)Interactive Simulation of Elastic Deformable Materials
 	#(2007)Efficient Simulation of Inextensible Cloth
 	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
+	(2013)Fast Simulation of Mass-Spring Systems
 	#(2014)strain Based Dynamics
 	#(2014)Position-Based Simulation of Continuous Materials
 	#(2014)Projective Dynamics
@@ -982,6 +1031,7 @@ R : (1987)Elastically Deformable Models
 	(2012)Fast Simulation of Inextensible Hair and Fur
 	(2013)Efficient GPU data structures and methods to solve
 	(2013)Position Based Fluids
+	(2013)Fast Simulation of Mass-Spring Systems
 	(2014)strain Based Dynamics
 	(2014)Position-Based Rigid Body Dynamics
 	(2014)Position-Based Simulation of Continuous Materials

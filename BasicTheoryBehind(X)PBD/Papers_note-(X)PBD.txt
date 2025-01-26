@@ -508,11 +508,16 @@ R : (1987)Elastically Deformable Models
 	(1999)Interactive animation of structured deformable objects
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2006)Position Based Dynamics
-C : (2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
+C : (2008)Discrete Elastic Rods : HS
+	(2008)A Mass Spring Model for Hair Simulation : HS
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics
+	(2011)A Hybrid Iterative Solver : HF
 	(2012)Fast Simulation of Inextensible Hair and Fur
 	(2012)Long Range Attachments - A Method to Simulate
+	(2013)Fast Simulation of Mass-Spring Systems
 	(2014)Projective Dynamics
 	(2014)strain Based Dynamics
+	(2015)Real-time Inextensible Hair with Volume and Shape : HS
 	(2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	(2018)Small Steps in Physics Simulation

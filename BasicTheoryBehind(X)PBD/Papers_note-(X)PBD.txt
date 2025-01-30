@@ -59,6 +59,7 @@ C : (1987)enrgy constraints on parameterized models
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2011)Example-Based Elastic Materials
+	(2013)Fast Simulation of Mass-Spring Systems
 	#(2014)Projective Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
@@ -355,7 +356,7 @@ C : (2003)Simulation of Clothing with Folds and Wrinkles : HC
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)Projective Dynamics
 
-#(2004)A Versatile and Robust Model
+#(2004)A Versatile and Robust Model for geometrically complex
 A : Matthias Teschner(ETH), Bruno Heidelberger(ETH)
 	Matthias M¨uller(ETH), Markus Gross(ETH)
 C : CGI 2004
@@ -375,6 +376,7 @@ R : (1987)Elastically Deformable Models
 	(2003)Discrete Shells
 C : #(2006)Position Based Dynamics
 	(2006)Interactive Simulation of Elastic Deformable Materials
+	(2013)Fast Simulation of Mass-Spring Systems
 	(2017)A Survey on Position Based Dynamics
 
 (2005)Meshless Deformations
@@ -418,6 +420,7 @@ C : (2007)Efficient Simulation of Inextensible Cloth
 	#(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	#(2012)Fast Simulation of Inextensible Hair and Fur
 	#(2012)Long Range Attachments - A Method to Simulate
+	(2013)Fast Simulation of Mass-Spring Systems
 	#(2013)Position Based Fluids
 	#(2014)strain Based Dynamics
 	#(2014)unified particle
@@ -599,7 +602,8 @@ R : (1987)Elastically Deformable Models
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	#(2006)Position Based Dynamics
 	(2007)Efficient Simulation of Inextensible Cloth
-C : #(2014)Projective Dynamics
+C : (2013)Fast Simulation of Mass-Spring Systems
+	#(2014)Projective Dynamics
 	(2014)Position-Based Simulation of Continuous Materials
 	(2014)unified particle
 	(2017)A Survey on Position Based Dynamics
@@ -641,7 +645,8 @@ R : This provides a concept of the elastic manifold and optimization method for 
 	This paper helps us understand Projective dynamics, but I don't know Projective Dynamics's relevance with (X)PBD for now.
 R : (1987)Elastically Deformable Models
 	(2003)Discrete Shells
-C : #(2014)Projective Dynamics
+C : #(2013)Fast Simulation of Mass-Spring Systems
+	#(2014)Projective Dynamics
 	(2016)ADMM ⊇ Projective Dynamics
 
 (2012)Long Range Attachments - A Method to Simulate
@@ -710,25 +715,34 @@ C :	#(2014)Projective Dynamics
 	(2016)ADMM ⊇ Projective Dynamics
 
 #(2013)Fast Simulation of Mass-Spring Systems
-A :	
-C :	
+A :	Tiantian Liu (University of Pennsylvania), Adam W. Bargteil (University of Utah), James F. O'Brien (University of California, Berkeley), Ladislav Kavan (University of Pennsylvania)
+C :	TOG 2013
 A :	local/global solver
 	``Recently, Liu and colleagues [2013] presented a method for efficient implicit time integration of mass-spring
 	systems by introducing auxiliary variables that enable alternating
 	local/global optimization. This approach, also known as block coordinate descent, has been previously used with great success in
-	geometry processing [Sorkine and Alexa 2007; Bouaziz et al. 2012]''
+	geometry processing [Sorkine and Alexa 2007; Bouaziz et al. 2012]'' : (2014)Projective Dynamics
 M :	
 M :	
 D :	
 I :	
-K :	local/global solver.
+K :	local/global solver, block coordinate descent
 U :	
 R :	
-R :	!
-C :	(2014)Projective Dynamics
+R : (1987)Elastically Deformable Models
+	(1998)Large Steps in Cloth Simulation
+	(2003)Simulation of Clothing with Folds and Wrinkles : HCF
+	(2004)A Versatile and Robust Model for geometrically complex
+	(2006)PBD
+	(2007)Efficient Simulation of Inextensible Cloth
+	(2008)A Mass Spring Model for Hair Simulation
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
+	#(2011)Example-Based Elastic Materials
+R :	(2014)Projective Dynamics
 	(2016)ADMM ⊇ Projective Dynamics
 	(2017)XPBD
 	(2017)A Survey on Position Based Dynamics
+	(2020)Primal/Dual Descent Methods for Dynamics : HCF
 
 (2013)Efficient GPU data structures and methods to solve
 A : 

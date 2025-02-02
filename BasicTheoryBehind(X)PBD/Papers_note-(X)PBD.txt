@@ -178,20 +178,26 @@ C : (1998)Large Steps in Cloth Simulation
 A : David Baraff (Carnegie Mellon)
 C : SIGGRAPH 96
 A : ``Since stability hinges on
-reasonably accurate solutions of a large system of linear equations,
-performance is achieved by exploiting sparsity in a direct solver as
-was done in [Baraff 1996], for instance.''
-M : 
-M :	
+	reasonably accurate solutions of a large system of linear equations,
+	performance is achieved by exploiting sparsity in a direct solver as
+	was done in [Baraff 1996], for instance.'' : (2006)Interactive Simulation of Elastic Deformable Materials
+	``this paper that a very simple direct (that is, noniterative) O(n)solution method exists for 
+	computing Lagrange multipliers for sparse acyclic constraint systems.'' : (1996)Linear-Time Dynamics using Lagrange Multipliers
+M :	The author wanted to avoid a problem about the reduced coordinate methods such as ``For an arbitrary set of constraints, finding a parameterization for m maximal
+	coordinates in terms of n generalized coordinates is arbitrarily hard''. : (1996)Linear-Time Dynamics using Lagrange Multipliers
+M :	Using Lagrange Multipliers method
 D :	
-I : 
-K : Lagrange Multipliers
+I :	
+K : Lagrange Multipliers method
 U : 
-R : 
+R : ``rom φi(x) = 0 because of discretization and approximation errors. The common strategy 
+	for linearizing the equations for the constraint forces [Baraff 1996] and
+	stabilizing the constraints φi(x) = 0 [Baumgarte 1972] is notoriously unstable 
+	and this has given the constraint method much bad press'' : (2006)Interactive Simulation of Elastic Deformable Materials
 R :	(1988)a modeling system based on dynamic constraints
 	(1990)Interactive Dynamics
-	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 C : #(2006)Interactive Simulation of Elastic Deformable Materials
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2014)Position-Based Rigid Body Dynamics
 	(2015)Stable Constrained Dynamics
 
@@ -434,6 +440,24 @@ C : (2007)Efficient Simulation of Inextensible Cloth
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	#(2022)Physically Based Shape Matching
 
+(2006)Geometric, Variational Integrators for Computer Animation
+A :	
+C :	
+A :	``w. In fact, some low order methods, such as the
+	popular symplectic Euler [Kharevych et al. 2006]–also known as
+	St¨ormer-Verlet, Leapfrog, or several other names as well–globally
+	preserve some of these invariants within certain bounds during the
+	entire simulation, provided some stability restrictions on the size
+	of the time step are met'' : (2006)Interactive Simulation of Elastic Deformable Materials
+M :	
+M :	
+D :	
+I :	
+K :	symplectic method
+U :	
+R :	
+R :	Cource_Variational Integrators
+C :	(2006)Interactive Simulation of Elastic Deformable Materials
 
 (2006)A Quadratic Bending Model for Inextensible Surfaces
 A : 
@@ -476,7 +500,7 @@ R : (1987)Elastically Deformable Models
 	(1998)Large Steps in Cloth Simulation
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
-	(2006)Geometric, Variational Integrators for Computer Animation : phys. sim.
+	(2006)Geometric, Variational Integrators for Computer Animation
 C : (2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	(2018)Small Steps in Physics Simulation

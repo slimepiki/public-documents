@@ -169,7 +169,7 @@ C : (1996)Linear-Time Dynamics using Lagrange Multipliers
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2017)A Survey on Position Based Dynamics
 
-(1995)Deformation Constraints in a MassSpring Model
+(1995)Deformation Constraints in a Mass-Spring Model
 A : 
 C : 
 A : ###being referred as###
@@ -187,7 +187,16 @@ U :
 R : 
 R :!
 C : (1998)Large Steps in Cloth Simulation
-	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
+	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
+	(2004)A Versatile and Robust Model for geometrically complex
+	(2006)Position Based Dynamics
+	(2007)Efficient Simulation of Inextensible Cloth
+	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics
+	(2013)Fast Simulation of Mass-Spring Systems 
+	(2014)Projective Dynamics
+	(2014)strain Based Dynamics
+	(2015)Stable Constrained Dynamics
+	(2017)A Survey on Position Based Dynamics
 
 #(1996)Linear-Time Dynamics using Lagrange Multipliers
 A : David Baraff (Carnegie Mellon)
@@ -375,19 +384,31 @@ A :	#### be referred as####
 	This allows us to easily integrate our collision, contact and friction processing algorithm 
 	with a pre-existing cloth dynamics engine.''
 
+	######my summary#######
+
 M : In Conventional cloth simulation methods, collisions are a major bottleneck.
 M : Combining a fail-safe geometric collision method with a fast (non-stiff) repulsion force method
 	that models cloth tickness as well as both static and kinetic friction.
 
 	The method doesn't work directly with posiitons but only obtain positions by integrating velocities.
 
+	The cloth solver uses Jacobi-type one to avoid the result to have a solve-order dependency.
+
+	This solver once computes mid-step states and uses it for the collision detection/reaction and next step's state.
+
 D :	Penalty (non-stiff, in contrast to the conventional methods using expensive stiff springs) spring forces are used for low-velocity contact, 
 	and exact impulse-based treatments are used for high-velocity contact.
+
+	The Strain limiting often used in the cloth simulation to improve simulation quality moves the vertices directory. As a consequence, self-intersections can't be avoided.
+	Then, the authors decided not to modify the vertices but the velocities that can be used at the collision detection stage.
 I : 
-K : 
-U : 
-R : 
+K : The method can simulate self-intersection, drape, and static/kinetic friction stabler than previous methods.
+U : Interactions between cloth with sharp objects and the behavior fo cloth when trapped in between two solid deformable or rigidbody were not addressed.
+R : I see the integration scheme proposed here sometimes used in another paper. In addition,
+	the scheme can be seen as one of the variants of an explicit time integration scheme.
+	However, the scheme is not related to PBD directly.
 R :	(1987)Elastically Deformable Models
+	(1995)Deformation Constraints in a Mass-Spring Model
 	(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
 C : (2003)Simulation of Clothing with Folds and Wrinkles : H
@@ -436,17 +457,18 @@ C : CGI 2004
 A : ###being referred as###
 	####from this paper####
 	######my summary#######
-We define general constraints via a constraint function as [BW98] and [THMG04]
-In order to compute forces based on these constraints we consider the potential energy
-1/2 kC^2
 M : 
 M : 
 D : 
+	``We define general constraints via a constraint function as [BW98] and [THMG04]
+	In order to compute forces based on these constraints we consider the potential energy
+	1/2 kC^2''
 I : 
 K : 
 U : 
 R : 
 R : (1987)Elastically Deformable Models 
+	(1995)Deformation Constraints in a Mass-Spring Model
 	#(1998)Large Steps in Cloth Simulation
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2003)Discrete Shells
@@ -487,7 +509,8 @@ C : (2006)Interactive Simulation of Elastic Deformable Materials
 A : 
 C : 
 A : PBD!
-R : #(1998)Large Steps in Cloth Simulation
+R : (1995)Deformation Constraints in a Mass-Spring Model
+	#(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
 	#(2001)Advanced Character Physics
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
@@ -615,6 +638,7 @@ U :
 R : In this method, the constrained system is globally linearized and solved with a direct approach at each iteration. This paper is not in a directory related to (X)PBD.
 R : (1987)Elastically Deformable Models
 	(1990)Interactive Dynamics
+	(1995)Deformation Constraints in a Mass-Spring Model
 	#(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
@@ -875,6 +899,7 @@ U :	The result depends on the resolution of discretization. This problem can be 
 	No matter how much taking iterations, this method doesn't settle down onto accurate answer.
 R :	This paper describes the local/global type solver to the mass-spring system clearly. Thus this paper helps us understand the variant solvers.
 R : (1987)Elastically Deformable Models
+	(1995)Deformation Constraints in a Mass-Spring Model
 	(1998)Large Steps in Cloth Simulation
 	(2003)Simulation of Clothing with Folds and Wrinkles : HCF
 	(2004)A Versatile and Robust Model for geometrically complex
@@ -946,7 +971,8 @@ I :
 K : 
 U : 
 R : 
-R : (1998)Large Steps in Cloth Simulation
+R : (1995)Deformation Constraints in a Mass-Spring Model
+	(1998)Large Steps in Cloth Simulation
 	#(2006)Position Based Dynamics
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2008)Animating Developable Surfaces using Nonconforming Elements
@@ -1005,6 +1031,7 @@ U : There is implicit damping.
 R : This paper depicts PBD's weakness, which results in dependency on iteration times and introduces momentum constraints to remove them.
 	``Unlike Projective Dynamics [Bouaziz et al. 2014] our method is only an approximation of an implicit Euler integrator.'' from XPBD.
 R :	(1987)Elastically Deformable Models
+	(1995)Deformation Constraints in a Mass-Spring Model
 	(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
 	(2003)Discrete Shells
@@ -1134,6 +1161,7 @@ K :
 U : 
 R : 
 R : (1988)a modeling system based on dynamic constraints
+	(1995)Deformation Constraints in a Mass-Spring Model
 	(1996)Linear-Time Dynamics using Lagrange Multipliers
 	(2014)Projective Dynamics
 C : (2017)XPBD
@@ -1221,6 +1249,7 @@ A : Jan Bender(RWTH Aachen), Matthias Müller(NVIDIA), Miles Macklin(NVIDIA)
 C : EG 2017
 R : (1987)Elastically Deformable Models 
 	(1990)Interactive Dynamics
+	(1995)Deformation Constraints in a Mass-Spring Model
 	(1998)Large Steps in Cloth Simulation
 	(1999)Interactive animation of structured deformable objects
 	(2001)Advanced Character Physics

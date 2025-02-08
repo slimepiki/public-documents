@@ -391,9 +391,7 @@ M : Combining a fail-safe geometric collision method with a fast (non-stiff) rep
 	that models cloth tickness as well as both static and kinetic friction.
 
 	The method doesn't work directly with posiitons but only obtain positions by integrating velocities.
-
 	The cloth solver uses Jacobi-type one to avoid the result to have a solve-order dependency.
-
 	This solver once computes mid-step states and uses it for the collision detection/reaction and next step's state.
 
 D :	Penalty (non-stiff, in contrast to the conventional methods using expensive stiff springs) spring forces are used for low-velocity contact, 
@@ -401,12 +399,12 @@ D :	Penalty (non-stiff, in contrast to the conventional methods using expensive 
 
 	The Strain limiting often used in the cloth simulation to improve simulation quality moves the vertices directory. As a consequence, self-intersections can't be avoided.
 	Then, the authors decided not to modify the vertices but the velocities that can be used at the collision detection stage.
-I : 
-K : The method can simulate self-intersection, drape, and static/kinetic friction stabler than previous methods.
+I : The method can simulate self-intersection, drape, and static/kinetic friction stabler than previous methods.
+K : impluse, repulsion spring, central time differencing
 U : Interactions between cloth with sharp objects and the behavior fo cloth when trapped in between two solid deformable or rigidbody were not addressed.
-R : I see the integration scheme proposed here sometimes used in another paper. In addition,
-	the scheme can be seen as one of the variants of an explicit time integration scheme.
-	However, the scheme is not related to PBD directly.
+R : This scheme separates physical simulation into internal parts and external parts. 
+	Therefore, we can choose the internal modeling(e.g. mass-spring) and the external modeling(e.g. collision repulsion, friction, or gravity) independently. 
+	However, the scheme is not directly related to PBD.
 R :	(1987)Elastically Deformable Models
 	(1995)Deformation Constraints in a Mass-Spring Model
 	(1998)Large Steps in Cloth Simulation

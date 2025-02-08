@@ -101,6 +101,7 @@
 \usepackage{algpseudocode}%
 \usepackage{listings}%
 \usepackage[xindy]{glossaries}
+\usepackage{ulem}
 
 %% as per the requirement new theorem styles can be included as shown below
 \theoremstyle{thmstyleone}%
@@ -117,7 +118,7 @@
 \theoremstyle{thmstylethree}%
 \newtheorem{definition}{Definition}%
 \makeglossaries
-\newcommand{\pname}[1]{``{\sl #1}''}
+\newcommand{\pname}[1]{``{\uline{\sl #1}}''}
 
 \newglossaryentry{iteration}
 {
@@ -237,7 +238,7 @@ A lower number means more important.
 			\item \pname{Projective Dynamics: Fusing Constraint Projections for Fast Simulation}\cite{ProjDyn} provided a position-based method that uses energy formulation and local/global solver. The method has a local Jacobi-like solver and a linear global equation one. The solvers enable robust and fast simulation without safeguards against singular or indefinite Hessians.
 			If you want to understand state-of-the-art physics simulation methods, including PBD, it's better to read this.
 		\end{itemize}
-		\item These papers offer interesting discussions around PBD or deepen your understanding of PBD.
+		\item These papers offer interesting discussions around PBD, deepen your understanding of PBD, or description of basic physical simulation scheme.
 		\begin{itemize}
 			\item \pname{Constraint Methods for Neural Networks and Computer Graphics}\cite{ConstrainedPlatt} describes the constraint methods for neural networks and computer graphics.
 			It may not be easy to read because of 150 pages. But, if you have time, it's more worth reading this paper than some papers published before this one.
@@ -247,6 +248,8 @@ A lower number means more important.
 			\item \pname{Nucleus: Towards a unified dynamics solver for computer graphics}\cite{Nucleus} is a good introduction to constrained dynamics because it shows its implementation aspect.
 			However, it doesn't describe how constraints are resolved, so it isn't full-contained.
 			\item \pname{Fast simulation of mass-spring systems}\cite{fastMassTiantian} describes the local/global type solver to the mass-spring system clearly. Thus this paper helps us understand the variant solvers.
+			\item \pname{Robust treatment of collisions, contact and friction for cloth animation}\cite{RobustBridson2002}'s scheme separates physical simulation into internal parts and external parts. 
+			Therefore, we can choose the internal modeling(e.g. mass-spring) and the external modeling(e.g. collision repulsion, friction, or gravity) independently. However, the scheme is not directly related to PBD.
 		\end{itemize}
 	\item These ones have historical value, but deeper discussions are done in other papers.
 		\begin{itemize}

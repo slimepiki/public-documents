@@ -422,7 +422,6 @@ C : (2003)Simulation of Clothing with Folds and Wrinkles : H
 	(2015)A physically based approach to the accurate simulation : H
 	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation :H
 	(2017)A Survey on Position Based Dynamics
-	(2017)Adaptive Skinning for Interactive Hair-Solid Simulation : H
 	(2020)Simple and Scalable Frictional Contacts for Thin Nodal Objects : H
 	(2020)Real-Time Hair Simulation with hepta : H
 	(2022)Contact and Friction Simulation for Computer Graphics : H
@@ -538,7 +537,7 @@ C : (2007)Efficient Simulation of Inextensible Cloth
 A :	
 C :	
 A : ###being referred as###
-	``w. In fact, some low order methods, such as the
+	``In fact, some low order methods, such as the
 	popular symplectic Euler [Kharevych et al. 2006]–also known as
 	St¨ormer-Verlet, Leapfrog, or several other names as well–globally
 	preserve some of these invariants within certain bounds during the
@@ -553,7 +552,7 @@ I :
 K :	symplectic method
 U :	
 R :	
-R :	Cource_Variational Integrators
+R :	Cource_Variational_Integrators
 C :	(2006)Interactive Simulation of Elastic Deformable Materials
 
 (2006)A Quadratic Bending Model for Inextensible Surfaces

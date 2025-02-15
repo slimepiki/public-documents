@@ -1317,6 +1317,27 @@ C : (2020)Detailed Rigid Body Simulation XPBD
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	(2022)Physically Based Shape Matching
 
+(2020)Incremental Potential Contact
+A :	
+C :	
+A :	###being referred as###
+	``sequential solver to the massively parallel GPU architectures.
+	Following Li et al. [2020] barrier-based techniques have recently
+	gained in popularity for their robustness and strong interpenetrationfree guarantees, and variants focusing on codimensional objects [Li
+	et al. 2021] and GPU-friendly [Lan et al. 2022] simulation have
+	emerged.'' : (2023)Interactive Hair Simulation on the GPU using ADMM : HS
+	####from this paper####
+	######my summary#######
+M :	
+M :	
+D :	
+I :	
+K :	
+U :	
+R :	
+R :	
+C :	(2023)Interactive Hair Simulation on the GPU using ADMM : HS
+
 #(2020)Detailed Rigid Body Simulation XPBD
 A : 
 C : 

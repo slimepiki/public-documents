@@ -65,6 +65,7 @@ C : (1987)enrgy constraints on parameterized models
 	(2011)Example-Based Elastic Materials
 	(2013)Fast Simulation of Mass-Spring Systems
 	#(2014)Projective Dynamics
+	(2016)ADMM ⊇ Projective Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
@@ -100,8 +101,7 @@ R : This is the first paper that uses constraints for conserving geometric prope
 	and the constraints presented in this paper are slightly inconvenient
 	to the current ones. Thus, we no longer have to read this though we can say it has historical value.
 R : (1987)Elastically Deformable Models 
-C : (1987)enregy constraints on parameterized models
-	(1988)a modeling system based on dynamic constraints
+C : (1988)a modeling system based on dynamic constraints
 	(1989)Constraint Methods
 
 (1988)a modeling system based on dynamic constraints
@@ -294,6 +294,7 @@ C : (2001)A Layered Wisp Model for Simulating Interactions : hair
 	(2013)Fast Simulation of Mass-Spring Systems : hair-sim
 	(2014)strain Based Dynamics
 	(2014)Projective Dynamics
+	(2016)ADMM ⊇ Projective Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 	(2020)Primal/Dual Descent Methods for Dynamics
@@ -525,6 +526,7 @@ C : (2007)Efficient Simulation of Inextensible Cloth
 	#(2014)unified particle
 	#(2014)Projective Dynamics
 	#(2015)air Meshes Preprint
+	(2016)ADMM ⊇ Projective Dynamics
 	#(2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	#(2018)Small Steps in Physics Simulation
@@ -554,6 +556,7 @@ U :
 R :	
 R :	Cource_Variational_Integrators
 C :	(2006)Interactive Simulation of Elastic Deformable Materials
+	(2016)ADMM ⊇ Projective Dynamics
 
 (2006)A Quadratic Bending Model for Inextensible Surfaces
 A : 
@@ -853,7 +856,7 @@ A : ###being referred as###
 	``Recently, Liu and colleagues [2013] presented a method for efficient implicit time integration of mass-spring
 	systems by introducing auxiliary variables that enable alternating
 	local/global optimization. This approach, also known as block coordinate descent, has been previously used with great success in
-	geometry processing [Sorkine and Alexa 2007; Bouaziz et al. 2012]'' : missing
+	geometry processing [Sorkine and Alexa 2007; Bouaziz et al. 2012]'' : (2014)Projective Dynamics
 	####from this paper####
 	######my summary#######
 	local/global solver
@@ -948,6 +951,7 @@ R :
 R : #(2006)Position Based Dynamics
 C : #(2014)unified particle
 	(2014)Projective Dynamics
+	(2016)ADMM ⊇ Projective Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 	(2020)Detailed Rigid Body Simulation XPBD
@@ -966,13 +970,14 @@ A : ###being referred as###
 	directions independent from the model discretization.
 M : The authors wanted to remove the direction dependency from the constraints.
 M : Constraining the entries of the Green-St.Venant strain tensor.
-D : 
+D : See the appendix of the paper. All we need is there to implement the method.
 I : X-stretch, y-stretch, and shear could be independently simulated even on the irregular mesh.
 	The timings are slower than edge-based constraints, but the differences are within 1.3 times of the edge-based method.
 K : PBD, independency of the stretchs and the shear, Green-St Venant strain tensor,
 U : The method doesn't use physically based parameters.
 R : The formulation of the strain tensor in XPBD seems to be based on 
 	"Interactive Simulation of Elastic Deformable Materials"(2006) rather than this paper.
+	However, the formulations described here are easy to understand if you are familiar with PBD and strain tensor.
 R : (1995)Deformation Constraints in a Mass-Spring Model
 	(1998)Large Steps in Cloth Simulation
 	#(2006)Position Based Dynamics
@@ -1048,6 +1053,7 @@ R :	(1987)Elastically Deformable Models
 	(2013)Fast Simulation of Mass-Spring Systems
 	(2013)Position Based Fluids
 C : (2015)Stable Constrained Dynamics
+	#(2016)ADMM ⊇ Projective Dynamics
 	#(2017)XPBD
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
@@ -1191,14 +1197,22 @@ R :!
 C : (2017)A Survey on Position Based Dynamics
 
 (2016)ADMM ⊇ Projective Dynamics
-A : 
-C : 
+A : Rahul Narain, Matthew Overby George E. Brown (University of Minnesota)
+C : SIGGRAPH 2016
 A :	###being referred as###
 	``Narain et al. [2016] applies the alternating direction method of multipliers (ADMM) for implicit time integration. 
 	Their method allows handling nonlinear constitutive models, hard constraints,
 	and they show that projective dynamics is a special case of the ADMM.'' : missing
 	####from this paper####
+	``We apply the alternating direction method of multipliers (ADMM) optimization algorithm
+	to implicit time integration of elastic bodies, and show that the resulting method closely
+	relates to the recently proposed projective dynamics algorithm''
 	######my summary#######
+	This is the method that has properties: 
+	・Generic method that supports arbitrary conservative forces
+	・highly parallelizable
+	・robust to large time steps and nonsmooth energies, and
+	・the special case of linear forces, it is identical to projective dynamics
 M : 
 M :	
 D :	
@@ -1206,9 +1220,15 @@ I :
 K : 
 U : 
 R : 
-R :	(2011)Example-Based Elastic Materials
+R :	(1987)Elastically Deformable Models
+	(1998)Large Steps in Cloth Simulation
+	(2006)Position Based Dynamics
+	(2006)Geometric, Variational Integrators for Computer Animation
+	(2011)Example-Based Elastic Materials
 	(2012)Shaping Discrete Geometry with Projections
 	(2013)Fast Simulation of Mass-Spring Systems
+	(2013)Position Based Fluids
+	#(2014)Projective Dynamics
 C : #(2017)XPBD
 	(2020)Simple and Scalable Frictional Contacts for Thin Nodal Objects
 	(2022)Contact and Friction Simulation for Computer Graphics : H

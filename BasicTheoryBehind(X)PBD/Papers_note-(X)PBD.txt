@@ -1213,13 +1213,14 @@ A :	###being referred as###
 	・highly parallelizable
 	・robust to large time steps and nonsmooth energies, and
 	・the special case of linear forces, it is identical to projective dynamics
-M : 
-M :	
-D :	
-I : 
+M : Currently, the nonlinear materials are difficult to simulate robustly in real-time.
+M :	Applying ADMM to the time integration of nonlinear elastic forces.
+D :	The method can be considered to be a generalized projective dynamics for arbitrary conservative forces, including nonlinear elasticity.
+I : The simulation results presented the versatility of ADMM,
+	and the computational times were close to real-time.
 K : 
 U : 
-R : 
+R : ADMM is popular now because of its robustness, parallelizability, and simplicity.
 R :	(1987)Elastically Deformable Models
 	(1998)Large Steps in Cloth Simulation
 	(2006)Position Based Dynamics

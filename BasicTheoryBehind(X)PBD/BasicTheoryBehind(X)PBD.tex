@@ -177,7 +177,7 @@ Let me name them pre-PBD, post-PBD and post-XPBD.
 \begin{figure}[h]
 \centering
 \label{prePBD}
-\includegraphics[width=0.8\textwidth]{prePBD.png}
+\includegraphics[width=0.8\textwidth]{images/prePBD.png}
 \caption{history of pre-PBD}
 \end{figure}
 
@@ -237,6 +237,7 @@ A lower number means more important. The papers' names are aligned in the lexico
 			\item \pname{Large steps in cloth simulation}\cite{LargeStepBaraff} solved implicit integration with \gls{constraint}s by \gls{cgmethod} for off-line simulation. The scheme isn't used at PBD, but this one gives us a perspective of present physical simulations.
 			\item \pname{Projective Dynamics: Fusing Constraint Projections for Fast Simulation}\cite{ProjDyn} provided a position-based method that uses energy formulation and local/global solver. The method has a local Jacobi-like solver and a linear global equation one. The solvers enable robust and fast simulation without safeguards against singular or indefinite Hessians.
 			If you want to understand state-of-the-art physics simulation methods, including PBD, it's better to read this.
+			\item \pname{ADMM ⊇ projective dynamics: fast simulation of general constitutive models}\cite{ADMM_Proj} is worth reading because ADMM is actively researched now because of its robustness, parallelizability, and simplicity. 
 		\end{itemize}
 		\item These papers offer interesting discussions around PBD, deepen your understanding of PBD, or description of basic physical simulation scheme.
 		\begin{itemize}
@@ -279,7 +280,6 @@ A lower number means more important. The papers' names are aligned in the lexico
 			\item \pname{Detailed Rigid Body Simulation with Extended Position Based Dynamics}\cite{DetailedRigidbody}
 			\item \pname{A Constraint-based Formulation of Stable Neo-Hookean Materials}\cite{ConstrainedBasedNeo-Hookean}
 			\item \pname{Physically Based Shape Matching}\cite{PhysBaseShapeMatching}
-			\item \pname{}\cite{}
 			\item \pname{}\cite{}
 			\item \pname{}\cite{}
 			\item \pname{}\cite{}

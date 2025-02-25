@@ -8,7 +8,7 @@ D :	Detail
 I : Insight
 K : Key word
 U : Unknown
-R : Reflection
+R : Reminder
 R :	Reference
 C : Cited by
 
@@ -1177,6 +1177,29 @@ C : (2017)XPBD
 	(2020)Primal/Dual Descent Methods for Dynamics
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 
+(2015)CONVERGENCE ANALYSIS OF ALTERNATING DIRECTION
+A :	
+C :	
+A :	###being referred as###
+	``While the energy functions
+	Ui used in physics-based animation are typically not convex, ADMM
+	has in practice also been observed to perform well on nonconvex
+	problems; we refer the reader to [BPC∗
+	11, Sec. 9] and references
+	in [HLR15] for more details.'' : (2016)ADMM ⊇ Projective Dynamics
+	####from this paper####
+	######my summary#######
+M :	
+M :	
+D :	
+I :	
+K :	
+U :	
+R :	
+R :	
+C :	!
+	(2016)ADMM ⊇ Projective Dynamics
+
 (2016)Position and Orientation Based Cosserat Rods
 A : 
 C : 
@@ -1209,17 +1232,17 @@ A :	###being referred as###
 	relates to the recently proposed projective dynamics algorithm''
 	######my summary#######
 	This is the method that has properties: 
-	・Generic method that supports arbitrary conservative forces
+	・Generic method that supports arbitrary conservative forces.
 	・highly parallelizable
 	・robust to large time steps and nonsmooth energies, and
 	・the special case of linear forces, it is identical to projective dynamics
-M : Currently, the nonlinear materials are difficult to simulate robustly in real-time.
+M : In current methods, the nonlinear materials are difficult to simulate robustly in real-time.
 M :	Applying ADMM to the time integration of nonlinear elastic forces.
 D :	The method can be considered to be a generalized projective dynamics for arbitrary conservative forces, including nonlinear elasticity.
 I : The simulation results presented the versatility of ADMM,
 	and the computational times were close to real-time.
-K : 
-U : 
+K : ADMM, projective dynamics, hard constraints, arbitrarily elasticity
+U : Applying more optimization such as Chebyshev acceleration.
 R : ADMM is popular now because of its robustness, parallelizability, and simplicity.
 R :	(1987)Elastically Deformable Models
 	(1998)Large Steps in Cloth Simulation
@@ -1235,14 +1258,21 @@ C : #(2017)XPBD
 	(2022)Contact and Friction Simulation for Computer Graphics : H
 
 ###(2017)XPBD
-A : 
-C : 
+A : Miles Macklin, Matthias Müller, Nuttapong Chentanez (NVIDIA)
+C : MIG (Mortion in Games)
 A :	###being referred as###
 	####from this paper####
+	•``Extending PBD constraints to have a direct correspondence to
+		well-defined elastic and dissipation energy potentials.''
+	• ``Introducing the concept of a total Lagrange multiplier to PBD
+		allowing us to solve constraints in a time step and iteration
+		count independent manner.''
+	• ``Validation of our algorithm against a reference implicit time
+		stepping scheme based on a non-linear Newton solver.''
 	######my summary#######
 	XPBD!!
-M : 
-M : 
+M : PBD has drawbacks whose result depends on iteration count and unphysically. 
+M : Introducing total Lagrange multiplier and formulation constraints based on energy potentials.
 D : 
 I : 
 K : 

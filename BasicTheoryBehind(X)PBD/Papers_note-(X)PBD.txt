@@ -561,11 +561,14 @@ A : ###being referred as###
 M :	Despite of the development of numerical methods to solve dynamical systems, they are often
 	overlooked in the computer animaion.
 M :	Utilizing discrete variational approaches succeeded in geometric modeling and discrete differential geometry. 
-D :	
-I :	
-K :	symplectic method, Pontryagin-Hamilton principle, variational integrators, Hamiltonian physics
-U :	
-R :	
+D :	This method conserves linear/angular momenta.
+	The formulation is seemd as descrete Hamiltonian physics.
+I :	Linear/angular momenta are preserved and the natural damping can be introduced.
+K :	symplectic method, Pontryagin-Hamilton principle, variational integrators, Hamiltonian physics, Lagrangian physics
+U :	Applying model reduction theory.
+R :	This paper presents the variational integrator from the Lagrangian/Hamiltonian physics that preserves linear/angular momenta.
+	Its conservative quantities will be more important in fields such as robotics or accurate physical computation.
+	But, this knowledge may be useless if you only want to understand  (X)PBD.
 R :	Cource : Variational Integrators
 	(1998)Large Steps in Cloth Simulation
 C :	(2006)Interactive Simulation of Elastic Deformable Materials

@@ -792,6 +792,30 @@ R :!
 C : (2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 
+(2011)Adding Physics to Animated Characters
+A :	
+C :	
+A :	###being referred as###
+	``Oriented particles [MC11] are
+	a further generalization of shape matching. They are related to
+	our work because they also use orientation quaternions in PBD.
+	But they do not couple the oriented particles with orientation constraints.
+	The couplings are achieved through shape matching and
+	the orientations are used to guarantee numerical stability of polar
+	decompositions.'' : (2016)Position and Orientation Based Cosserat Rods
+	####from this paper####
+	######my summary#######
+M :	
+M :	
+D :	
+I :	
+K :	
+U :	
+R :	
+R :	
+C :	!
+	(2016)Position and Orientation Based Cosserat Rods
+
 (2011)Example-Based Elastic Materials
 A : Sebastian Martin (ETH), Bernhard Thomaszewski (ETH, Disney),Eitan Grinspun (Columbia Univ.), Markus Gross (ETH, Disney)
 C : SIGGRAPH 2011
@@ -1235,7 +1259,7 @@ A : !!
 !
 !
 !
-C : (2017)A Survey on Position Based Dynamics
+
 
 (2016)ADMM ⊇ Projective Dynamics
 A : Rahul Narain, Matthew Overby George E. Brown (University of Minnesota)
@@ -1390,6 +1414,23 @@ R : (1987)Elastically Deformable Models
 C : (2020)Detailed Rigid Body Simulation XPBD
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	(2022)Physically Based Shape Matching
+
+(2019)Volume Invariant Position-based Elastic Rods
+A :	
+C :	
+A :	###being referred as###
+	####from this paper####
+	######my summary#######
+M :	
+M :	
+D :	
+I :	
+K :	
+U :	
+R :	
+R :	!
+	(2016)Position and Orientation Based Cosserat Rods
+C :	
 
 (2020)Incremental Potential Contact
 A :	

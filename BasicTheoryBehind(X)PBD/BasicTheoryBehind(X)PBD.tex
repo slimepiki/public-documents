@@ -102,6 +102,7 @@
 \usepackage{listings}%
 \usepackage[xindy]{glossaries}
 \usepackage{ulem}
+\renewcommand{\glossarysection}[2][]{}
 
 %% as per the requirement new theorem styles can be included as shown below
 \theoremstyle{thmstyleone}%
@@ -118,30 +119,10 @@
 \theoremstyle{thmstylethree}%
 \newtheorem{definition}{Definition}%
 \makeglossaries
-\newcommand{\pname}[1]{``{\uline{\sl #1}}''}
-
-\newglossaryentry{iteration}
-{
-	name=iteration,
-	description={ : In computer science, iteration is the process of repeating a series of instructions multiple times. Especially at (X)PBD, the part of physical solver which treats \gls{constraint}s is called iteration
-	}
-}
-
-\newglossaryentry{constraint}{
-	name = constraint,
-	description={
-		 : At the (X)PBD, constraint is relationship among arbitrary vertices what we want to keep during simulation.
-		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron
-	}
-}
-
-\newglossaryentry{cgmethod}
-{
-	name = {conjugate gradient method},
-	description={ : This method, abbreviated as CG method is used linear equations that form is $A\boldsymbol{x} = \boldsymbol{b}$. This method often has high computational cost
-	}
-}
-
+\setacronymstyle{long-short-desc}
+\loadglsentries{glossary.tex}
+\newcommand{\pname}[1]{``{\uline{\sl {#1}}}''}
+\newcommand{\mainpname}[1]{``{\sl {#1}}''}
 
 %%%%
 \raggedbottom
@@ -181,8 +162,8 @@ Let them are pre-PBD, post-PBD and post-XPBD.
 \caption{history of pre-PBD}
 \end{figure}
 
-The flow of the pre-PBD began from the appearance of constraint dynamics(\cite{EnergyWitkin1987}, \cite{ConstrainedBarzel} and \cite{ConstrainedPlatt}) through \pname{Large Steps in Cloth Simulation}\cite{LargeStepBaraff} used \gls{constraint}s as shape representation and simulates cloth with energy form \gls{constraint}s' gradients, \pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduces position-based approach derived from Verlet's integration scheme with the distance constraints and \pname{A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner} generalize \cite{LargeStepBaraff}'s method.
-And, finally, \pname{Position Based Dynamics}\cite{PBD} introduced the generalized constraints method from \cite{VersatileTeschner} into \cite{Jakobsen2003AdvancedCP}'s position-based simulation to use various \gls{constraint}s.
+The flow of the pre-PBD began from the appearance of constraint dynamics(\cite{EnergyWitkin1987}, \cite{ConstrainedBarzel} and \cite{ConstrainedPlatt}) through \mainpname{Large Steps in Cloth Simulation}\cite{LargeStepBaraff} used \gls{constraint}s as shape representation and simulates cloth with energy form \gls{constraint}s' gradients, \mainpname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduces position-based approach derived from Verlet's integration scheme with the distance constraints and \mainpname{A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner} generalize \cite{LargeStepBaraff}'s method.
+And, finally, \mainpname{Position Based Dynamics}\cite{PBD} introduced the generalized constraints method from \cite{VersatileTeschner} into \cite{Jakobsen2003AdvancedCP}'s position-based simulation to use various \gls{constraint}s.
 
 \subsection{Post-PBD}
 
@@ -362,7 +343,7 @@ A lower number means more important. The papers' names are aligned in the lexico
 \subsection{symbols}
 
 \subsection{terms}
-\printglossaries
+\printglossary[nonumberlist, title={\hspace{-30pt}}, style=altlist]
 
 \appendix
 

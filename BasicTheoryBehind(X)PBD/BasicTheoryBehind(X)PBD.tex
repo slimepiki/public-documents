@@ -169,9 +169,22 @@ And, finally, \mainpname{Position Based Dynamics}\cite{PBD} introduced the gener
 \begin{figure}[h]
 	\centering
 	\label{postPBD}
-	\includegraphics[width=0.8\textwidth]{images/postPBD.png}
+	\includegraphics[width=1\textwidth]{images/postPBD.png}
 	\caption{history of post-PBD}
 \end{figure}
+
+From the published PBD paper, a lot of study about it has been done.
+The central development is resolving well-known PBD's drawback whose result depends on \gls{iteration} times, at \mainpname{XPBD: position-based simulation of compliant constrained dynamics}\cite{XPBD}.
+
+To understand XPBD, we need some knowledge of continuum mechanics.
+The theory directly used in XPBD is derived from \pname{Interactive simulation of elastic deformable materials}\cite{Servin2006InteractiveSO} that uses the theory for \gls{LagrangianMechanics}.
+
+Besides that, some papers also influence XPBD, \mainpname{Efficient simulation of inextensible cloth}\cite{EfficientGoldenthai} and \pname{Strain Based Dynamics}\cite{StrainBasedDyn} are examples of them.
+The former introduces the projection method described later. The latter invites physically based constraints to PBD.
+
+Although there is relevance to XPBD, the key idea to construct XPBD is \cite{Servin2006InteractiveSO} and aren't the last two papers. In other words, to understand XPBD, we truly only have to read \cite{Servin2006InteractiveSO} or get the equivalent knowledge.
+
+But, unfortunately, the key idea of XPBD provided by \cite{Servin2006InteractiveSO} doesn't have a sufficient explanation of where the authors get the formulation. Then, I guess a description later that seemed reasonable enough.
 
 \subsection{Post-XPBD}
 

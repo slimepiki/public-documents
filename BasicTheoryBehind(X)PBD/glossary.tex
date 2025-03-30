@@ -1,11 +1,11 @@
 \newglossaryentry{iteration}{
-	name=iteration,
+	name={Iteration},
 	description={In computer science, iteration is the process of repeating a series of instructions multiple times. Especially at (X)PBD, the part of physical solver which treats \gls{constraint}s is called iteration
 }
 }
 
 \newglossaryentry{constraint}{
-	name = constraint,
+	name = {constraint},
 	description={At the (X)PBD, constraint is relationship among arbitrary vertices what we want to keep during simulation.
 		It can express not only between two vertices relation, e.g. distance a vertex to another one, but among more than three vertices, e.g. volume of the tetrahedron
 	}
@@ -20,5 +20,24 @@
 \newglossaryentry{LagrangianMechanics}{
 	name = {Lagrangian mechanics},
 	description={This is one of the physics theories that conserves momentum in addition to inertia. Variational integration is a crucial concept in this theory. Hamiltonian mechanics is also known as a more generalized form than this theory.
+	}
+}
+
+\newglossaryentry{elasticBody}{
+	name = {elastic-body},
+	description={This is an object that resists deformation and returns to its original shape when that influence or force is removed. 
+	Sometimes, the term refers to objects with high stiffness(e.g. steel wire).
+	}
+}
+
+\newglossaryentry{softBody}{
+	name = {soft-body},
+	description={This is an object that deforms by external force. The term is often compared to "Rigid body" which refers to an undeformable object.
+	}
+}
+
+\newglossaryentry{primitive}{
+	name = {primitive},
+	description={This is the smallest unit used in the physical simulation, such as a line segment, a triangle, or a tetrahedron. In most cases, the primitive isn't simulated solely but objects composed of primitives (for example, a rod, cloth, or rubber ball).
 	}
 }

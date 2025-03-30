@@ -102,6 +102,7 @@
 \usepackage{listings}%
 \usepackage[xindy]{glossaries}
 \usepackage{ulem}
+\usepackage{bm}
 \renewcommand{\glossarysection}[2][]{}
 
 %% as per the requirement new theorem styles can be included as shown below
@@ -123,6 +124,10 @@
 \loadglsentries{glossary.tex}
 \newcommand{\pname}[1]{``{\uline{\sl {#1}}}''}
 \newcommand{\mainpname}[1]{``{\sl {#1}}''}
+\newcommand{\inprep}{
+	\begin{center}
+		\sl\rm {!!!!In preparation!!!!}
+\end{center}}
 
 %%%%
 \raggedbottom
@@ -130,13 +135,15 @@
 %%\unnumbered% uncomment this for unnumbered level heads
 \begin{document}
 	\title[Basic theory behind (X)PBD]{Basic theory behind (X)PBD}
-	\author*{\fnm{Slime} \sur{Piki}}
+	\author*{\fnm{Slime} \sur{Piki}(Taisei Kunimi)}
 \maketitle
 \tableofcontents
 \newpage
 
 \section{Introduction}\label{sec1}
 \subsection{What is (X)PBD?}
+PBD is one of the simulation theories that basically simulates \gls{softBody} or \gls{elasticBody}.
+
 PBD (Position Based Dynamics) proposed at \cite{PBD} is a popular method because of its stability and ease of implementation. The reason for them is the same, PBD computes physical simulation only using positions inside the \gls{iteration}s and all we have to do is compute displacement and modify them.
 In other words, we don't have to use complicated numerical analysis theories, it sounds pretty good.
 
@@ -177,9 +184,9 @@ From the published PBD paper, a lot of study about it has been done.
 The central development is resolving well-known PBD's drawback whose result depends on \gls{iteration} times, at \mainpname{XPBD: position-based simulation of compliant constrained dynamics}\cite{XPBD}.
 
 To understand XPBD, we need some knowledge of continuum mechanics.
-The theory directly used in XPBD is derived from \pname{Interactive simulation of elastic deformable materials}\cite{Servin2006InteractiveSO} that uses the theory for \gls{LagrangianMechanics}.
+The theory directly used in XPBD is derived from \mainpname{Interactive simulation of elastic deformable materials}\cite{Servin2006InteractiveSO} that uses the theory for \gls{LagrangianMechanics}.
 
-Besides that, some papers also influence XPBD, \mainpname{Efficient simulation of inextensible cloth}\cite{EfficientGoldenthai} and \pname{Strain Based Dynamics}\cite{StrainBasedDyn} are examples of them.
+Besides that, some papers also influence XPBD, \mainpname{Efficient simulation of inextensible cloth}\cite{EfficientGoldenthai} and \mainpname{Strain Based Dynamics}\cite{StrainBasedDyn} are examples of them.
 The former introduces the projection method described later. The latter invites physically based constraints to PBD.
 
 Although there is relevance to XPBD, the key idea to construct XPBD is \cite{Servin2006InteractiveSO} and aren't the last two papers. In other words, to understand XPBD, we truly only have to read \cite{Servin2006InteractiveSO} or get the equivalent knowledge.
@@ -187,83 +194,131 @@ Although there is relevance to XPBD, the key idea to construct XPBD is \cite{Ser
 But, unfortunately, the key idea of XPBD provided by \cite{Servin2006InteractiveSO} doesn't have a sufficient explanation of where the authors get the formulation. Then, I guess a description later that seemed reasonable enough.
 
 \subsection{Post-XPBD}
-
+Shortly after published XPBD paper, a simple but important improvement was provided at \mainpname{Small steps in physics simulation}\cite{SmallSteps}.
+\inprep
 \section{Physics}
-\subsection{Newtonial mechanics}
+This section is devoted to fundamental physics. 
+
+Of course, the physics simulation field takes advantage of the basics.
+If we only handle trivial environments, classical mechanics can achieve simulation. 
+
+However, classical mechanics isn't enough to simulate complex objects or get plausible results. For example, Newtonian mechanics-based methods suffer from preserving the energies or the (angular) momenta. Unconservation causes artificial damping that creates a gap between physical accuracy and the simulation result.
+
+Here, I explain some physical theories that often be used in soft/elastic body simulation, Lagrangian mechanics and Continuum mechanics.
+\begin{figure}[h]
+	\centering
+	\label{physics}
+	\includegraphics[width=0.8\textwidth]{images/Physics.png}
+	\caption{Comparison of the physics}
+\end{figure}
+
+Although there are many other important theories, such as fluid mechanics or thermodynamics, I won't explain them because this document's subject is (X)PBD which focuses on soft/elastic body (actually, PBD can be used in fluid simulation...).
+
+\subsection{Classical mechanics}
+Let's start the physics course with classical mechanics.
+
+First, please imagine a car running at a constant speed.
+\inprep
 
 \subsection{Lagrangian mechanics}
-
+\inprep
 \subsection{Continuum mechanics}
+\inprep
 \subsubsection{What is tensor?}
+\inprep
 \subsubsection{Force, strain, and stress}
+\inprep
 
 \subsection{Exambles of tensor}
+\inprep
 \subsubsection{Kirchhoff stress tensor}
+\inprep
 \subsubsection{Cauchy-Green deformation tensor}
+\inprep
 \subsubsection{St. Venant strain tensor}
-
+\inprep
 
 \section{Numerical integration}
+\inprep
 \subsection{The linear solvers}
-
+\inprep
 \subsection{Newton's method}
-
+\inprep
 \subsection{Iterative solvers}
-
+\inprep
 \subsection{What is the local/global solver}
-
+\inprep
 \subsection{Misc. topics}
+\inprep
 \subsubsection{Lagrange Multiplier}
+\inprep
 \subsubsection{LU decomposition}
+\inprep
 \subsubsection{Schur decomposition}
-
+\inprep
 
 \section{Numerical physics}
+\inprep
 \subsection{verlet's integration}
-
+\inprep
 \subsection{mass-spring system}
-
+\inprep
 \subsection{Explicit/implicit euler scheme}
-
+\inprep
 \subsection{Constrained Dynamics}
-
+\inprep
 \subsection{shape matching}
-
-
-\newpage
+\inprep
 
 \section{Column : In the terminology mess}
+\inprep
 \subsection{Newton*}
+\inprep
 \subsection{Euler*}
+\inprep
 \subsection{Jacobi*}
+\inprep
 \subsection{Lagrange*, Hamilton*, Hesse*}
+\inprep
 
 \section{Interplet the papers}
+\inprep
 \subsection{To PBD}
+\inprep
 \subsubsection{{\sl Large steps in cloth simulation}\cite{LargeStepBaraff}}
+\inprep
 \subsubsection{{\sl Advanced Character Physics}\cite{Jakobsen2003AdvancedCP}}
-\subsubsection{{\sl A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner}}
+\inprep
+\subsubsection{\small{\sl A Versatile and Robust Model for Geometrically Complex Deformable Solids}\cite{VersatileTeschner}}
+\inprep
 \subsubsection{{\sl Position Based Dynamics}\cite{PBD}}
+\inprep
 
 \subsection{To XPBD}
+\inprep
 \subsubsection{{\sl Geometric, Variational Integrators for Computer Animation}\cite{VariationalIntegrators2006}}
+\inprep
 \subsubsection{{\sl Interactive simulation of elastic deformable materials}\cite{Servin2006InteractiveSO}}
-\subsubsection{{\sl XPBD : position-based simulation of compliant constrained dynamics}\cite{XPBD}}
-\subsubsection{{\sl Small steps in physics simulation}\cite{SmallSteps}}
+\inprep
+\subsubsection{\small{\sl XPBD : position-based simulation of compliant constrained dynamics}\cite{XPBD}}
+\inprep
 
+\subsubsection{{\sl Small steps in physics simulation}\cite{SmallSteps}}
+\inprep
 \subsection{Bonus section : Projective Dynamics}
+\inprep
 \subsubsection{{\sl Example-based elastic materials}\cite{Example-basedMartin}}
+\inprep
 \subsubsection{{\sl Fast simulation of mass-spring systems}\cite{fastMassTiantian}}
-\subsubsection{{\sl Projective Dynamics: Fusing Constraint Projections for Fast Simulation}\cite{ProjDyn}}
-\subsubsection{{\sl ADMM $\subseteq$ projective dynamics: fast simulation of general constitutive models}\cite{ADMM_Proj}}
+\inprep
+\subsubsection{\small{\sl Projective Dynamics: Fusing Constraint Projections for Fast Simulation}\cite{ProjDyn}}
+\inprep
+\subsubsection{\small{\sl ADMM $\subseteq$ projective dynamics: fast simulation of general constitutive models}\cite{ADMM_Proj}}
+\inprep
 
 \subsection{Post-XPBD}
-
-
-
+\inprep
 \newpage
-
-
 \appendix
 
 
@@ -275,40 +330,54 @@ A lower number means more important. The papers' names are aligned in the lexico
 	\item You must read these papers if you want to understand (X)PBD. But if you want to understand them completely, I recommend reading the others also.
 		\begin{itemize}
 			\item \pname{Position Based Dynamics}\cite{PBD} is one of the main subjects of this document.
+			\newline
 			\item \pname{XPBD : position-based simulation of compliant constrained dynamics}\cite{XPBD} addressed a numerical artifact that makes dependency between stiffness and \gls{iteration} count or size of the time-step.
 		\end{itemize}
 		\item  These papers are vital in understanding (X)PBD or have a strong impact on the field.
 		\begin{itemize}
 			\item\pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduced position based simulation method derived from Verlet's integration scheme and combined distance constraints. The framework of PBD can be seen here. Specifically,using distance and angular constraints, modifying verticies' position directoly and solving \gls{constraint}s with some iterations. This paper is easier to read than PBD, but the ideas appear here and pseudo codes are presented. I recommend reading this before read PBD.
+			\newline
 			\item \pname{Large steps in cloth simulation}\cite{LargeStepBaraff} solved implicit integration with \gls{constraint}s by \gls{cgmethod} for off-line simulation. The scheme isn't used at PBD, but this one gives us a perspective of present physical simulations.
+			\newline
 			\item \pname{Projective Dynamics: Fusing Constraint Projections for Fast Simulation}\cite{ProjDyn} provided a position-based method that uses energy formulation and local/global solver. The method has a local Jacobi-like solver and a linear global equation one. The solvers enable robust and fast simulation without safeguards against singular or indefinite Hessians.
 			If you want to understand state-of-the-art physics simulation methods, including PBD, it's better to read this.
+			\newline
 			\item \pname{ADMM $\subseteq$ projective dynamics: fast simulation of general constitutive models}\cite{ADMM_Proj} is worth reading because ADMM is actively researched now because of its robustness, parallelizability, and simplicity. 
 		\end{itemize}
 		\item These papers offer interesting discussions around PBD, deepen your understanding of PBD, or description of basic physical simulation scheme.
 		\begin{itemize}
 			\item \pname{Constraint Methods for Neural Networks and Computer Graphics}\cite{ConstrainedPlatt} describes the constraint methods for neural networks and computer graphics.
 			It may not be easy to read because of 150 pages. But, if you have time, it's more worth reading this paper than some papers published before this one.
+			\newline
 			\item \pname{Example-based elastic materials}\cite{Example-basedMartin} provides a concept of the elastic manifold and optimization method for deforming into an artist-desirable state. However, this paper lacks reference to the manifold projection methods that are apparently well-known in the geometric optimization field.This paper helps us understand Projective dynamics, but I don't know Projective Dynamics's relevance with (X)PBD for now.
+			\newline
 			\item \pname{Fast simulation of mass-spring systems}\cite{fastMassTiantian} describes the local/global type solver to the mass-spring system clearly. Thus this paper helps us understand the variant solvers.
+			\newline
 			\item \pname{Interactive simulation of elastic deformable materials}\cite{Servin2006InteractiveSO} introduces physical parameters into constrained dynamics; the spirit is inherited by XPBD and there is an interesting discussion about the integrator. But I think this paper does explain the concept poorly,e. g. the integrator provided here, equation (20) lack of explanation, etc. 
 			Therefore, this one classified here.
+			\newline
 			\item \pname{Nucleus: Towards a unified dynamics solver for computer graphics}\cite{Nucleus} is a good introduction to constrained dynamics because it shows its implementation aspect.
 			However, it doesn't describe how constraints are resolved, so it isn't full-contained.
+			\newline
 			\item \pname{Robust treatment of collisions, contact and friction for cloth animation}\cite{RobustBridson2002}'s scheme separates physical simulation into internal parts and external parts. 
 			Therefore, we can choose the internal modeling(e.g. mass-spring) and the external modeling(e.g. collision repulsion, friction, or gravity) independently. However, the scheme is not directly related to PBD.
+			\newline
 			\item \pname{Strain Based Dynamics}\cite{StrainBasedDyn}. The formulation of the strain tensor in XPBD seems to be based on 
 			"Interactive Simulation of Elastic Deformable Materials"(2006) rather than this paper.
 			However, the formulations described here are easy to understand if you are familiar with PBD and strain tensor.
+			\newline
 			\item \pname{Geometric, Variational Integrators for Computer Animation}\cite{VariationalIntegrators2006} presents the variational integrator from the Lagrangian/Hamiltonian physics that preserves linear/angular momenta.
 			Its conservative quantities will be more important in fields such as robotics or accurate physical computation.
 			But, this knowledge may be useless if you only want to understand  (X)PBD.
+			\newline
 			\item \pname{Efficient simulation of inextensible cloth}\cite{EfficientGoldenthai} treated the constrained system as globally linearized form and solved with a direct approach at each iteration.
 		\end{itemize}
 	\item These ones have historical value, but deeper discussions are done in other papers.
 		\begin{itemize}
 		\item \pname{Elastically deformable models}\cite{ElasticTerzopoulos}  brought the formulation of elastic bodies to computer graphics.
+		\newline
 		\item \pname{Energy Constraints On Parameterized Models}\cite{Witkin1987} uses shape representations that quite different from the current ones and the constraints presented in this paper are slightly inconvenient to the current ones. Thus, we no longer have to read this.
+		\newline
 		\item \pname{A modeling system based on dynamic constraints}\cite{Barzel1988} uses constraints as models' motion rather than to hold a model's detail and uses linear simultaneous equations when deriving forces.The points that are difficult to understand are that the paper doesn't describe the background of the equation derivation and that the symbols are scattered too much.
 		Fortunately, we don't have to read this paper completely to understand present constrained dynamics because the style varies from the recent ones.
 		\end{itemize}

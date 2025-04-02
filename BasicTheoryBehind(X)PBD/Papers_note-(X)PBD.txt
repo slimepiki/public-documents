@@ -1002,6 +1002,7 @@ C : #(2014)unified particle
 	(2016)ADMM ⊇ Projective Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
+	(2020)Real-Time Hair Simulation with hepta : HS
 	(2020)Detailed Rigid Body Simulation XPBD
 
 (2014)strain Based Dynamics

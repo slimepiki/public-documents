@@ -235,7 +235,7 @@ Based on the above perspective, in this section, I also introduce some physical 
 In particular, continuum mechanics is vital to understanding XPBD.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{images/Physics.png}
+	\includegraphics[width=0.4\textwidth]{images/Physics.png}
 	\caption{Comparison of the physics}
 		\label{physics}
 \end{figure}
@@ -244,8 +244,30 @@ Although there are many other important theories, such as fluid mechanics or the
 
 \subsection{Classical mechanics}
 Let's start the physics course with classical mechanics.
+\subsubsection{Position, Velocity and, Acceleration}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/constCar.png}
+	\caption{constantly moving car}
+	\label{cscar}
+\end{figure}
+First, please imagine a vehicle running on a line at a constant speed.
+Next, we measure the vehicle's position once per second and start your stopwatch with zero. From now on, time is measured in seconds and denoted as $t = (current time in seconds)$
+Let the first measured position $x_0$, the second position $x_1$, and so on.
 
-First, please imagine a car running at a constant speed.
+The moved distance per second is called velocity whose unit [$(distance)/(time)$] e. g. [$meter/second$]. Following that, we can say the vehicle's velocity is $x_n - x_{n-1}$[m/s](this is the abbreviation of meter/seconds) in this example. Let the velocity denote $v$[m/s] then the relation between the current position at $t$ second $x_t$ and initial position $x_0$ is
+\begin{eqnarray}
+	x_t = x_0 + v * t .
+\end{eqnarray}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/accCar.png}
+	\caption{constantly accelerating car}
+	\label{cacar}
+\end{figure}
+Let's start the second case. Imagine a vehicle running on a line, and its speed increases constantly.
+
 \inprep
 
 \subsection{Constrained Dynamics}

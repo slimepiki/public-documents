@@ -287,8 +287,9 @@ C : (2001)A Layered Wisp Model for Simulating Interactions : hair
 	(2004)A Versatile and Robust Model
 	(2005)Meshless Deformations
 	(2006)Geometric, Variational Integrators for Computer Animation
+	(2006)Oriented Strands - dynamics of stiff multi-body system : HS
 	#(2006)Position Based Dynamics
-	(2007)Cosserat Rod Elements for the Dynamic Simulation : H S
+	(2007)Cosserat Rod Elements for the Dynamic Simulation : HS
 	(2007)A Survey on Hair Modeling : hair
 	#(2007)Efficient Simulation of Inextensible Cloth
 	(2012)Long Range Attachments - A Method to Simulat

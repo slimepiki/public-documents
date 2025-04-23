@@ -420,6 +420,7 @@ C : (2003)Simulation of Clothing with Folds and Wrinkles : H
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2008)A Mass Spring Model for Hair Simulation : H
 	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
+	(2009)Detail Preserving Continuum Simulation of Straight Hair : HC
 	(2010)A Nonsmooth Newton Solver for Capturing Exact Coulomb : H
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)unified particle

@@ -235,7 +235,7 @@ Based on the above perspective, in this section, I also introduce some physical 
 In particular, continuum mechanics is vital to understanding XPBD.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.4\textwidth]{images/Physics.png}
+	\includegraphics[width=0.8\textwidth]{images/Physics.png}
 	\caption{Comparison of the physics}
 		\label{physics}
 \end{figure}
@@ -247,7 +247,7 @@ Let's start the physics course with classical mechanics.
 \subsubsection{Position, Velocity and, Acceleration}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\textwidth]{images/constCar.png}
+	\includegraphics[width=0.45\textwidth]{images/constCar.png}
 	\caption{constantly moving car}
 	\label{cscar}
 \end{figure}
@@ -255,20 +255,40 @@ First, please imagine a vehicle running on a line at a constant speed.
 Next, we measure the vehicle's position once per second and start your stopwatch with zero. From now on, time is measured in seconds and denoted as $t = (current time in seconds)$
 Let the first measured position $x_0$, the second position $x_1$, and so on.
 
+Because the vehicle has a constant speed, the distance it moves between a single step is the same. In other words, $x_{n}-x_{n-1}$ is an invariant for any natural integer $n$.
+
 The moved distance per second is called velocity whose unit [$(distance)/(time)$] e. g. [$meter/second$]. Following that, we can say the vehicle's velocity is $x_n - x_{n-1}$[m/s](this is the abbreviation of meter/seconds) in this example. Let the velocity denote $v$[m/s] then the relation between the current position at $t$ second $x_t$ and initial position $x_0$ is
-\begin{eqnarray}
+\begin{eqnarray}\label{xtx0vt}
 	x_t = x_0 + v * t .
 \end{eqnarray}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{images/accCar.png}
+	\includegraphics[width=0.5\textwidth]{images/accCar.png}
 	\caption{constantly accelerating car}
 	\label{cacar}
 \end{figure}
-Let's start the second case. Imagine a vehicle running on a line, and its speed increases constantly.
+Let's start the second case. Imagine a vehicle running on a line, and its speed increases constantly. Like the former example, let the speed at time $t$ be denoted as $v_t$.
+
+Like the relation between distance and velocity in the former example, the increased speed between a single step is constant, and $v_t-v_{t-1}$ is an invariant for any natural number $t$. We call the increased amount acceleration. You may suppose the accerelation to have a unit $[(velocity)/(time)]$. Unfortunately, the supposed unit won't be used. Let's remind that velocity has the unit [$(distance)/(time)$], and put this into [$(velocity)/(time)$] then we earn commonly used unit [$(distance)/(time)^2$] e. g. [m/s$^2$].
+
+########################
+
+We can find a relation between the velocity and the constant acceleration $a$, that is
+\begin{eqnarray}\label{vtv0at}
+	v_t = v_0 + a * t .
+\end{eqnarray}
+
+Next, we look the relation among the traveled distance, the velocity and the acceleration. 
+
+Simply put \ref{vtv0at} into \ref{xtx0vt} dosen't work because the result
+\begin{eqnarray}
+	x_t = x_0 + v_0 * t + a* t^2
+\end{eqnarray}
+says
 
 \inprep
+\subsection{The Calculus}
 
 \subsection{Constrained Dynamics}
 \inprep

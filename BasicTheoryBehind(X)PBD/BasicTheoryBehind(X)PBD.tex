@@ -259,7 +259,7 @@ Because the vehicle has a constant speed, the distance it moves between a single
 
 The moved distance per second is called velocity whose unit [$(distance)/(time)$] e. g. [$meter/second$]. Following that, we can say the vehicle's velocity is $x_n - x_{n-1}$[m/s](this is the abbreviation of meter/seconds) in this example. Let the velocity denote $v$[m/s] then the relation between the current position at $t$ second $x_t$ and initial position $x_0$ is
 \begin{eqnarray}\label{xtx0vt}
-	x_t = x_0 + v * t .
+	x_t = x_0 + v t .
 \end{eqnarray}
 
 \begin{figure}[H]
@@ -268,27 +268,64 @@ The moved distance per second is called velocity whose unit [$(distance)/(time)$
 	\caption{constantly accelerating car}
 	\label{cacar}
 \end{figure}
+
 Let's start the second case. Imagine a vehicle running on a line, and its speed increases constantly. Like the former example, let the speed at time $t$ be denoted as $v_t$.
 
 Like the relation between distance and velocity in the former example, the increased speed between a single step is constant, and $v_t-v_{t-1}$ is an invariant for any natural number $t$. We call the increased amount acceleration. You may suppose the accerelation to have a unit $[(velocity)/(time)]$. Unfortunately, the supposed unit won't be used. Let's remind that velocity has the unit [$(distance)/(time)$], and put this into [$(velocity)/(time)$] then we earn commonly used unit [$(distance)/(time)^2$] e. g. [m/s$^2$].
 
-########################
-
-We can find a relation between the velocity and the constant acceleration $a$, that is
+We can find a relation between the velocity and the constant acceleration $a$, that is,
 \begin{eqnarray}\label{vtv0at}
 	v_t = v_0 + a * t .
 \end{eqnarray}
 
-Next, we look the relation among the traveled distance, the velocity and the acceleration. 
+Next, we look at the relation between the traveled distance, the velocity, and the acceleration. 
 
-Simply put \ref{vtv0at} into \ref{xtx0vt} dosen't work because the result
+Simply putting \ref{vtv0at} into \ref{xtx0vt} dosen't work because the result
 \begin{eqnarray}
-	x_t = x_0 + v_0 * t + a* t^2
+	x_t = x_0 + t(v_0 + at )
 \end{eqnarray}
-says
+says that the car runs in the constant speed $v_0 + at$ from start measuring.
+
+What we have to do is find a geometric relation between the distance and the velocity. Let's revisit the first example and see eq.(\ref{xtx0vt}).
+
+The traveled distance increases $v_0$ per second. Now, we consider a small timestep $\delta_t (\Delta_t << 1)$ and calculate the distance the vehicle traveled ($x << 1$ says that x is too small compared to 1).
+We can easily get the answer
+
+\begin{equation}
+	v_0 \Delta_t \mathrm{[m/s]} .
+\end{equation}
+
+The answer can be seen as a rectangle whose width is $\Delta_t$ and height is $v_0$. Calculating total distance is interpreted as collecting such rectangles until the width being $t$.
+
+The consequence is depicted in Fig.(\ref{geoDist}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/geoDist.png}
+	\caption{Geometric aspect of the distance}
+	\label{geoDist}
+\end{figure}
+
+Now, we expect that the total distance is the area of the graph whose x-axis is time and y-axis is velocity. In fact, the expectation is correct. I show this in a later section. For now, let the expectation be true.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/x_v_aGraph.png}
+	\caption{The graph of the second exapmle}
+	\label{x_v_a}
+\end{figure}
+
+Return to the second example, and draw a graph of time vs velocity (Fig.(\ref{x_v_a})), then yield the correct total distance.
+\begin{eqnarray}
+	x_t = x_0 + v_0 t + \frac{1}{2} a t^2 .
+\end{eqnarray}
+
+\subsection{The Calculus}
+We concluded that the relation between distance, velocity, and acceleration can be interpreted geometrically in the last section. However, we can't calculate the distance whose graph has a curve. How do we do it?
+
+
 
 \inprep
-\subsection{The Calculus}
 
 \subsection{Constrained Dynamics}
 \inprep

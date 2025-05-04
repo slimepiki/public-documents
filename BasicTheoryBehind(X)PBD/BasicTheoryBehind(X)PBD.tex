@@ -292,7 +292,7 @@ The traveled distance increases $v_0$ per second. Now, we consider a small times
 We can easily get the answer
 
 \begin{equation}
-	v_0 \Delta_t \mathrm{[m/s]} .
+	v_0 \Delta_t \mathrm{[m]} .
 \end{equation}
 
 The answer can be seen as a rectangle whose width is $\Delta_t$ and height is $v_0$. Calculating total distance is interpreted as collecting such rectangles until the width being $t$.
@@ -310,7 +310,7 @@ Now, we expect that the total distance is the area of the graph whose x-axis is 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{images/x_v_aGraph.png}
+	\includegraphics[width=0.6\textwidth]{images/x_v_aGraph.png}
 	\caption{The graph of the second exapmle}
 	\label{x_v_a}
 \end{figure}
@@ -323,6 +323,51 @@ Return to the second example, and draw a graph of time vs velocity (Fig.(\ref{x_
 \subsection{The Calculus}
 We concluded that the relation between distance, velocity, and acceleration can be interpreted geometrically in the last section. However, we can't calculate the distance whose graph has a curve. How do we do it?
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{images/vCurve.png}
+	\caption{The graph with the velocity curve}
+	\label{vCurve}
+\end{figure}
+
+First, as we did in the previous section, the area is assumed to be the sum of rectangles. We fix the width rather large and pick the height by matching the rectangle's right corner with the curve. The result will be the figure below.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{images/vCurveLargeRec.png}
+	\caption{The graph with the velocity curve with the large rectangles}
+	\label{vCurveLR}
+\end{figure}
+
+We can see quite a large total error. This result is incorrect. Well then, let's see what happens when we set the width smaller.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{images/vCurveSmallRec.png}
+	\caption{The graph with the velocity curve with the small rectangles}
+	\label{vCurveSR}
+\end{figure}
+
+While we didn't measure precisely, the total error looks smaller than before because they are split into small parts.
+
+If this observation continues to the infinitesimal width, the total error also might go infinitesimal. The problem had been studied for a long time, and this manipulation is called "integration". As a consequence, it has concluded true.
+
+However, the conclusion doesn't tell us how to calculate the total area. Thus next, we see how to calculate the sum briefly. 
+
+The formulation is straightforward, summing the rectangles which have infinitesimal width.
+Let the total area at a time $t$ $A(t)$, rectangles' width $dt$ and the velocity at time $t$ $v(t)$, $A(t)$ is
+
+\begin{equation}
+	A(t) = \sum_{i = 1}^{t/dt} v(i*dt)*dt ,
+\end{equation}
+
+and bring $dt$ to infinitesimal,
+
+\begin{eqnarray}
+	\lim_{dt \rightarrowtail 0} A(t) =\lim_{dt \rightarrowtail 0} \sum_{i=1}^{\infty}v(i*dt)*dt
+\end{eqnarray}
+
+This equation is merely formulating the above description.
 
 
 \inprep

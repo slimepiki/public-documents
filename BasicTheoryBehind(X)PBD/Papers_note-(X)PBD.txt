@@ -433,6 +433,22 @@ C : (2003)Simulation of Clothing with Folds and Wrinkles : H
 	(2020)Real-Time Hair Simulation with hepta : H
 	(2022)Contact and Friction Simulation for Computer Graphics : H
 
+#(2003)Particle-Based Fluid Simulation for Interactive Applications
+A :	
+C :	
+A :	###being referred as###
+	####from this paper####
+	######my summary#######
+M :	
+M :	
+D :	
+I :	
+K :	
+U :	
+R :	
+R :	
+C :	!#(2013)Position Based Fluids
+
 (2003)Discrete Shells
 A : 
 C : 
@@ -1001,7 +1017,8 @@ I :
 K : 
 U : 
 R : 
-R : #(2006)Position Based Dynamics
+R : #(2003)Particle-Based Fluid Simulation for Interactive Applications
+	#(2006)Position Based Dynamics
 C : #(2014)unified particle
 	(2014)Projective Dynamics
 	(2016)Position and Orientation Based Cosserat Rods

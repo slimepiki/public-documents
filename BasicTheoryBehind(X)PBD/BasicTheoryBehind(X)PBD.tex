@@ -275,7 +275,7 @@ Like the relation between distance and velocity in the former example, the incre
 
 We can find a relation between the velocity and the constant acceleration $a$, that is,
 \begin{eqnarray}\label{vtv0at}
-	v_t = v_0 + a * t .
+	v_t = v_0 + a \dot t .
 \end{eqnarray}
 
 Next, we look at the relation between the traveled distance, the velocity, and the acceleration. 
@@ -310,7 +310,7 @@ Now, we expect that the total distance is the area of the graph whose x-axis is 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{images/x_v_aGraph.png}
+	\includegraphics[width=0.4\textwidth]{images/x_v_aGraph.png}
 	\caption{The graph of the second exapmle}
 	\label{x_v_a}
 \end{figure}
@@ -358,17 +358,33 @@ The formulation is straightforward, summing the rectangles which have infinitesi
 Let the total area at a time $t$ $A(t)$, rectangles' width $dt$ and the velocity at time $t$ $v(t)$, $A(t)$ is
 
 \begin{equation}
-	A(t) = \sum_{i = 1}^{t/dt} v(i*dt)*dt ,
+	A(t) = \sum_{i = 1}^{t/dt} v(i \dot dt) \dot dt ,
 \end{equation}
 
 and bring $dt$ to infinitesimal,
 
 \begin{eqnarray}
-	\lim_{dt \rightarrowtail 0} A(t) =\lim_{dt \rightarrowtail 0} \sum_{i=1}^{\infty}v(i*dt)*dt
+	\label{integration}
+	\lim_{dt \rightarrowtail 0} A(t) =\lim_{dt \rightarrowtail 0} \sum_{i=1}^{\infty}v(i \dot dt) \dot dt
 \end{eqnarray}
 
-This equation is merely formulating the above description.
+We can also write the summation in infinitely small rectangles like the notation below.
 
+\begin{eqnarray}
+	A(t) = \int_{0}^{t} f(t) dt ,
+\end{eqnarray}
+
+particularly, the relation between the total displacement $x$ and the velocity $v$ is written as
+
+\begin{eqnarray}
+	x(t) = \int_{0}^{t} v(t) dt ,
+\end{eqnarray}
+
+Please note that this equation is merely formulating the above description.
+
+Of course, we can calculate the integlation from Eq.(\ref{integration}), many functions ' integrals have already been solved by someone, and we can use the results instead. That's why I won't tell you details about the integration procedures. In this text, you only have to remember the relation between integration and geometric concepts.
+
+Next, we will see how to calculate 
 
 \inprep
 

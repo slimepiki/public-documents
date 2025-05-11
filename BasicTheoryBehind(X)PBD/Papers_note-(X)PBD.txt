@@ -399,10 +399,7 @@ M : Combining a fail-safe geometric collision method with a fast (non-stiff) rep
 	The cloth solver uses Jacobi-type one to avoid the result to have a solve-order dependency.
 	This solver once computes mid-step states and uses it for the collision detection/reaction and next step's state.
 
-D :	Penalty (non-stiff, in contrast to the conventional methods using expensive stiff springs) spring forces are used for low-velocity contact, 
-	and exact impulse-based treatments are used for high-velocity contact.
-
-	The Strain limiting often used in the cloth simulation to improve simulation quality moves the vertices directory. As a consequence, self-intersections can't be avoided.
+D : The Strain limiting often used in the cloth simulation to improve simulation quality moves the vertices directory. As a consequence, self-intersections can't be avoided.
 	Then, the authors decided not to modify the vertices but the velocities that can be used at the collision detection stage.
 I : The method can simulate self-intersection, drape, and static/kinetic friction stabler than previous methods.
 K : impluse, repulsion spring, central time differencing

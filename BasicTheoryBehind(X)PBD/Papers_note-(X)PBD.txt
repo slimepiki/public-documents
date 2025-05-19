@@ -1224,6 +1224,7 @@ R : (2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animati
 	#(2006)Position Based Dynamics
 	(2014)unified particle
 C : (2017)A Survey on Position Based Dynamics
+	(2019)A Hybrid Material Point Method for Frictional Contact with : HC
 
 #(2015)Stable Constrained Dynamics
 A : 

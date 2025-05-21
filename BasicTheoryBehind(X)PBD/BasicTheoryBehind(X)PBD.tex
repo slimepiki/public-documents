@@ -275,7 +275,7 @@ Like the relation between distance and velocity in the former example, the incre
 
 We can find a relation between the velocity and the constant acceleration $a$, that is,
 \begin{eqnarray}\label{vtv0at}
-	v_t = v_0 + a \dot t .
+	v_t = v_0 + a \cdot t .
 \end{eqnarray}
 
 Next, we look at the relation between the traveled distance, the velocity, and the acceleration. 
@@ -365,7 +365,7 @@ and bring $dt$ to infinitesimal,
 
 \begin{eqnarray}
 	\label{integration}
-	\lim_{dt \rightarrowtail 0} A(t) =\lim_{dt \rightarrowtail 0} \sum_{i=1}^{\infty}v(i \dot dt) \dot dt
+	\lim_{dt \rightarrow 0} A(t) =\lim_{dt \rightarrow 0} \sum_{i=1}^{\infty}v(i \cdot dt) \cdot dt .
 \end{eqnarray}
 
 We can also write the summation in infinitely small rectangles like the notation below.
@@ -382,9 +382,68 @@ particularly, the relation between the total displacement $x$ and the velocity $
 
 Please note that this equation is merely formulating the above description.
 
-Of course, we can calculate the integlation from Eq.(\ref{integration}), many functions ' integrals have already been solved by someone, and we can use the results instead. That's why I won't tell you details about the integration procedures. In this text, you only have to remember the relation between integration and geometric concepts.
+Of course, we can calculate the integration from Eq.(\ref{integration}) using limit theory; many functions' integrals have already been solved by someone, and we can use the results instead. That's why I won't tell you details about the integration procedures. Here, you only have to remember the relation between the displacement and the velocity.
 
-Next, we will see how to calculate 
+The same reasoning can be used for the relation between the velocity at $t$, $v(t)$, and the acceleration at $t$, $a(t)$; specifically,
+
+\begin{equation}
+	v(t) = \int_{0}^{t} a(t) dt .
+\end{equation}
+
+Next, let's see the inverse relation: how to derive the velocity $v(t)$ from the displacement $x(t)$ (or acceleration $a(t)$ from the velocity).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{images/VFromX.png}
+	\caption{How do we derive $v(t)$ from $x(t)$?}
+	\label{vfromx}
+\end{figure}
+
+The answer to the question, "How do we derive $v(t)$ from $x(t)$?" is to start by calculating the average velocity in an interval.
+
+The average of the velocity between time $t$ and the time elapsed $\Delta t$, $t + \Delta t$, is an elementary calculation;
+
+\begin{equation}
+	(avg. velocity between t and t + \Delta t) = \frac{x(t+\Delta t)}{\Delta t} 
+\end{equation}
+
+However, what we want is the velocity at time $t$, then, like before, taking a small $\Delta t$, we get closer to the desired thing.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{images/fDifferentialFromX.png}
+	\caption{How do we derive $v(t)$ from $x(t)$?}
+	\label{fDifferentialFromX}
+\end{figure}
+
+When the $\Delta t$ is infinitesimal (see fig. \ref{fDifferentialFromX}), the average of the velocity is identical to the velocity at $t$ (It's a bit paradoxical, but let this slide), that is, $v(t)$.
+
+In mathematical terms, the above description can be written as
+
+\begin{equation}
+	v(t) = \lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t)}{\Delta t},
+\end{equation}
+
+or its abbreviation notation,
+
+\begin{equation}\label{vdxdt}
+v(t) = \frac{dx(t)}{dt}.
+\end{equation}
+
+Again, the relation between the acceleration at $t$, $a(t)$, and the velocity $v(t)$ is denoted as
+
+\begin{equation}\label{advdt}
+	a(t) = \frac{dv(t)}{dt} .
+\end{equation}
+
+Here, we can also derive the relation between the $a(t)$ and the $x(t)$ by inserting eq.(\ref{vdxdt}) into eq.(\ref{advdt}),
+
+\begin{eqnarray}
+	a(t) &=& \frac{dv(t)}{dt}\nonumber\\
+	&=& \frac{\frac{dx(t)}{dt}}{dt}.
+\end{eqnarray}
+
+then we can write this as......####
 
 \inprep
 

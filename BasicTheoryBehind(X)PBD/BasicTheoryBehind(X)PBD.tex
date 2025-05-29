@@ -279,7 +279,6 @@ We can find a relation between the velocity and the constant acceleration $a$, t
 \end{eqnarray}
 
 Next, we look at the relation between the traveled distance, the velocity, and the acceleration. 
-
 Simply putting \ref{vtv0at} into \ref{xtx0vt} dosen't work because the result
 \begin{eqnarray}
 	x_t = x_0 + t(v_0 + at )
@@ -290,15 +289,11 @@ What we have to do is find a geometric relation between the distance and the vel
 
 The traveled distance increases $v_0$ per second. Now, we consider a small timestep $\delta_t (\Delta_t << 1)$ and calculate the distance the vehicle traveled ($x << 1$ says that x is too small compared to 1).
 We can easily get the answer
-
 \begin{equation}
 	v_0 \Delta_t \mathrm{[m]} .
 \end{equation}
-
 The answer can be seen as a rectangle whose width is $\Delta_t$ and height is $v_0$. Calculating total distance is interpreted as collecting such rectangles until the width being $t$.
-
 The consequence is depicted in Fig.(\ref{geoDist}).
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{images/geoDist.png}
@@ -320,9 +315,8 @@ Return to the second example, and draw a graph of time vs velocity (Fig.(\ref{x_
 	x_t = x_0 + v_0 t + \frac{1}{2} a t^2 .
 \end{eqnarray}
 
-\subsection{The Calculus}
+\subsubsection{The Calculus}
 We concluded that the relation between distance, velocity, and acceleration can be interpreted geometrically in the last section. However, we can't calculate the distance whose graph has a curve. How do we do it?
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{images/vCurve.png}
@@ -331,23 +325,19 @@ We concluded that the relation between distance, velocity, and acceleration can 
 \end{figure}
 
 First, as we did in the previous section, the area is assumed to be the sum of rectangles. We fix the width rather large and pick the height by matching the rectangle's right corner with the curve. The result will be the figure below.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{images/vCurveLargeRec.png}
 	\caption{The graph with the velocity curve with the large rectangles}
 	\label{vCurveLR}
 \end{figure}
-
 We can see quite a large total error. This result is incorrect. Well then, let's see what happens when we set the width smaller.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{images/vCurveSmallRec.png}
 	\caption{The graph with the velocity curve with the small rectangles}
 	\label{vCurveSR}
 \end{figure}
-
 While we didn't measure precisely, the total error looks smaller than before because they are split into small parts.
 
 If this observation continues to the infinitesimal width, the total error also might go infinitesimal. The problem had been studied for a long time, and this manipulation is called "integration". As a consequence, it has concluded true.
@@ -356,27 +346,21 @@ However, the conclusion doesn't tell us how to calculate the total area. Thus ne
 
 The formulation is straightforward, summing the rectangles which have infinitesimal width.
 Let the total area at a time $t$ $A(t)$, rectangles' width $dt$ and the velocity at time $t$ $v(t)$, $A(t)$ is
-
 \begin{equation}
-	A(t) = \sum_{i = 1}^{t/dt} v(i \dot dt) \dot dt ,
+	A(t) = \sum_{i = 1}^{t/dt} v(i \cdot dt) \cdot dt ,
 \end{equation}
-
 and bring $dt$ to infinitesimal,
-
 \begin{eqnarray}
 	\label{integration}
 	\lim_{dt \rightarrow 0} A(t) =\lim_{dt \rightarrow 0} \sum_{i=1}^{\infty}v(i \cdot dt) \cdot dt .
 \end{eqnarray}
 
 We can also write the summation in infinitely small rectangles like the notation below.
-
 \begin{eqnarray}
 	A(t) = \int_{0}^{t} f(t) dt ,
 \end{eqnarray}
-
 particularly, the relation between the total displacement $x$ and the velocity $v$ is written as
-
-\begin{eqnarray}
+\begin{eqnarray}\label{xintv}
 	x(t) = \int_{0}^{t} v(t) dt ,
 \end{eqnarray}
 
@@ -385,13 +369,20 @@ Please note that this equation is merely formulating the above description.
 Of course, we can calculate the integration from Eq.(\ref{integration}) using limit theory; many functions' integrals have already been solved by someone, and we can use the results instead. That's why I won't tell you details about the integration procedures. Here, you only have to remember the relation between the displacement and the velocity.
 
 The same reasoning can be used for the relation between the velocity at $t$, $v(t)$, and the acceleration at $t$, $a(t)$; specifically,
-
-\begin{equation}
+\begin{equation}\label{vinta}
 	v(t) = \int_{0}^{t} a(t) dt .
+\end{equation}
+Here, we can also derive the relation between the $x(t)$ and the $a(t)$ by inserting eq.(\ref{vinta}) into eq.(\ref{xintv}),
+\begin{eqnarray}
+	x(t) &=& \int_{0}^{t} v(t) dt\\
+		&=& \int_{0}^{t}(\int_{0}^{t}a(t')dt')dt .
+\end{eqnarray}
+Then, we can write this shortly as
+\begin{equation}
+		x(t) = \int_{0}^{t}\int_{0}^{t}a(t')dt'dt .
 \end{equation}
 
 Next, let's see the inverse relation: how to derive the velocity $v(t)$ from the displacement $x(t)$ (or acceleration $a(t)$ from the velocity).
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{images/VFromX.png}
@@ -400,18 +391,15 @@ Next, let's see the inverse relation: how to derive the velocity $v(t)$ from the
 \end{figure}
 
 The answer to the question, "How do we derive $v(t)$ from $x(t)$?" is to start by calculating the average velocity in an interval.
-
 The average of the velocity between time $t$ and the time elapsed $\Delta t$, $t + \Delta t$, is an elementary calculation;
-
 \begin{equation}
 	(avg. velocity between t and t + \Delta t) = \frac{x(t+\Delta t)}{\Delta t} 
 \end{equation}
 
 However, what we want is the velocity at time $t$, then, like before, taking a small $\Delta t$, we get closer to the desired thing.
-
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{images/fDifferentialFromX.png}
+	\includegraphics[width=0.8\textwidth]{images/fDifferentialFromX.png}
 	\caption{How do we derive $v(t)$ from $x(t)$?}
 	\label{fDifferentialFromX}
 \end{figure}
@@ -419,31 +407,58 @@ However, what we want is the velocity at time $t$, then, like before, taking a s
 When the $\Delta t$ is infinitesimal (see fig. \ref{fDifferentialFromX}), the average of the velocity is identical to the velocity at $t$ (It's a bit paradoxical, but let this slide), that is, $v(t)$.
 
 In mathematical terms, the above description can be written as
-
 \begin{equation}
 	v(t) = \lim_{\Delta t \rightarrow 0} \frac{x(t+\Delta t)}{\Delta t},
 \end{equation}
-
 or its abbreviation notation,
-
 \begin{equation}\label{vdxdt}
 v(t) = \frac{dx(t)}{dt}.
 \end{equation}
 
-Again, the relation between the acceleration at $t$, $a(t)$, and the velocity $v(t)$ is denoted as
+The manipulation is called "differentiation".
 
+Again, the relation between the acceleration at $t$, $a(t)$, and the velocity $v(t)$ is denoted as
 \begin{equation}\label{advdt}
 	a(t) = \frac{dv(t)}{dt} .
 \end{equation}
-
 Here, we can also derive the relation between the $a(t)$ and the $x(t)$ by inserting eq.(\ref{vdxdt}) into eq.(\ref{advdt}),
-
 \begin{eqnarray}
 	a(t) &=& \frac{dv(t)}{dt}\nonumber\\
 	&=& \frac{\frac{dx(t)}{dt}}{dt}.
 \end{eqnarray}
+then we can write this as 
+\begin{equation}
+	a(t) = \frac{d^2 x(t)}{dt^2}.
+\end{equation}
 
-then we can write this as......####
+All relations are gathered eq. (\ref{relations}) for a recap(also see fig. \ref{xva}).
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{images/xva.png}
+	\caption{The relations}
+	\label{xva}
+\end{figure}
+
+\begin{eqnarray}\label{relations}
+	x(t) &=& x(t) = \int_{0}^{t} v(t) dt ,\\
+	&=& \int_{0}^{t}\int_{0}^{t}a(t')dt'dt .\\
+	v(t) &=& \int_{0}^{t} a(t) dt\\
+	v(t) &=& \frac{dx(t)}{dt}\\
+	a(t) &=& \frac{dv(t)}{dt}\\
+	&=& \frac{d^2 x(t)}{dt^2}.
+\end{eqnarray}
+
+\subsubsection{Newton's Laws of Motion}
+
+In classical physics, there are principles to capture motion confirmed by experiments. They were named after the physicist who discovered them, Newton's Laws of Motion. Here, I emphasize "confirmed by experiments" because we have to admit them without proof. Once we admit them, we can construct various physical theories on them, and indeed, the theories match the natural effects.
+Newton's Laws of Motion consist of three laws.
+Then, let's see the laws.
+
+{\noindent\rm\bf\large Newton's First Law}
+
+{\noindent\rm\bf\large Newton's Second Law}
+
+{\noindent\rm\bf\large Newton's Third Law}
 
 \inprep
 

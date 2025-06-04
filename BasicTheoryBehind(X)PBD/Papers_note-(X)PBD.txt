@@ -67,6 +67,7 @@ C : (1987)enrgy constraints on parameterized models
 	#(2014)Projective Dynamics
 	(2016)ADMM ⊇ Projective Dynamics
 	(2017)A Survey on Position Based Dynamics
+	(2017)Anisotropic Elastoplasticity for Cloth, Knit and Hair Frictional Contact : HCF
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 

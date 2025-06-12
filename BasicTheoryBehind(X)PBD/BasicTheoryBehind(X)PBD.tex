@@ -285,7 +285,7 @@ Simply putting \ref{vtv0at} into \ref{xtx0vt} dosen't work because the result
 \end{eqnarray}
 says that the car runs in the constant speed $v_0 + at$ from start measuring.
 
-What we have to do is find a geometric relation between the distance and the velocity. Let's revisit the first example and see eq.(\ref{xtx0vt}).
+What we have to do is find a geometric relation between the position and the velocity. Let's revisit the first example and see eq.(\ref{xtx0vt}).
 
 The traveled distance increases $v_0$ per second. Now, we consider a small timestep $\delta_t (\Delta_t << 1)$ and calculate the distance the vehicle traveled ($x << 1$ says that x is too small compared to 1).
 We can easily get the answer
@@ -316,7 +316,7 @@ Return to the second example, and draw a graph of time vs velocity (Fig.(\ref{x_
 \end{eqnarray}
 
 \subsubsection{The Calculus}
-We concluded that the relation between distance, velocity, and acceleration can be interpreted geometrically in the last section. However, we can't calculate the distance whose graph has a curve. How do we do it?
+We concluded that the relation between position, velocity, and acceleration can be interpreted geometrically in the last section. However, we can't calculate the distance whose graph has a curve. How do we do it?
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{images/vCurve.png}
@@ -453,10 +453,13 @@ All relations are gathered eq. (\ref{relations}) for a recap(also see fig. \ref{
 In classical physics, there are principles to capture motion confirmed by experiments. They were named after the physicist who discovered them, Newton's Laws of Motion. Here, I emphasize "confirmed by experiments" because we have to admit them without proof. Once we admit them, we can construct various physical theories on them, and indeed, the theories match the natural effects.
 Newton's Laws of Motion consist of three laws.
 Then, let's see the laws.
+\vspace{2truemm}
 
 {\noindent\rm\bf\large Newton's First Law}
 
-The first law is ``An object at rest remains at rest, and an object in motion remains in motion at constant speed and in a straight line unless acted on by an unbalanced force.''. The law also interpreted as ``The velocity or the direction of the motion of the body is changed if the force acting on the body is unbalanced.''
+The first law is {\sl ``An object at rest remains at rest, and an object in motion remains in motion at constant speed and in a straight line unless acted on by an unbalanced force.''}. The law also interpreted as {\sl ``The velocity or the direction of the motion of the body is changed if the force acting on the body is unbalanced.''}
+
+Let's imagine the rocket in space to understand the raw. Ideally, nothing affects it in space, and it keeps its speed without consuming fuel. When it lands on a star, it has to synchronize its speed with the star's, consuming fuel. When consuming fuel, the rocket serves force.
 
 \begin{figure}[H]
 	\centering
@@ -465,12 +468,13 @@ The first law is ``An object at rest remains at rest, and an object in motion re
 	\label{NewF}
 \end{figure}
 
-
-Let's imagine the rocket in space to understand the raw. Ideally, nothing affects it in space, and it keeps its speed without consuming fuel. When it lands on a star, it has to synchronize its speed with the star's, consuming fuel. When consuming fuel, the rocket serves force.
-
-On the other hand, everything around any planet is pulled to the planet's core. It is the gravity. We can stay still where we stand only when the gravity and the force from the land are balanced. It's also worth noting that any moving body on Earth receives opposite-direction damping force. The atmosphere around the planet causes this.
+On the other hand, everything around any planet is pulled to the planet's core. It is the gravity. We can stay still where we stand only when the gravity and the force from the land are balanced. It's also worth noting that any moving body on Earth receives opposite-direction damping force. The atmosphere around the planet causes this.\vspace{2truemm}
 
 {\noindent\rm\bf\large Newton's Second Law}
+
+The second law is {\sl The acceleration of an object depends on the mass of the object and the amount of force applied.}. In short, {\sl ``A heavier object is harder to move''}.
+
+Look at Fig.(\ref{NewS}) with two different bodies whose mass are$M$ and $m$, are pushed the same force $F$. If $M > m$, the body whose mass is $m$ has has a larger acceleration than the other.
 
 \begin{figure}[H]
 	\centering
@@ -479,7 +483,28 @@ On the other hand, everything around any planet is pulled to the planet's core. 
 	\label{NewS}
 \end{figure}
 
+The second law also describes the rigorous relationship between force and acceleration in the formulation, 
+
+\begin{equation}
+	ma = F
+\end{equation}
+
+Where $m$ denotes the mass of the pushed body, $a$ equals the acceleration, and $F$ is the force. The $F$'s unit is $Newton$ (or N) which is defined so that a 1[N] force gives a 1 [m/$\rm s^2$] acceleration to a 1 [kg] object.
+
+Ofcource, The equation could be written with velocity $v$ or position $x$;
+
+\begin{eqnarray}
+	m\frac{dv}{dt} = F\\
+	m\frac{d^2 x}{dt^2} = F
+\end{eqnarray}
+
+\vspace{2truemm}
+
 {\noindent\rm\bf\large Newton's Third Law}
+
+The third law is {\sl ``Whenever one object exerts a force on a second object, the second object exerts an equal and opposite force on the first.''}. Look at fig.(\ref{NewT}) about this law. Two people are receiving the same amount of force in opposite directions.
+
+These are 
 
 \begin{figure}[H]
 	\centering
@@ -488,7 +513,12 @@ On the other hand, everything around any planet is pulled to the planet's core. 
 	\label{NewT}
 \end{figure}
 
-\inprep
+I think there is no need to describe the law.
+
+\subsubsection{Summary}
+First, this section described the relation between position $x$, velocity $v$, and acceleration $a$. Next, I showed Newton's law of motion which is vital to classical mechanics.
+
+The basic physical simulations consist of these laws, but we have to do some additional work like sec. \ref{NumPhys} to put into practice.
 
 \subsection{Constrained Dynamics}
 \inprep
@@ -503,6 +533,17 @@ On the other hand, everything around any planet is pulled to the planet's core. 
 \subsubsection{Cauchy-Green deformation tensor}
 \inprep
 \subsubsection{St. Venant strain tensor}
+\inprep
+
+\section{Numerical physics}\label{NumPhys}
+\inprep
+\subsection{Verlet's integration}
+\inprep
+\subsection{Mass-spring system}
+\inprep
+\subsection{Explicit/implicit Euler method}
+\inprep
+\subsection{Shape matching}
 \inprep
 
 \section{Numerical integration}
@@ -522,17 +563,6 @@ On the other hand, everything around any planet is pulled to the planet's core. 
 \subsubsection{LU decomposition}
 \inprep
 \subsubsection{Schur decomposition}
-\inprep
-
-\section{Numerical physics}
-\inprep
-\subsection{Verlet's integration}
-\inprep
-\subsection{Mass-spring system}
-\inprep
-\subsection{Explicit/implicit Euler method}
-\inprep
-\subsection{Shape matching}
 \inprep
 
 \section{Column : In the terminology mess}

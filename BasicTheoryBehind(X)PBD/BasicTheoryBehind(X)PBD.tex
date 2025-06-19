@@ -504,8 +504,6 @@ Ofcource, The equation could be written with velocity $v$ or position $x$;
 
 The third law is {\sl ``Whenever one object exerts a force on a second object, the second object exerts an equal and opposite force on the first.''}. Look at fig.(\ref{NewT}) about this law. Two people are receiving the same amount of force in opposite directions.
 
-These are 
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\textwidth]{images/NewtonsThirdLaw.png}
@@ -521,6 +519,10 @@ First, this section described the relation between position $x$, velocity $v$, a
 The basic physical simulations consist of these laws, but we have to do some additional work like sec. \ref{NumPhys} to put into practice.
 
 \subsection{Constrained Dynamics}
+This section is based on \cite{ConstrainedWitkin}.
+
+Constrained Dynamics resolves physics problems that obey geometric constraints while satisfying Newton's law. This dynamics 
+
 \inprep
 \subsection{Continuum mechanics}
 \inprep
@@ -630,7 +632,7 @@ A lower number means more important. The papers' names are aligned in the lexico
 		\end{itemize}
 		\item  These papers are vital in understanding (X)PBD or have a strong impact on the field.
 		\begin{itemize}
-			\item\pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduced position based simulation method derived from Verlet's integration scheme and combined distance constraints. The framework of PBD can be seen here. Specifically,using distance and angular constraints, modifying verticies' position directoly and solving \gls{constraint}s with some iterations. This paper is easier to read than PBD, but the ideas appear here and pseudo codes are presented. I recommend reading this before read PBD.
+			\item\pname{Advanced Character Physics}\cite{Jakobsen2003AdvancedCP} introduced position based simulation method derived from Verlet's integration scheme and combined distance constraints. The concepts for PBD appear here, specifically, using distance and angular constraints, modifying vertices' positions directly, and solving \gls{constraint}s with some iterations. I recommend reading this before reading the PBD paper because this article is easier to read than PBD, contains insights into PBD, and presents source codes.
 			\newline
 			\item \pname{Large steps in cloth simulation}\cite{LargeStepBaraff} solved implicit integration with \gls{constraint}s by \gls{cgmethod} for off-line simulation. The scheme isn't used at PBD, but this one gives us a perspective of present physical simulations.
 			\newline
@@ -693,7 +695,7 @@ A lower number means more important. The papers' names are aligned in the lexico
 			\item \pname{Detailed Rigid Body Simulation with Extended Position Based Dynamics}\cite{DetailedRigidbody}
 			\item \pname{A Constraint-based Formulation of Stable Neo-Hookean Materials}\cite{ConstrainedBasedNeo-Hookean}
 			\item \pname{Physically Based Shape Matching}\cite{PhysBaseShapeMatching}
-			\item \pname{}\cite{}
+			\item \pname{Physically Based Modeling: Principles and Practice}\cite{ConstrainedWitkin}
 			\item \pname{}\cite{}
 			\item \pname{}\cite{}
 			\item \pname{}\cite{}

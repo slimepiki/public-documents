@@ -244,6 +244,7 @@ A : ###being referred as###
 	or via Lagrange multipliers derived from constrained dynamics (hard constraints) [Wit97].'' : (2017)A Survey on Position Based Dynamics
 	####from this paper####
 	######my summary#######
+	This note guides solving physical problems with constraints in a force-based style.
 M : -
 M : -
 D : -

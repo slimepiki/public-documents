@@ -69,6 +69,7 @@ C : (1987)enrgy constraints on parameterized models
 	(2017)A Survey on Position Based Dynamics
 	(2017)Anisotropic Elastoplasticity for Cloth, Knit and Hair Frictional Contact : HCF
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
+	(2020)Incremental Potential Contact
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	(2021)Codimensional Incremental Potential Contact : HC
 
@@ -574,8 +575,8 @@ C : (2007)Efficient Simulation of Inextensible Cloth
 	#(2018)Small Steps in Physics Simulation
 	#(2020)Detailed Rigid Body Simulation XPBD
 	#(2020)Primal/Dual Descent Methods for Dynamics
-	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	(2021)Codimensional Incremental Potential Contact : HC
+	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 	#(2022)Physically Based Shape Matching
 	#(2024)Vertex Block Descent
 
@@ -718,6 +719,7 @@ C : (2008)Discrete Elastic Rods : HS
 	#(2017)XPBD
 	(2018)Small Steps in Physics Simulation
 	(2020)Primal/Dual Descent Methods for Dynamics
+	(2021)Codimensional Incremental Potential Contact
 
 (2007)FastLSM Fast Lattice Shape Matching for realtime
 A : 
@@ -1258,6 +1260,7 @@ R : (2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animati
 	(2014)unified particle
 C : (2017)A Survey on Position Based Dynamics
 	(2019)A Hybrid Material Point Method for Frictional Contact with : HC
+	(2020)Incremental Potential Contact
 
 #(2015)Stable Constrained Dynamics
 A : 

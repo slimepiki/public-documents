@@ -70,6 +70,7 @@ C : (1987)enrgy constraints on parameterized models
 	(2017)Anisotropic Elastoplasticity for Cloth, Knit and Hair Frictional Contact : HCF
 	(2018)Small Steps in Physics Simulation(stabilize XPBD by simple way)
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	(2021)Codimensional Incremental Potential Contact : HC
 
 (1987)enregy constraints on parameterized models
 A : Andrew Witkin(Schlumberger Palo Alto), Kurt Fleischer(ditto), Alan Barr(Caltech)
@@ -200,6 +201,7 @@ C : (1998)Large Steps in Cloth Simulation
 	(2014)strain Based Dynamics
 	(2015)Stable Constrained Dynamics
 	(2017)A Survey on Position Based Dynamics
+	(2021)Codimensional Incremental Potential Contact : HC
 
 #(1996)Linear-Time Dynamics using Lagrange Multipliers
 A : David Baraff (Carnegie Mellon)
@@ -311,6 +313,8 @@ C : (2001)A Layered Wisp Model for Simulating Interactions : hair
 	(2018)An Implicit Frictional Contact Solver for Adaptive Cloth : HCF
 	(2020)Primal/Dual Descent Methods for Dynamics
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	mensional Incremental Potential Contact : HC
+	(2024)Vertex Block Descent
 
 
 (1999)Interactive animation of structured deformable objects
@@ -440,7 +444,9 @@ C : (2003)Simulation of Clothing with Folds and Wrinkles : H
 	(2018)An Implicit Frictional Contact Solver for Adaptive Cloth : HCF
 	(2020)Simple and Scalable Frictional Contacts for Thin Nodal Objects : H
 	(2020)Real-Time Hair Simulation with hepta : H
+	(2021)Codimensional Incremental Potential Contact : HC
 	(2022)Contact and Friction Simulation for Computer Graphics : H
+	(2024)Vertex Block Descent
 
 #(2003)Particle-Based Fluid Simulation for Interactive Applications
 A :	
@@ -457,9 +463,10 @@ U :
 R :	
 R :	
 C :	!#(2013)Position Based Fluids
+	(2024)Vertex Block Descent
 
 (2003)Discrete Shells
-A : 
+A : Eitan Grinspun, Anil N Hirani, Mathieu Desbrun, and Peter Schröder
 C : 
 A : ###being referred as###
 	####from this paper####
@@ -479,6 +486,7 @@ C : (2003)Simulation of Clothing with Folds and Wrinkles : HC
 	(2012)Long Range Attachments - A Method to Simulate
 	(2014)Projective Dynamics
 	(2018)An Implicit Frictional Contact Solver for Adaptive Cloth : HCF
+	(2021)Codimensional Incremental Potential Contact : HC
 
 #(2004)A Versatile and Robust Model for geometrically complex
 A : Matthias Teschner(ETH), Bruno Heidelberger(ETH)
@@ -534,6 +542,7 @@ C : (2006)Interactive Simulation of Elastic Deformable Materials
 	(2017)A Survey on Position Based Dynamics
 	(2020)Detailed Rigid Body Simulation XPBD
 	#(2022)Physically Based Shape Matching
+	(2024)Vertex Block Descent
 
 ###(2006)Position Based Dynamics
 A : 
@@ -566,7 +575,9 @@ C : (2007)Efficient Simulation of Inextensible Cloth
 	#(2020)Detailed Rigid Body Simulation XPBD
 	#(2020)Primal/Dual Descent Methods for Dynamics
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	(2021)Codimensional Incremental Potential Contact : HC
 	#(2022)Physically Based Shape Matching
+	#(2024)Vertex Block Descent
 
 (2006)Geometric, Variational Integrators for Computer Animation
 A :	L. Kharevych Weiwei, Y.Tong, E. Kanso, J. E. Marsden, P. Schröder, M.Desburn
@@ -606,6 +617,7 @@ C :	(2006)Interactive Simulation of Elastic Deformable Materials
 	(2014)Projective Dynamics
 	(2016)ADMM ⊇ Projective Dynamics
 	(2018)Small Steps in Physics Simulation
+	(2024)Vertex Block Descent
 
 (2006)A Quadratic Bending Model for Inextensible Surfaces
 A : 
@@ -749,6 +761,7 @@ C : (2012)Long Range Attachments - A Method to Simulate
 	(2014)strain Based Dynamics
 	(2017)A Survey on Position Based Dynamics
 	(2018)An Implicit Frictional Contact Solver for Adaptive Cloth
+	(2021)Codimensional Incremental Potential Contact : HC
 
 (2009)Volume Conserving Simulation of Deformable Bodies
 A : 
@@ -768,7 +781,7 @@ R :
 R :!
 C : (2017)A Survey on Position Based Dynamics
 
-(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
+(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics
 A : Jos Stam (Autodesk, Inc.)
 C : IEEE International Conference on Computer-Aided Design and Computer Graphics (IEEE CAD/Graphics)
 A : ###being referred as###
@@ -803,6 +816,7 @@ C : (2013)Fast Simulation of Mass-Spring Systems
 	(2017)XPBD
 	(2018)Small Steps in Physics Simulation
 	(2020)Detailed Rigid Body Simulation XPBD
+	(2021)Codimensional Incremental Potential Contact : HC
 
 (2011)Robust Real-Time Deformation
 A : 
@@ -871,6 +885,7 @@ R : (1987)Elastically Deformable Models
 C : #(2013)Fast Simulation of Mass-Spring Systems
 	#(2014)Projective Dynamics
 	(2016)ADMM ⊇ Projective Dynamics
+	(2024)Vertex Block Descent
 
 (2012)Long Range Attachments - A Method to Simulate
 A : 
@@ -925,6 +940,7 @@ C : (2014)strain Based Dynamics
 	(2016)Position and Orientation Based Cosserat Rods
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
+	(2021)Codimensional Incremental Potential Contact : HC
 
 (2012)Shaping Discrete Geometry with Projections
 A :	
@@ -1143,6 +1159,8 @@ C : (2015)Stable Constrained Dynamics
 	(2018)Small Steps in Physics Simulation
 	(2019)non-smooth newton : HF
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	(2021)Codimensional Incremental Potential Contact : HC
+	#(2024)Vertex Block Descent
 
 (2014)Position-Based Simulation of Continuous Materials
 A : 
@@ -1166,6 +1184,7 @@ C : (2016)Position and Orientation Based Cosserat Rods
 	(2017)A Survey on Position Based Dynamics
 	#(2017)XPBD
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	(2021)Codimensional Incremental Potential Contact : HC
 
 (2014)unified particle
 A : 
@@ -1196,6 +1215,7 @@ C : (2015)air Meshes
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 	(2020)Detailed Rigid Body Simulation XPBD
+	(2024)Vertex Block Descent
 
 (2015)Scalable Partitioning for Parallel Position Based Dynamics
 A : 
@@ -1215,6 +1235,7 @@ U :
 R : 
 R :!
 C : (2017)A Survey on Position Based Dynamics
+	(2024)Vertex Block Descent
 
 (2015)air Meshes
 A : 
@@ -1332,7 +1353,8 @@ R :	(1987)Elastically Deformable Models
 	#(2014)Projective Dynamics
 C : #(2017)XPBD
 	(2020)Simple and Scalable Frictional Contacts for Thin Nodal Objects
-	(2022)Contact and Friction Simulation for Computer Graphics : H
+	(2021)Codimensional Incremental Potential Contact : HC
+	(2022)Contact and Friction Simulation for Computer Graphics : HFC
 
 ###(2017)XPBD
 A : Miles Macklin, Matthias Müller, Nuttapong Chentanez (NVIDIA)
@@ -1372,7 +1394,9 @@ C : (2017)A Survey on Position Based Dynamics
 	#(2020)Detailed Rigid Body Simulation XPBD
 	#(2020)Primal/Dual Descent Methods for Dynamics
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	(2021)Codimensional Incremental Potential Contact : HC
 	#(2022)Physically Based Shape Matching
+	#(2024)Vertex Block Descent
 
 #(2017)A Survey on Position Based Dynamics
 A : Jan Bender(RWTH Aachen), Matthias Müller(NVIDIA), Miles Macklin(NVIDIA)
@@ -1488,6 +1512,7 @@ U :
 R :	
 R :	
 C :	(2023)Interactive Hair Simulation on the GPU using ADMM : HS
+	(2024)Vertex Block Descent
 
 #(2020)Detailed Rigid Body Simulation XPBD
 A : 
@@ -1563,3 +1588,34 @@ R :
 	#(2020)Dynamic Deformables
 	#(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
 C :
+
+(2024)Vertex Block Descent
+A :	Anka He Chen, Ziheng Liu, Yin Yang, Cem Yuksel (すべて University of Utah)
+C :	TOG 2024
+A :	###being referred as###
+	####from this paper####
+	######my summary#######
+M :	
+M :	
+D :	
+I :	
+K :	
+U :	
+R :	
+R :	(1998)Large Steps in Cloth Simulation
+	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation : HCF
+	(2003)Particle-Based Fluid Simulation for Interactive Applications
+	(2003)Simulation of Clothing with Folds and Wrinkles : HS
+	(2005)Meshless Deformations
+	#(2006)Position Based Dynamics
+	(2006)Geometric, Variational Integrators for Computer Animation
+	(2011)Example-Based Elastic Materials
+	#(2014)Projective Dynamics
+	(2014)unified particle
+	(2015)Scalable Partitioning for Parallel Position Based Dynamics
+	(2016)Descent Methods for Elastic Body Simulation on the GPU : HS
+	#(2017)XPBD
+	(2020)Primal/Dual Descent Methods for Dynamics : HCF
+	(2020)Incremental Potential Contact
+	(2021)Intersection-free Rigid Body Dynamics : HCF
+C :	#(2025)Stable Cosserat Rods : HS

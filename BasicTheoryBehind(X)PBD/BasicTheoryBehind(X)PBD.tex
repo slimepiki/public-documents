@@ -519,9 +519,34 @@ First, this section described the relation between position $x$, velocity $v$, a
 The basic physical simulations consist of these laws, but we have to do some additional work like sec. \ref{NumPhys} to put into practice.
 
 \subsection{Constrained Dynamics}
-This section is based on \cite{ConstrainedWitkin}.
+Constrained Dynamics resolves physics problems that obey geometric constraints while satisfying Newton's law. In this dynamics, each of all constraints forms a constraint function that must meet a specific condition.
+The functions take all related mass points' positions and are equal to zero if and only if the constraint is satisfied. From here, we concatenate all positions and denote as $\boldsymbol{x}$, and any constraint function is denoted as $C(\boldsymbol{x})$. Note that the function takes $\boldsymbol{x}$ but ignores the unrelated positions.
 
-Constrained Dynamics resolves physics problems that obey geometric constraints while satisfying Newton's law. This dynamics 
+At least there are two styles of constrained dynamics. The first one is used in \sl{An Introduction to Physically Based Modeling: Constrained Dynamics} (\cite{ConstrainedWitkin}) and the other is used in \sl{Position Based Dynamics}(\cite{PBD}).
+
+Although PBD uses the latter, I describe both of them for completeness. If you only want to understand PBD, you can skip section\ref{FBConstrained}.
+
+\subsubsection{Force-Based Constrained Dynamics}
+\label{FBConstrained}
+
+\subsubsection{Position-Based Constrained Dynamics}
+If we obey the position-based style, we can create a constrained function $C(\boldsymbol{x})$ by simply giving a function $\rho(\boldsymbol{x})$ that measures something among mass points, and an objective value $v$. Then, the function can be defined as
+\begin{equation}
+	(\boldsymbol{x}) \equiv \rho(\boldsymbol{x}) - v.
+\end{equation}
+
+Please remember that the constraint functions used in the last section were carefully constructed that satisfy three conditions.
+
+We will see one of the simplest constraints in this section before learning the general case.
+
+First, put two mass points $\boldsymbol{x}_1$ and $\boldsymbol{x}_2$ on the space and define a constraint function $C(\boldsymbol{x})$ which restrict two points' distance by $l$.
+\begin{eqnarray}
+	C(\boldsymbol{x}) \equiv | \boldsymbol{x}_1 - \boldsymbol{x}_2 | - l
+\end{eqnarray}
+For clarity, we use $C(\boldsymbol{x}_1,\boldsymbol{x}_2)$ instead of $C(\boldsymbol{x})$ from now.
+If $C(\boldsymbol{x}_1,\boldsymbol{x}_2) \neq 0$ then 
+
+\subsubsection{Multiple Constraints Assembly}
 
 \inprep
 \subsection{Continuum mechanics}

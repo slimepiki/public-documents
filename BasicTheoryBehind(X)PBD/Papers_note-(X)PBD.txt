@@ -595,7 +595,7 @@ A : ###being referred as###
 	``We present a general-purpose numerical scheme 
 	for time integration of Lagrangian dynamical systems''
 
-	``: it numerically preserves important invariants,
+	``it numerically preserves important invariants,
 	such as linear and angular momenta; the symplectic nature of the integrator also guarantees
 	a correct energy behavior, even when dissipation and external forces are added;
 	 holonomic constraints can also be enforced quite simply''

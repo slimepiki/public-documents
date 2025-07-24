@@ -430,6 +430,7 @@ R :	(1987)Elastically Deformable Models
 	(1999)Interactive animation of structured deformable objects
 C : (2003)Simulation of Clothing with Folds and Wrinkles : H
 	(2004)A Versatile and Robust Model
+	(2005)Animating Sand as a fluid : HC
 	#(2006)Position Based Dynamics
 	(2007)Efficient Simulation of Inextensible Cloth
 	(2008)A Mass Spring Model for Hair Simulation : H
@@ -463,7 +464,8 @@ K :
 U :	
 R :	
 R :	
-C :	!#(2013)Position Based Fluids
+C :	!(2005)Animating Sand as a fluid
+	#(2013)Position Based Fluids
 	(2024)Vertex Block Descent
 
 (2003)Discrete Shells
@@ -1207,6 +1209,7 @@ R :
 R : (2001)Advanced Character Physics
 	(2002)Robust Treatment of Collisions, Contact and Friction for Cloth Animation
 	(2005)Meshless Deformations
+	(2005)Animating Sand as a fluid : HC
 	#(2006)Position Based Dynamics
 	(2009)Nucleus : Towards a Unified Dynamics Solver for Computer Graphics 
 	(2012)Long Range Attachments - A Method to Simulate
@@ -1584,6 +1587,7 @@ K :
 U : 
 R : 
 R : 
+	(2005)Animating Sand as a fluid
 	#(2005)Meshless Deformations_SIG05
 	#(2006)Position Based Dynamics
 	#(2017)XPBD

@@ -374,7 +374,7 @@ The same reasoning can be used for the relation between the velocity at $t$, $v(
 \end{equation}
 Here, we can also derive the relation between the $x(t)$ and the $a(t)$ by inserting eq.(\ref{vinta}) into eq.(\ref{xintv}),
 \begin{eqnarray}
-	x(t) &=& \int_{0}^{t} v(t) dt\\
+	x(t) &=& \int_{0}^{t} v(t) dt\nonumber\\
 		&=& \int_{0}^{t}(\int_{0}^{t}a(t')dt')dt .
 \end{eqnarray}
 Then, we can write this shortly as
@@ -440,12 +440,12 @@ All relations are gathered eq. (\ref{relations}) for a recap(also see fig. \ref{
 \end{figure}
 
 \begin{eqnarray}\label{relations}
-	x(t) &=& x(t) = \int_{0}^{t} v(t) dt ,\\
-	&=& \int_{0}^{t}\int_{0}^{t}a(t')dt'dt .\\
-	v(t) &=& \int_{0}^{t} a(t) dt\\
-	v(t) &=& \frac{dx(t)}{dt}\\
-	a(t) &=& \frac{dv(t)}{dt}\\
-	&=& \frac{d^2 x(t)}{dt^2}.
+	x(t) &=& x(t) = \int_{0}^{t} v(t) dt ,\nonumber\\
+	&=& \int_{0}^{t}\int_{0}^{t}a(t')dt'dt .\nonumber\\
+	v(t) &=& \int_{0}^{t} a(t) dt\label{xvarelations}\\
+	v(t) &=& \frac{dx(t)}{dt}\nonumber\\
+	a(t) &=& \frac{dv(t)}{dt}\nonumber\\
+	&=& \frac{d^2 x(t)}{dt^2}\nonumber.
 \end{eqnarray}
 
 \subsubsection{Newton's Laws of Motion}
@@ -474,7 +474,7 @@ On the other hand, everything around any planet is pulled to the planet's core. 
 
 The second law is {\sl The acceleration of an object depends on the mass of the object and the amount of force applied.}. In short, {\sl ``A heavier object is harder to move''}.
 
-Look at Fig.(\ref{NewS}) with two different bodies whose mass are$M$ and $m$, are pushed the same force $F$. If $M > m$, the body whose mass is $m$ has has a larger acceleration than the other.
+Look at Fig.(\ref{NewS}) with two different bodies whose mass are$M$ and $m$, are pushed the same force $\boldsymbol{F}$($\boldsymbol{F}$). If $M > m$, the body whose mass is $m$ has has a larger acceleration than the other.
 
 \begin{figure}[H]
 	\centering
@@ -489,7 +489,7 @@ The second law also describes the rigorous relationship between force and accele
 	ma = F
 \end{equation}
 
-Where $m$ denotes the mass of the pushed body, $a$ equals the acceleration, and $F$ is the force. The $F$'s unit is $Newton$ (or N) which is defined so that a 1[N] force gives a 1 [m/$\rm s^2$] acceleration to a 1 [kg] object.
+Where $m$ denotes the mass of the pushed body, $a$ equals the acceleration, and $\boldsymbol{F}$ is the force. The $F$'s unit is $Newton$ (or N) which is defined so that a 1[N] force gives a 1 [m/$\rm s^2$] acceleration to a 1 [kg] object.
 
 Ofcource, The equation could be written with velocity $v$ or position $x$;
 
@@ -506,7 +506,7 @@ The third law is {\sl ``Whenever one object exerts a force on a second object, t
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.4\textwidth]{images/NewtonsThirdLaw.png}
+	\includegraphics[width=0.2\textwidth]{images/NewtonsThirdLaw.png}
 	\caption{Newton's third Law}
 	\label{NewT}
 \end{figure}
@@ -524,7 +524,7 @@ Often, we want to know the total amount of force exerted.
 	\label{constForceEnergy}
 \end{figure}
 
-If the force $F$ is constant, the quantity $W$ measured the below equation defined by the force $F$ and moved distance $x$,
+If the force $\boldsymbol{F}$ is constant, the quantity $W$ measured the below equation defined by the force$\boldsymbol{F}$ and moved distance $x$,
 
 \begin{eqnarray}
 	W = Fx.
@@ -540,17 +540,30 @@ If the force $F$ is constant, the quantity $W$ measured the below equation defin
 If the force $F$ varies with its position(i. e. $F(x)$), the quantity produced by the force $F(x)$ from $x = x_s$ to $x = x_e$ is ,
 
 \begin{equation}
-	W = \int_{x_s}^{x_t}F(x) dx,
+	W = \int_{x_s}^{x_e}F(x) dx.\label{WintF}
 \end{equation}
 
 I skipped describing the detail because this is analogous to the relations among the displacement $\boldsymbol{x}$, the velocity $\boldsymbol{v}$, and the acceleration $\boldsymbol{a}$.
 
---------------------------------
-$W = 1/2 mv^2$
---------------------------------
+Next, let's see kinetic energy as an example of the energy.
+
+First, recall that the force $F$ that exerts acceleration $a$ to a mass point whose mass $m$ is $F(x) = ma(x)$. Here, the values are scalar for simplicity.
+Assigning this relation into \ref{WintF}.With given velocities $v(x_s) = v_s$ and $v(x_e) = v_e$, we have 
+
+\begin{eqnarray}
+		W &=& \int_{x_s}^{x_e}F(x) dx\\
+		  &=& \int_{x_s}^{x_e}m\frac{dv}{dt}dx\\
+		  &=& \int_{v_s}^{v_e}m\frac{dx}{dt}dv\\
+		  &=&\int_{v_s}^{v_e}m vdv\\
+		  &=&\left[\frac{1}{2}m v^2\right]_{v_s}^{v_e}.
+\end{eqnarray}
+
+In conclusion, the amount of the exerted work is $\frac{1}{2}m v_e^2-\frac{1}{2}mv_s^2$ if we have $v(x_s) = v_s$ and $v(x_e) = v_e$. The resulting expression $\frac{1}{2}m v^2$ is called kinetic energy.
+
+Please note that the force has a direction in a general case because the acceleration has a direction. Therefore, the energy must be accumulated along the motion's path(but the integrated value is scalar). The calculation is called line integration. Actually, the added energy is the same regardless of the path if there is no dissipation force(e.g., friction). In other words, the energy can be derived if we have the original state and the resulting state.
 
 \subsubsection{Summary}
-First, this section described the relation between position $x$, velocity $v$, and acceleration $a$. Next, I showed Newton's law of motion which is vital to classical mechanics.
+First, this section describes the relation between position $x$, velocity $v$, and acceleration $a$. Next, we saw Newton's law of motion, which is vital to classical mechanics. Finally, we saw energy, the key to exerting force.
 
 The basic physical simulations consist of these laws, but we have to do some additional work like sec. \ref{NumPhys} to put into practice.
 
@@ -592,7 +605,7 @@ Next, we can get the velocity $\boldsymbol{v}$ and the acceleration, $\boldsymbo
 	\boldsymbol{v} &=& \frac{d\boldsymbol{x}}{dt}\nonumber\\
 	&=& \omega(-sin(\omega t), \cos(\omega t), 0),\\
 	\boldsymbol{a} &=& \frac{d\boldsymbol{v}}{dt}\nonumber\\
-	&=& \omega^2(-\cos(\omega t), -\sin(\omega t), 0)\\
+	&=& \omega^2(-\cos(\omega t), -\sin(\omega t), 0)\nonumber\\
 	&=& -\omega^2\boldsymbol{x}.
 \end{eqnarray}
 
@@ -608,21 +621,21 @@ If $C = 0$, the position $x$ is legal because $|\boldsymbol{x}| = l$.
 Next, we try to get the first and second time derivatives of $C(\boldsymbol{x})$.
 
 \begin{eqnarray}
-	\frac{dC(\boldsymbol{x})}{dt} &=& \boldsymbol{x} \cdot \frac \boldsymbol{v}\\
-	\frac{d^2C(\boldsymbol{x})}{dt}^2 &=&  \boldsymbol{a} \cdot \boldsymbol{x} + \boldsymbol{v} \cdot \boldsymbol{v}
+	\frac{dC(\boldsymbol{x})}{dt} &=& \boldsymbol{x} \cdot \boldsymbol{v}\\
+	\frac{d^2C(\boldsymbol{x})}{dt^2} &=&  \boldsymbol{a} \cdot \boldsymbol{x} + \boldsymbol{v} \cdot \boldsymbol{v}
 \end{eqnarray}
 Here, we can use the relation of circular motion among quantities eq.\ref{circularxv} and \ref{circularaxvv}, then,
 
 \begin{eqnarray}
 	\frac{dC(\boldsymbol{x})}{dt} &=& 0\\
-	\frac{d^2C(\boldsymbol{x})}{dt}^2 &=& 0.
+	\frac{d^2C(\boldsymbol{x})}{dt^2} &=& 0.
 \end{eqnarray}
 
-Thus, $\boldsymbol{x}$ is regal if $C(\boldsymbol{x}) = 0$, and $\boldsymbol{v}$ is regal if $\frac{dC(\boldsymbol{x})}{dt} = 0$, futhermore, $\boldsymbol{a}$ is regal if $\frac{d^2C(\boldsymbol{x})}{dt^2} = 0$
+Thus, $\boldsymbol{x}$ is regal if $C(\boldsymbol{x}) = 0$, and $\boldsymbol{v}$ is regal if $\frac{dC(\boldsymbol{x})}{dt} = 0$, futhermore, $\boldsymbol{a}$ is regal if $\frac{d^2C(\boldsymbol{x})}{dt^2} = 0$. In particular, the last relation is heavily used in force-based constrained dynamics when solving the system.
 
-In particular, the last relation is heavily used in force-based constrained dynamics when solving the system.
-
-
+!!!!!!!!!!!!!!!!!!!!!!!!
+Witkinの式(4)から
+!!!!!!!!!!!!!!!!!!!!!!!!
 
 \subsubsection{Position-Based Constrained Dynamics}
 If we obey the position-based style, we can create a constrained function $C(\boldsymbol{x})$ by simply giving a function $\rho(\boldsymbol{x})$ that measures something among mass points, and an objective value $v$. Then, the function can be defined as

@@ -314,6 +314,7 @@ C : (2001)A Layered Wisp Model for Simulating Interactions : hair
 	(2018)An Implicit Frictional Contact Solver for Adaptive Cloth : HCF
 	(2020)Primal/Dual Descent Methods for Dynamics
 	(2021)A Constraint-based Formulation of Stable Neo-Hookean Materials
+	(2021)Revisiting Integration in the Material Point Method : HCF
 	mensional Incremental Potential Contact : HC
 	(2024)Vertex Block Descent
 
@@ -490,6 +491,7 @@ C : (2003)Simulation of Clothing with Folds and Wrinkles : HC
 	(2014)Projective Dynamics
 	(2018)An Implicit Frictional Contact Solver for Adaptive Cloth : HCF
 	(2021)Codimensional Incremental Potential Contact : HC
+	(2021)Revisiting Integration in the Material Point Method : HCF
 
 #(2004)A Versatile and Robust Model for geometrically complex
 A : Matthias Teschner(ETH), Bruno Heidelberger(ETH)
@@ -1220,6 +1222,7 @@ C : (2015)air Meshes
 	(2017)A Survey on Position Based Dynamics
 	(2018)Small Steps in Physics Simulation
 	(2020)Detailed Rigid Body Simulation XPBD
+	(2021)Revisiting Integration in the Material Point Method : HCF
 	(2024)Vertex Block Descent
 
 (2015)Scalable Partitioning for Parallel Position Based Dynamics

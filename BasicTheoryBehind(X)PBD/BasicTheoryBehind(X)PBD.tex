@@ -513,7 +513,7 @@ The third law is {\sl ``Whenever one object exerts a force on a second object, t
 
 I think there is no need to describe the law.
 
-\subsubsection{Energy}
+\subsubsection{Energy}\label{BasicEnergy}
 
 Often, we want to know the total amount of force exerted.
 
@@ -622,20 +622,42 @@ Next, we try to get the first and second time derivatives of $C(\boldsymbol{x})$
 
 \begin{eqnarray}
 	\frac{dC(\boldsymbol{x})}{dt} &=& \boldsymbol{x} \cdot \boldsymbol{v}\\
-	\frac{d^2C(\boldsymbol{x})}{dt^2} &=&  \boldsymbol{a} \cdot \boldsymbol{x} + \boldsymbol{v} \cdot \boldsymbol{v}
+	\frac{d^2C(\boldsymbol{x})}{dt^2} &=&  \boldsymbol{a} \cdot \boldsymbol{x} + \boldsymbol{v} \cdot \boldsymbol{v}\label{dc2dt}
 \end{eqnarray}
 Here, we can use the relation of circular motion among quantities eq.\ref{circularxv} and \ref{circularaxvv}, then,
 
 \begin{eqnarray}
 	\frac{dC(\boldsymbol{x})}{dt} &=& 0\\
-	\frac{d^2C(\boldsymbol{x})}{dt^2} &=& 0.
+	\frac{d^2C(\boldsymbol{x})}{dt^2} &=& 0.\label{dc2dt0}
 \end{eqnarray}
 
 Thus, $\boldsymbol{x}$ is regal if $C(\boldsymbol{x}) = 0$, and $\boldsymbol{v}$ is regal if $\frac{dC(\boldsymbol{x})}{dt} = 0$, futhermore, $\boldsymbol{a}$ is regal if $\frac{d^2C(\boldsymbol{x})}{dt^2} = 0$. In particular, the last relation is heavily used in force-based constrained dynamics when solving the system.
 
-!!!!!!!!!!!!!!!!!!!!!!!!
-Witkinの式(4)から
-!!!!!!!!!!!!!!!!!!!!!!!!
+Then, let's solve a constrained system with a mass point with the point-on-circle constraint whose setting is the same as described above.
+Briefly, what we want to get is the force $\boldsymbol{\hat{f}}$ exerted by the constraint. We can write the equation that yields $\boldsymbol{\hat{f}}$ from the mass point's equation of motion,
+\begin{eqnarray}
+	\frac{d^2 x}{dt^2} = \frac{\boldsymbol{f}+\boldsymbol{\hat{f}}}{m}\label{EOMConstraiedDynamics}
+\end{eqnarray}
+Here, $\boldsymbol{f}$ is the external force that is irrelevant to the constraint, m is the mass of the point, and $\boldsymbol{x}$ is the mass point's position. We can substitute Eq. (\ref{EOMConstraiedDynamics})for Eq. (\ref{dc2dt}) and Eq. (\ref{dc2dt0}) if the mass point satisfies the legal position condition, the legal velocity condition, and the legal acceleration condition.
+
+\begin{eqnarray}
+	\frac{d^2 C(\boldsymbol{x})}{dt^2} = \frac{\boldsymbol{f}+\boldsymbol{\hat{f}}}{m}\cdot \boldsymbol{x} + \frac{d\boldsymbol{x}}{dt}\cdot\frac{d\boldsymbol{x}}{dt} = 0
+\end{eqnarray}
+ 
+Or, rewrite this and we get
+
+\begin{eqnarray}
+	\boldsymbol{\hat{f}} \cdot \boldsymbol{x} = -\boldsymbol{f}\cdot\boldsymbol{x} - m \frac{d\boldsymbol{x}}{dt}\cdot\frac{d\boldsymbol{x}}{dt}
+\end{eqnarray}
+
+The above equation has three unknowns, the elements of $\boldsymbol{\hat{f}}$. Nevertheless, we have only one equation. Thus, we have to get two additional conditions. We get the condition by requiring that the constraint force never add energy to nor remove energy from the system, i.e., the constraint is passive and lossless. We can get this condition from the kinetic energy $T(\boldsymbol{x})$ described in Sec. \ref{BasicEnergy},  $T(\boldsymbol{x}) = \frac{1}{2}m v^2$. The requirement can be written with $T(\boldsymbol{x})$ differentiated by t,
+
+\begin{eqnarray}
+	\frac{dT(\boldsymbol{x})}{dt} &=& m\frac{d^2\boldsymbol{x}}{dt^2}\cdot \frac{d\boldsymbol{x}}{dt}\nonumber\\
+	&=& \boldsymbol{f} \cdot \frac{d\boldsymbol{x}}{dt}+ \boldsymbol{\hat{f}}\cdot \frac{d\boldsymbol{x}}{dt} = 0
+\end{eqnarray}
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 \subsubsection{Position-Based Constrained Dynamics}
 If we obey the position-based style, we can create a constrained function $C(\boldsymbol{x})$ by simply giving a function $\rho(\boldsymbol{x})$ that measures something among mass points, and an objective value $v$. Then, the function can be defined as

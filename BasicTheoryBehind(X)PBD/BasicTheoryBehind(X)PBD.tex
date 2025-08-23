@@ -647,17 +647,39 @@ Here, $\boldsymbol{f}$ is the external force that is irrelevant to the constrain
 Or, rewrite this and we get
 
 \begin{eqnarray}
-	\boldsymbol{\hat{f}} \cdot \boldsymbol{x} = -\boldsymbol{f}\cdot\boldsymbol{x} - m \frac{d\boldsymbol{x}}{dt}\cdot\frac{d\boldsymbol{x}}{dt}
+	\boldsymbol{\hat{f}} \cdot \boldsymbol{x} = -\boldsymbol{f}\cdot\boldsymbol{x} - m \frac{d\boldsymbol{x}}{dt}\cdot\frac{d\boldsymbol{x}}{dt}\label{fhatxeqmf}
 \end{eqnarray}
 
-The above equation has three unknowns, the elements of $\boldsymbol{\hat{f}}$. Nevertheless, we have only one equation. Thus, we have to get two additional conditions. We get the condition by requiring that the constraint force never add energy to nor remove energy from the system, i.e., the constraint is passive and lossless. We can get this condition from the kinetic energy $T(\boldsymbol{x})$ described in Sec. \ref{BasicEnergy},  $T(\boldsymbol{x}) = \frac{1}{2}m v^2$. The requirement can be written with $T(\boldsymbol{x})$ differentiated by t,
+The above equation has three unknowns, the elements of $\boldsymbol{\hat{f}}$. Nevertheless, we have only one equation. Thus, we have to get two additional conditions. We get the condition by requiring that the constraint force never add energy to nor remove energy from the system, i.e., the constraint is passive and lossless. We will use this condition in the kinetic energy $T(\boldsymbol{x})$ described in Sec. \ref{BasicEnergy},  $T(\boldsymbol{x}) = \frac{1}{2}m v^2$. The equation $T(\boldsymbol{x})$ differentiated by t is
 
 \begin{eqnarray}
 	\frac{dT(\boldsymbol{x})}{dt} &=& m\frac{d^2\boldsymbol{x}}{dt^2}\cdot \frac{d\boldsymbol{x}}{dt}\nonumber\\
-	&=& \boldsymbol{f} \cdot \frac{d\boldsymbol{x}}{dt}+ \boldsymbol{\hat{f}}\cdot \frac{d\boldsymbol{x}}{dt} = 0
+	&=& \boldsymbol{f} \cdot \frac{d\boldsymbol{x}}{dt}+ \boldsymbol{\hat{f}}\cdot \frac{d\boldsymbol{x}}{dt}.
 \end{eqnarray}
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Here, using the fact that constraint force is passive and lossless, we can conclude that the contribution of the term $\boldsymbol{\hat{f}}\cdot \frac{d\boldsymbol{x}}{dt}$ doesn't attribute energy. Thus,
+
+\begin{eqnarray}
+	\boldsymbol{\hat{f}}\cdot \frac{d\boldsymbol{x}}{dt} = 0.\label{fhatxz}
+\end{eqnarray}
+
+In addition, the legal velocity condition holds $\boldsymbol{x} \cdot  \boldsymbol{v} = 0$. Using this and Eq. (\ref{fhatxz}), the constraint force $\boldsymbol{\hat{f}}$ is
+
+\begin{equation}
+	\boldsymbol{\hat{f}} = \lambda\boldsymbol{x},
+\end{equation}
+
+whose scalar $\lambda$ is unknown.
+
+SSubstituting for $\boldsymbol{\hat{f}}$ in Eq. (\ref{fhatxeqmf}), and solving for $\lambda$ gives
+
+\begin{equation}
+	\lambda = \frac{-\boldsymbol{f}\cdot\boldsymbol{x} - m \frac{d\boldsymbol{x}}{dt}\cdot\frac{d\boldsymbol{x}}{dt}}{\boldsymbol{x} \cdot\boldsymbol{x}}.
+\end{equation}
+
+Having solved for $\lambda$, we can calculate $\boldsymbol{\hat{f}} = \lambda\boldsymbol{x}$, then get $\frac{d^2 \boldsymbol{x}}{dt^2} = \frac{\boldsymbol{f}+\boldsymbol{\hat{f}}}{m}$. After getting the acceleration, we can simulate the system by using it. The details of the simulation are described in Sec. \ref{NumPhys}.
+
+A more complicated system with multiple constraints is described in Sec.  \ref{multipleConstraintsAssembly}.
 
 \subsubsection{Position-Based Constrained Dynamics}
 If we obey the position-based style, we can create a constrained function $C(\boldsymbol{x})$ by simply giving a function $\rho(\boldsymbol{x})$ that measures something among mass points, and an objective value $v$. Then, the function can be defined as
@@ -676,7 +698,8 @@ First, put two mass points $\boldsymbol{x}_1$ and $\boldsymbol{x}_2$ on the spac
 For clarity, we use $C(\boldsymbol{x}_1,\boldsymbol{x}_2)$ instead of $C(\boldsymbol{x})$ from now.
 If $C(\boldsymbol{x}_1,\boldsymbol{x}_2) \neq 0$ then 
 
-\subsubsection{Multiple Constraints Assembly}
+\subsubsection{Multiple Constraints Assembly}\label{multipleConstraintsAssembly}
+%force-basedにしろ、position-basedにしろ、行列を作れば解けるということを書く。
 
 \inprep
 \subsection{Continuum mechanics}

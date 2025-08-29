@@ -591,6 +591,8 @@ Force-based constrained dynamics is start with a below constraint that is called
 \end{equation}
 Here, the dot between two vectors represents the dot product of the vectors.
 
+\textbf{\noindent Circular Motion}
+
 Before we delve into the main topic, I provide a brief description of uniform circular motion.
 
 If the mass point rotates $\omega [rad/s]$ on a plane whose third element is zero, its position is represented as
@@ -633,6 +635,8 @@ Here, we can use the relation of circular motion among quantities eq.\ref{circul
 
 Thus, $\boldsymbol{x}$ is regal if $C(\boldsymbol{x}) = 0$, and $\boldsymbol{v}$ is regal if $\frac{dC(\boldsymbol{x})}{dt} = 0$, futhermore, $\boldsymbol{a}$ is regal if $\frac{d^2C(\boldsymbol{x})}{dt^2} = 0$. In particular, the last relation is heavily used in force-based constrained dynamics when solving the system.
 
+\textbf{\noindent Solving a Point-on-Circle Constraint}
+
 Then, let's solve a constrained system with a mass point with the point-on-circle constraint whose setting is the same as described above.
 Briefly, what we want to get is the force $\boldsymbol{\hat{f}}$ exerted by the constraint. We can write the equation that yields $\boldsymbol{\hat{f}}$ from the mass point's equation of motion,
 \begin{eqnarray}
@@ -671,7 +675,7 @@ In addition, the legal velocity condition holds $\boldsymbol{x} \cdot  \boldsymb
 
 whose scalar $\lambda$ is unknown.
 
-SSubstituting for $\boldsymbol{\hat{f}}$ in Eq. (\ref{fhatxeqmf}), and solving for $\lambda$ gives
+Substituting for $\boldsymbol{\hat{f}}$ in Eq. (\ref{fhatxeqmf}), and solving for $\lambda$ gives
 
 \begin{equation}
 	\lambda = \frac{-\boldsymbol{f}\cdot\boldsymbol{x} - m \frac{d\boldsymbol{x}}{dt}\cdot\frac{d\boldsymbol{x}}{dt}}{\boldsymbol{x} \cdot\boldsymbol{x}}.
@@ -679,7 +683,28 @@ SSubstituting for $\boldsymbol{\hat{f}}$ in Eq. (\ref{fhatxeqmf}), and solving f
 
 Having solved for $\lambda$, we can calculate $\boldsymbol{\hat{f}} = \lambda\boldsymbol{x}$, then get $\frac{d^2 \boldsymbol{x}}{dt^2} = \frac{\boldsymbol{f}+\boldsymbol{\hat{f}}}{m}$. After getting the acceleration, we can simulate the system by using it. The details of the simulation are described in Sec. \ref{NumPhys}.
 
-A more complicated system with multiple constraints is described in Sec.  \ref{multipleConstraintsAssembly}.
+\textbf{\noindent Multiple Constraints}
+
+Next, we will consider $n$ mass points and $k$ constraints.
+Henceforward, a vector $\boldsymbol{q}$ expresses concatenated positions; that is, $\boldsymbol{q} = (x_1, y_1, z_1, x_2, y_2, z_2, \cdots, x_n, y_n, z_n)$. Here $(x_i, y_i, z_i)$ denotes $i$-th mass point's position. Likewise, we concatenate the force $\boldsymbol{F}$ exerted to mass and denote it as $Q \in \mathbb{R}^{3n}$.
+A matrix called the mass matrix $\boldsymbol{M}$ is defined as a diagonal matrix whose elements are $(m_1, m_1, m_1, m_2, m_2, m_2, \cdots, m_n, m_n, m_n)$. Here, $m_i$ denotes the $i$-th point's mass.
+Now, we can express the multiple mass points version of the equation of motion using the above three quantities:
+\begin{eqnarray}
+	\frac{d^2\boldsymbol{q}}{dt^2} = \boldsymbol{M} \boldsymbol{F}
+\end{eqnarray}
+Here, the differentiated vector means element-wise differentiation.
+You can validate this expression by comparing the left-hand $i$-th three elements and the right-hand ones.
+
+The constraints also merged into a matrix $\boldsymbol{C(q)\in \mathbb{R}^{m\times 3n}}$ whose every row is a constraint. The element of row has a non-zero value if and only if the constraints are related to the corresponding mass point.
+
+%not grammarlied
+We can differentiate $\boldsymbol{C(q)}$ w.r.t time $t$ like as the single constraint example with chain rule (which is well-known in the analytic field):
+\begin{eqnarray}
+	\frac{d\boldsymbol{C(q)}}{dt} = \frac{\delta \boldsymbol{C(q)}}{\delta \boldsymbol{q}}\frac{d\boldsymbol{q}}{dt}
+\end{eqnarray}
+%各要素の説明(とくに行列の微分など)
+
+
 
 \subsubsection{Position-Based Constrained Dynamics}
 If we obey the position-based style, we can create a constrained function $C(\boldsymbol{x})$ by simply giving a function $\rho(\boldsymbol{x})$ that measures something among mass points, and an objective value $v$. Then, the function can be defined as
@@ -698,8 +723,6 @@ First, put two mass points $\boldsymbol{x}_1$ and $\boldsymbol{x}_2$ on the spac
 For clarity, we use $C(\boldsymbol{x}_1,\boldsymbol{x}_2)$ instead of $C(\boldsymbol{x})$ from now.
 If $C(\boldsymbol{x}_1,\boldsymbol{x}_2) \neq 0$ then 
 
-\subsubsection{Multiple Constraints Assembly}\label{multipleConstraintsAssembly}
-%force-basedにしろ、position-basedにしろ、行列を作れば解けるということを書く。
 
 \inprep
 \subsection{Continuum mechanics}
